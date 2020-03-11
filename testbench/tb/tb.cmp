@@ -1,0 +1,13 @@
+	component tb is
+		port (
+			clk_clk               : in    std_logic                    := 'X';             -- clk
+			reset_reset_n         : in    std_logic                    := 'X';             -- reset_n
+			ts4231_d_io           : inout std_logic_vector(9 downto 0) := (others => 'X'); -- d_io
+			ts4231_e_io           : inout std_logic_vector(9 downto 0) := (others => 'X'); -- e_io
+			ts4231_current_state  : out   std_logic_vector(3 downto 0);                    -- current_state
+			ts4231_current_sensor : out   std_logic_vector(7 downto 0);                    -- current_sensor
+			ts4231_sensor_state   : out   std_logic_vector(2 downto 0);                    -- sensor_state
+			ts4231_watch_state    : out   std_logic_vector(9 downto 0)                     -- watch_state
+		);
+	end component tb;
+

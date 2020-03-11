@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at TS4231_interface.v(7): object "watch_state" differs only in case from object "WATCH_STATE" in the same scope File: /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/TS4231_interface.v Line: 7
+Info (10281): Verilog HDL Declaration information at TS4231_interface.v(9): object "sensor_STATE" differs only in case from object "sensor_state" in the same scope File: /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/TS4231_interface.v Line: 9

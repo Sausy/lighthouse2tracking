@@ -1,0 +1,5 @@
+|TB_TS4
+clock => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+
+
