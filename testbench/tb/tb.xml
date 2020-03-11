@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.03.06.10:56:37"
+ outputDirectory="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 LP"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CL016YU256C8G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="ts4231" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="" />
+   <port name="ts4231_d_io" direction="bidir" role="d_io" width="10" />
+   <port name="ts4231_e_io" direction="bidir" role="e_io" width="10" />
+   <port
+       name="ts4231_current_state"
+       direction="output"
+       role="current_state"
+       width="4" />
+   <port
+       name="ts4231_current_sensor"
+       direction="output"
+       role="current_sensor"
+       width="8" />
+   <port
+       name="ts4231_sensor_state"
+       direction="output"
+       role="sensor_state"
+       width="3" />
+   <port
+       name="ts4231_watch_state"
+       direction="output"
+       role="watch_state"
+       width="10" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="tb:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10CL016YU256C8G,AUTO_DEVICE_FAMILY=Cyclone 10 LP,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1583488596,AUTO_UNIQUE_ID=(clock_source:18.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(ts4231:1.0:CLK_FREQ_HZ=50000000,NUMBER_OF_SENSORS=1)(clock:18.1:)(reset:18.1:)"
+   instancePathKey="tb"
+   kind="tb"
+   version="1.0"
+   name="tb">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1583488596" />
+  <parameter name="AUTO_DEVICE" value="10CL016YU256C8G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 LP" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/tb.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/TS4231_interface.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/ip-core/TS4231/ts4231_hw.tcl" />
+   <file
+       path="/home/sausy/intelFPGA_lite/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="tb">queue size: 0 starting:tb "tb"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>2</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>3</b> modules, <b>4</b> connections]]></message>
+   <message level="Debug" culprit="tb"><![CDATA["<b>tb</b>" reuses <b>ts4231</b> "<b>submodules/ts4231</b>"]]></message>
+   <message level="Debug" culprit="tb"><![CDATA["<b>tb</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="tb">queue size: 1 starting:ts4231 "submodules/ts4231"</message>
+   <message level="Info" culprit="ts4231_0"><![CDATA["<b>tb</b>" instantiated <b>ts4231</b> "<b>ts4231_0</b>"]]></message>
+   <message level="Debug" culprit="tb">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>tb</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="ts4231:1.0:CLK_FREQ_HZ=50000000,NUMBER_OF_SENSORS=1"
+   instancePathKey="tb:.:ts4231_0"
+   kind="ts4231"
+   version="1.0"
+   name="ts4231">
+  <parameter name="CLK_FREQ_HZ" value="50000000" />
+  <parameter name="NUMBER_OF_SENSORS" value="1" />
+  <generatedFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/TS4231_interface.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/ip-core/TS4231/ts4231_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="tb" as="ts4231_0" />
+  <messages>
+   <message level="Debug" culprit="tb">queue size: 1 starting:ts4231 "submodules/ts4231"</message>
+   <message level="Info" culprit="ts4231_0"><![CDATA["<b>tb</b>" instantiated <b>ts4231</b> "<b>ts4231_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:18.1:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="tb:.:rst_controller"
+   kind="altera_reset_controller"
+   version="18.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/sausy/intelFPGA_lite/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="tb" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="tb">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>tb</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

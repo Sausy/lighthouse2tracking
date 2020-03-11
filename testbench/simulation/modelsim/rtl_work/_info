@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/simulation/modelsim
+vclock_divider
+Z1 !s110 1583749814
+!i10b 1
+!s100 _3T@T7e0Y0>iHjY`WikE@0
+IF5AMP:eEZ64^?becTd>VR3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1583749625
+Z4 8/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TS43231_init.v
+Z5 F/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TS43231_init.v
+L0 280
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1583749814.000000
+Z8 !s107 /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TS43231_init.v|/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TB_TS4.v|
+Z9 !s90 -reportprogress|300|-work|work|/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TB_TS4.v|/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TS43231_init.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vtb_interface
+R1
+!i10b 1
+!s100 eKM>7QkM?@?@@8NCkBoE53
+I<dCiIcC3VVRaYJ[;C>g792
+R2
+R0
+Z12 w1583749806
+Z13 8/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TB_TS4.v
+Z14 F/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TB_TS4.v
+L0 10
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vTB_TS4
+R1
+!i10b 1
+!s100 4Bi`5PAW=@BkI=AEb^m_l1
+Ih:lfAzdhj5_Bm2Z>`CNGN1
+R2
+R0
+R12
+R13
+R14
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@t@b_@t@s4
+vTS43231_init
+R1
+!i10b 1
+!s100 N86ZRUnlz=HmUaGPC8]5B3
+IBlzd5KT^^c[0e4l2WGF1A2
+R2
+R0
+R3
+R4
+R5
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@t@s43231_init

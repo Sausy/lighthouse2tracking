@@ -1,0 +1,33 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb.qsys --block-symbol-file --output-directory=/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb --family="Cyclone 10 LP" --part=10CL016YU256C8G
+Progress: Loading testbench/tb.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding ts4231_0 [ts4231 1.0]
+Progress: Parameterizing module ts4231_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb.qsys --synthesis=VERILOG --output-directory=/home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/tb/synthesis --family="Cyclone 10 LP" --part=10CL016YU256C8G
+Progress: Loading testbench/tb.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding ts4231_0 [ts4231 1.0]
+Progress: Parameterizing module ts4231_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: tb: Generating tb "tb" for QUARTUS_SYNTH
+Info: ts4231_0: "tb" instantiated ts4231 "ts4231_0"
+Info: rst_controller: "tb" instantiated altera_reset_controller "rst_controller"
+Info: tb: Done "tb" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
