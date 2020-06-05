@@ -40,7 +40,8 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
     Serial.print(" TimeDiv: ");Serial.print(divTime);
     Serial.print(" BW: ");Serial.print(beam_word, HEX);*/
 
-    if ((offset & 0xffff00) != 0 ){
+    //if ((offset & 0xffff00) != 0 ){
+    if ((beam_word & 0x00007f) != 0 ){
       //Serial.print("\n[ERROR] (offset & 0xffff00) != 0: ");Serial.print(offset, HEX);
       /*
       Serial.print(" ID: ");Serial.print(sensor, HEX);

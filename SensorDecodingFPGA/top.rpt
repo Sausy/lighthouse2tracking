@@ -1,0 +1,100 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        ram_25_25 (SB_RAM40_4K) [clk] -> RDATA[13]: 3.263 ns
+     3.263 ns net_100235 (uinterf.io_output_fifo._zz_5_[45])
+        odrv_25_25_100235_103714 (Odrv12) I -> O: 0.796 ns
+        t29096 (Span12Mux_v12) I -> O: 0.796 ns
+        t29095 (Sp12to4) I -> O: 0.662 ns
+        t29094 (Span4Mux_h4) I -> O: 0.465 ns
+        t29093 (Span4Mux_v4) I -> O: 0.548 ns
+        t29092 (Span4Mux_h4) I -> O: 0.465 ns
+        t29091 (Span4Mux_v4) I -> O: 0.548 ns
+        t29090 (Span4Mux_h4) I -> O: 0.465 ns
+        t29089 (Span4Mux_v4) I -> O: 0.548 ns
+        t29088 (Span4Mux_h4) I -> O: 0.465 ns
+        t29087 (Span4Mux_h4) I -> O: 0.465 ns
+        t29086 (Span4Mux_h4) I -> O: 0.465 ns
+        t29085 (Span4Mux_h4) I -> O: 0.465 ns
+        t29084 (Span4Mux_h4) I -> O: 0.465 ns
+        t29105 (Span4Mux_v4) I -> O: 0.548 ns
+        t29104 (Span4Mux_h4) I -> O: 0.465 ns
+        t29103 (Span4Mux_h4) I -> O: 0.465 ns
+        t29102 (IoSpan4Mux) I -> O: 0.475 ns
+        t29101 (Span4Mux_v4) I -> O: 0.548 ns
+        t29100 (Span4Mux_v4) I -> O: 0.548 ns
+        t29148 (Span4Mux_h4) I -> O: 0.465 ns
+        t29158 (Span4Mux_v4) I -> O: 0.548 ns
+        t29157 (Span4Mux_h4) I -> O: 0.465 ns
+        t29156 (Span4Mux_v4) I -> O: 0.548 ns
+        t29187 (Span4Mux_h4) I -> O: 0.465 ns
+        t29186 (Span4Mux_v4) I -> O: 0.548 ns
+        t29185 (Span4Mux_v4) I -> O: 0.548 ns
+        t29184 (LocalMux) I -> O: 0.486 ns
+        inmux_14_10_57684_57719 (InMux) I -> O: 0.382 ns
+        lc40_14_10_4 (LogicCell40) in1 -> lcout: 0.589 ns
+    18.975 ns net_53547 (uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3)
+        odrv_14_10_53547_57406 (Odrv4) I -> O: 0.548 ns
+        t14258 (Span4Mux_v4) I -> O: 0.548 ns
+        t14257 (Span4Mux_h4) I -> O: 0.465 ns
+        t14256 (LocalMux) I -> O: 0.486 ns
+        inmux_15_10_61746_61786 (InMux) I -> O: 0.382 ns
+        lc40_15_10_2 (LogicCell40) in3 -> lcout: 0.465 ns
+    21.870 ns net_57622 (uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I0)
+        odrv_15_10_57622_61585 (Odrv12) I -> O: 0.796 ns
+        t15551 (LocalMux) I -> O: 0.486 ns
+        inmux_15_13_62130_62158 (InMux) I -> O: 0.382 ns
+        lc40_15_13_3 (LogicCell40) in0 -> lcout: 0.662 ns
+    24.195 ns net_57992 (uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2)
+        odrv_15_13_57992_61092 (Odrv12) I -> O: 0.796 ns
+        t15638 (Sp12to4) I -> O: 0.662 ns
+        t15637 (Span4Mux_v4) I -> O: 0.548 ns
+        t15636 (Span4Mux_h4) I -> O: 0.465 ns
+        t15635 (Span4Mux_h4) I -> O: 0.465 ns
+        t15634 (Span4Mux_h4) I -> O: 0.465 ns
+        t15633 (LocalMux) I -> O: 0.486 ns
+        inmux_4_19_18673_18713 (InMux) I -> O: 0.382 ns
+        lc40_4_19_1 (LogicCell40) in3 -> lcout: 0.465 ns
+    28.930 ns net_14554 (uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O)
+        odrv_4_19_14554_2134 (Odrv12) I -> O: 0.796 ns
+        t6450 (Span12Mux_v12) I -> O: 0.796 ns
+        t6478 (Span12Mux_h12) I -> O: 0.796 ns
+        t6477 (Span12Mux_v12) I -> O: 0.796 ns
+        t6476 (Sp12to4) I -> O: 0.662 ns
+        t6475 (Span4Mux_h4) I -> O: 0.465 ns
+        t6487 (Span4Mux_h4) I -> O: 0.465 ns
+        t6486 (Span4Mux_h4) I -> O: 0.465 ns
+        t6485 (Span4Mux_v4) I -> O: 0.548 ns
+        t6484 (Span4Mux_v4) I -> O: 0.548 ns
+        t6483 (Span4Mux_v4) I -> O: 0.548 ns
+        t6482 (LocalMux) I -> O: 0.486 ns
+        inmux_18_20_75198_75250 (InMux) I -> O: 0.382 ns
+        t2754 (CascadeMux) I -> O: 0.000 ns
+        lc40_18_20_3 (LogicCell40) in2 -> lcout: 0.558 ns
+    37.241 ns net_71083 (uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_._zz_25__SB_DFFSS_Q_D_SB_LUT4_O_I2)
+        odrv_18_20_71083_75299 (Odrv4) I -> O: 0.548 ns
+        t18837 (LocalMux) I -> O: 0.486 ns
+        inmux_21_20_87455_87499 (InMux) I -> O: 0.382 ns
+        t3156 (CascadeMux) I -> O: 0.000 ns
+    38.657 ns net_87499_cascademuxed
+        lc40_21_20_6 (LogicCell40) in2 [setup]: 0.475 ns
+    39.132 ns net_83316 (uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_._zz_25_[0])
+
+Resolvable net names on path:
+     3.263 ns .. 18.386 ns uinterf.io_output_fifo._zz_5_[45]
+    18.975 ns .. 21.404 ns uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I0_SB_LUT4_O_I3
+    21.870 ns .. 23.534 ns uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I0
+    24.195 ns .. 28.465 ns uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2
+    28.930 ns .. 36.682 ns uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_.found_SB_DFF_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O
+    37.241 ns .. 38.657 ns uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_._zz_25__SB_DFFSS_Q_D_SB_LUT4_O_I2
+                  lcout -> uinterf.slowArea_pulseOffsetFinder.offsetFinder_1_._zz_25_[0]
+
+Total number of logic levels: 6
+Total path delay: 39.13 ns (25.55 MHz)
+
