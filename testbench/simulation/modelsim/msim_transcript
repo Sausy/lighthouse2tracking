@@ -1321,3 +1321,6 @@ restart
 # ** Warning: (vsim-3722) /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/TB_TS4.v(38): [TFMPC] - Missing connection for port 'debug_flag_write_done'.
 run
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/sausy/Projects/lighthouse/lighthouse2tracking/testbench/simulation/modelsim/wave.do
+# End time: 19:50:08 on Mar 11,2020, Elapsed time: 122:12:17
+# Errors: 1, Warnings: 170
