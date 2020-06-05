@@ -13,3 +13,6 @@
 [submodule "UDPtoROS/src/roboy_lighthouse2/nanopb"]
 	path = UDPtoROS/src/roboy_lighthouse2/nanopb
 	url = https://github.com/nanopb/nanopb.git
+[submodule "TrackerInterfaceFPGA/DarkRoom_esp32/--force"]
+	path = TrackerInterfaceFPGA/DarkRoom_esp32/--force
+	url = https://github.com/nanopb/nanopb.git
