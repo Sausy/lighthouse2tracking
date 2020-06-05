@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sausy/Projects/lighthouse/lighthouse2sandbox/04_v4_tinyfpga/UDP_Client/src/udpInterface.cpp
+udpInterface.hpp
+-
+

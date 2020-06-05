@@ -1,13 +1,45 @@
-# FPGA and esp32 implementation of 
-This Project is based on the Project esptracker from cnlohr
-https://github.com/cnlohr/esptracker
+# Lighthouse 2 Tracking 
+This Project is based on the Project esptracker from cnlohr https://github.com/cnlohr/esptracker
+## Structur 
 
-For experimentation are conducted on the ardinor vidor MK4000 with the base system from Sausy that uses the devboard for fpga development
-https://github.com/Roboy/VidorNina-ESP32
+## Flashing the esp32 (nina) module
+### Hardware
+First you have to press both buttons, after a second the reset button can be release.
+Another second later the boot button can be released.
+### Software
+There are two posibilities
 
-## Structur
-ip-core ... has the FPGA code 
-lib ... cpp libary to work with 
+* Arduino IDE
+* Commandline
+
+#### Commandline
+```
+cd ~/ArduinoDarkroom/DarkRoom_esp8266/
+arduino --upload DarkRoom_esp8266.ino --port /dev/ttyUSB0
+```
+
+### Debuging
+i use pio for that but "screen" would also work.
+```
+pio device monitor --port /dev/ttyUSB0 --baud $( expr 115200 \* 4 )
+```
+
+### Real Debugging
+```
+python3 ~/esp/esp-idf/tools/idf_monitor.py  --port /dev/ttyUSB0 --baud $( expr 115200 \* 4 ) /tmp/arduino_build_317883/DarkRoom_esp8266.ino.elf
+```
+
+should spit out errors if you don't have aliased xtensa-esp32-elf-addr2line the following comand should spit out the msg:
+```
+~/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-addr2line -pfiaC -e /tmp/arduino_build_317883/DarkRoom_esp8266.ino.elf 0x40088b81
+```
 
 
 
+
+
+
+
+```
+pip3 install esptool
+```

@@ -1,0 +1,8 @@
+prefix=/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel
+
+Name: roboy_middleware_msgs
+Description: Description of roboy_middleware_msgs
+Version: 1.0.0
+Cflags: -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_middleware_msgs/include
+Libs: -L${prefix}/lib 
+Requires: roscpp message_runtime message_generation

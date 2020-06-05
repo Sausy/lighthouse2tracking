@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/roboy_middleware_msgs_generate_messages_lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/MotorAngle.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/ArmStatus.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DanceCommand.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/ControllerState.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DarkRoomStatus.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/MagneticSensor.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/MotorStatus.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/ADCvalue.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/HandCommand.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/MotorConfig.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DarkRoom.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DarkRoomOOTX.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/ArucoPose.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/LighthousePoseCorrection.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DarkRoomStatistics.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/JointStatus.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DarkRoomSensor.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/MotorCommand.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/msg/DarkRoomSensorV2.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/ForwardKinematics.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/MyoBrickCalibrationService.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/FrameIK.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/SystemCheck.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/InverseKinematics.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/XL320.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/MotorConfigService.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/ControlMode.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/JointController.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/EmergencyStop.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/TorqueControl.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/DanceTrajectory.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/SetInt16.lisp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/common-lisp/ros/roboy_middleware_msgs/srv/MotorCalibrationService.lisp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/roboy_middleware_msgs_generate_messages_lisp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

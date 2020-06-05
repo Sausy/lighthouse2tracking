@@ -1,0 +1,2 @@
+common_utilities:robots:roboy_communication/roboy_cognition_msgs:roboy_communication/roboy_control_msgs:roboy_communication/roboy_middleware_msgs:roboy_communication/roboy_simulation_msgs:roboy_darkroom/darkroom:roboy_darkroom/darkroom_rqt:roboy_darkroom/vive_ros:roboy_lighthouse2_tracking
+-DCATKIN_DEVEL_PREFIX=/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel -DCMAKE_INSTALL_PREFIX=/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install -G Unix Makefiles

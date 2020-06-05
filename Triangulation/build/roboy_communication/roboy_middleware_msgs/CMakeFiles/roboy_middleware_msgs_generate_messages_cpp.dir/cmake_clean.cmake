@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/roboy_middleware_msgs_generate_messages_cpp"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomStatus.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomOOTX.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ArucoPose.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/HandCommand.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomSensor.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ControllerState.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/LighthousePoseCorrection.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorStatus.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoom.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorCommand.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/JointStatus.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ADCvalue.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorAngle.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ArmStatus.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DanceCommand.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorConfig.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MagneticSensor.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomSensorV2.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomStatistics.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/SetInt16.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/EmergencyStop.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/InverseKinematicsMultipleFrames.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ControlMode.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/JointController.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/TorqueControl.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorCalibrationService.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ForwardKinematics.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MyoBrickCalibrationService.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/InverseKinematics.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/XL320.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DanceTrajectory.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/SystemCheck.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/FrameIK.h"
+  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorConfigService.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/roboy_middleware_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

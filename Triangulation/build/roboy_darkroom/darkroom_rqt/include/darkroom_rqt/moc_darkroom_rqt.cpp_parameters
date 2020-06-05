@@ -1,0 +1,11 @@
+-I/usr/include/eigen3
+-I/usr/include/libalglib
+-I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom_rqt/include
+-I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom_rqt/qcustomplot
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="darkroom_rqt"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/roboy_darkroom/darkroom_rqt/include/darkroom_rqt/moc_darkroom_rqt.cpp
+/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom_rqt/include/darkroom_rqt/darkroom_rqt.hpp

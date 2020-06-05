@@ -1,0 +1,8 @@
+prefix=/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install
+
+Name: common_utilities
+Description: Description of common_utilities
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrviz_visualization -lUDPSocket -lMotorConfig
+Requires: message_runtime roslib

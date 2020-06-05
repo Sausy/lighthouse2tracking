@@ -1,0 +1,8 @@
+prefix=/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel
+
+Name: darkroom_rqt
+Description: Description of darkroom_rqt
+Version: 0.0.0
+Cflags: -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom_rqt/include
+Libs: -L${prefix}/lib -ldarkroom_rqt
+Requires: roscpp rqt_gui_cpp std_msgs roboy_middleware_msgs darkroom common_utilities

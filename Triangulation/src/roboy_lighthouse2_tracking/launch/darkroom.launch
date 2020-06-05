@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="lighthouse1" args="0 0 0 0 0 0"/>
+</launch>
+        <!--launch-prefix="gdb -ex run"-->
+        <!--launch-prefix="gdb -ex run"-->
+        <!-- FOR DEBUGGING USE THIS launch-prefix="xterm -e gdb -se devel/lib/myo_master/multiJoint" FOR VALGRIND USE THIS launch-prefix="valgrind -log-file=/home/roboy/workspace/ros_hierarchy/valgrind.log -leak-check=full"-->
+
+        <!-- args="-c /home/roboy/workspace/roboy-ros-control/src/roboy_powerlink/powerlink/output/mnobd.cdc"-->
