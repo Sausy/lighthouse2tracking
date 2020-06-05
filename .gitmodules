@@ -1,6 +1,3 @@
-[submodule "VidorNina-ESP32"]
-	path = VidorNina-ESP32
-	url = https://github.com/Roboy/VidorNina-ESP32.git
 [submodule "UDPtoROS/src/roboy_communication"]
 	path = UDPtoROS/src/roboy_communication
 	url = https://github.com/Roboy/roboy_communication.git
@@ -12,7 +9,4 @@
 	url = https://github.com/nanopb/nanopb.git
 [submodule "UDPtoROS/src/roboy_lighthouse2/nanopb"]
 	path = UDPtoROS/src/roboy_lighthouse2/nanopb
-	url = https://github.com/nanopb/nanopb.git
-[submodule "TrackerInterfaceFPGA/DarkRoom_esp32/--force"]
-	path = TrackerInterfaceFPGA/DarkRoom_esp32/--force
 	url = https://github.com/nanopb/nanopb.git
