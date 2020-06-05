@@ -8,22 +8,22 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 
     inout d_io,
     inout e_io,
-	 
-	 input start_cfg, 
-		
+
+	 input start_cfg,
+
 	 output lighthouse_detected,
     output cfg_done,
-	 output [0:14] cfg_data_reply, 
-		
-	 output [15:0] debug_LUT_cnt,	
+	 output [0:14] cfg_data_reply,
+
+	 output [15:0] debug_LUT_cnt,
     output debug_cstatus,
     output debug_nstatus,
     output debug_difclk,
     output debug_flag_read_done,
     output debug_flag_write_done
   );
-			
-   
+
+
   localparam ISOUT = 1;
   localparam ISIN = 0;
 
@@ -33,8 +33,8 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 		.reset 		(reset),
 		.clock_out 	(dif_clk)
 	);
-  
-   
+
+
   //since every waiting time exeds the precision of 50MHz a 100ns delay will be used.
   //100ns was chosen because it would also work on another testboard with 4MHz clk
   localparam T_WAIT_SETUP = CLK_FREQ_HZ/1_000_000;
@@ -87,9 +87,9 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
       E_out_delayed <= E_out;
     end
   end
-  
+
   reg flag_start_conv;
-  
+
   always @(posedge clock, posedge reset) begin: restart_config
     if(reset)begin
       flag_start_conv <= 0;
@@ -102,7 +102,7 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 		end
     end
   end
-  
+
   reg [15:0] LUT_cnt;
   reg [0:14] reg_cfg_data_reply;
 	assign cfg_data_reply = reg_cfg_data_reply;
@@ -111,7 +111,7 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
   reg flag_allow_read;
   reg flag_write_done;
   reg flag_read_done;
-  
+
   reg flag_cfg_done;
 	assign cfg_done = flag_cfg_done;
   reg flag_lighthouse_detected;
@@ -160,7 +160,7 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 					if(!d_io) begin//e_io
 						flag_startup_trigger_delay <= 0;
 						flag_allow_write <= 1;
-						
+
 					end
 				end
 			 end
@@ -200,7 +200,7 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 				 e_state_out <= LUT_E_READ_INOUT[LUT_cnt];
 				 D_out <= LUT_D_READ[LUT_cnt];
 				 E_out <= LUT_E_READ[LUT_cnt];
-				 
+
 				 //Grabs reply data from TS43231
 				 if(LUT_cnt <= 16'd36)begin
 					if(LUT_cnt >= 16'd7)begin
@@ -209,7 +209,7 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 							//if(LUT_E_READ[LUT_cnt] == 1)begin //E is shiftet by one clock impuls ... hence the low impuls is important
 								//reg_cfg_data_reply <= (reg_cfg_data_reply << 1) | d_io; //
 							//end
-						 end 
+						 end
 					end else begin
 						flag_data_recording <= 0;
 						//reg_cfg_data_reply <= 32'd0;
@@ -227,13 +227,13 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 				 end
 			  end
 		  end
-		  
+
     end
   end
-  
-  reg [7:0] data_grab_count; 
+
+  reg [7:0] data_grab_count;
   always @(posedge E_out_delayed,posedge reset) begin: data_grab
-	if(reset)begin 
+	if(reset)begin
 		reg_cfg_data_reply <= 32'd0;
 		data_grab_count <= 8'd0;
 	end else begin
@@ -256,15 +256,15 @@ module TS43231_init #(parameter CLK_FREQ_HZ = 50_000_000)
 		end
 	end
   end
-  
-  
-  
-  //----- [DEBUG STUFF] ----- 
+
+
+
+  //----- [DEBUG STUFF] -----
   /*always @(posedge clock) begin: DEBUG_DATA
 		debug_cstatus <= 1;
-		//debug_nstatus <= 
+		//debug_nstatus <=
 		debug_difclk <= dif_clk;
-		//debug_flag_read_done <= 
+		//debug_flag_read_done <=
 		debug_flag_write_done <= flag_allow_write;
   end*/
   assign debug_difclk = dif_clk;
@@ -298,6 +298,6 @@ module clock_divider (
           counter <= 28'd0;
         end
       end
-	
+
     assign clock_out = (counter<DIVISOR/2)?1'b0:1'b1;//clock_out_reg;
 endmodule
