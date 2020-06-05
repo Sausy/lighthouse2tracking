@@ -1,0 +1,5 @@
+# exclude everything except directory foo/bar
+*.gch
+#!/foo
+#/foo/*
+#!/foo/ba
