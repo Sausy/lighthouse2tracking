@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp;message_runtime;message_generation;actionlib_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "roboy_control_msgs"
-PROJECT_SPACE_DIR = "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/install"
+PROJECT_SPACE_DIR = "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/install"
 PROJECT_VERSION = "1.0.3"

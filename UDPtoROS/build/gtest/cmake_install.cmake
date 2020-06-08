@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

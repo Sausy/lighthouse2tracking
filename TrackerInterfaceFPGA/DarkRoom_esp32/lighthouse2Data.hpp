@@ -7,7 +7,7 @@
 #include "protoLighthouse.h"
 
 #define MAX_SENSORS 12
-#define MAX_BASE_AMOUNT 32
+#define MAX_BASE_AMOUNT 33
 #define MAX_DELTA_TIME 240000  //10ms * 24MHz 240000 (due to the fact that we should position the lighthouse anyway 1.5meters away)...20ms * 24MHz = 480000  with buffer 25ms * 24MHz = 528000
 #define UART_SUBFRAME_SIZE_PERBYTE 3
 #define UART_FRAME_SIZE (4*UART_SUBFRAME_SIZE_PERBYTE)
@@ -36,6 +36,7 @@ class LIGHTHOUSEDATACONV{
 
   private:
     uint32_t prevSweepTime[MAX_BASE_AMOUNT]= {0};
+    uint32_t prevOfset[MAX_BASE_AMOUNT]= {0};
     uint32_t prevBeamWord[MAX_BASE_AMOUNT]= {0};
     uint16_t prevEwidth[MAX_BASE_AMOUNT] = {0};
     //bool wasLast

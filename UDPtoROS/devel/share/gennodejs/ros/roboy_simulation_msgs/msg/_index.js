@@ -15,7 +15,6 @@ let Model = require('./Model.js');
 let Abortion = require('./Abortion.js');
 let ControllerParameters = require('./ControllerParameters.js');
 let Joint = require('./Joint.js');
-let Point32Array = require('./Point32Array.js');
 let COM = require('./COM.js');
 let LegState = require('./LegState.js');
 let TendonInitialization = require('./TendonInitialization.js');
@@ -37,7 +36,6 @@ module.exports = {
   Abortion: Abortion,
   ControllerParameters: ControllerParameters,
   Joint: Joint,
-  Point32Array: Point32Array,
   COM: COM,
   LegState: LegState,
   TendonInitialization: TendonInitialization,

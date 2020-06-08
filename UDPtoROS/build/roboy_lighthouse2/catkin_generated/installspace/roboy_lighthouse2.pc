@@ -1,4 +1,4 @@
-prefix=/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/install
+prefix=/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/install
 
 Name: roboy_lighthouse2
 Description: Description of roboy_lighthouse2

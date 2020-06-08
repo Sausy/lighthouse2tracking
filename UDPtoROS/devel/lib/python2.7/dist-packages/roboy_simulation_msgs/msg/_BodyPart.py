@@ -8,12 +8,13 @@ import struct
 import geometry_msgs.msg
 
 class BodyPart(genpy.Message):
-  _md5sum = "4f76706811fad63028450434bc8c147d"
+  _md5sum = "7ea6a0636760eaf5fe7e84691fe02368"
   _type = "roboy_simulation_msgs/BodyPart"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """int32 id
-int32 link_id
+  _full_text = """int32 roboy_id
+string link
 geometry_msgs/Point position
+float64 mass
 
 ================================================================================
 MSG: geometry_msgs/Point
@@ -22,8 +23,8 @@ float64 x
 float64 y
 float64 z
 """
-  __slots__ = ['id','link_id','position']
-  _slot_types = ['int32','int32','geometry_msgs/Point']
+  __slots__ = ['roboy_id','link','position','mass']
+  _slot_types = ['int32','string','geometry_msgs/Point','float64']
 
   def __init__(self, *args, **kwds):
     """
@@ -33,7 +34,7 @@ float64 z
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       id,link_id,position
+       roboy_id,link,position,mass
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -42,16 +43,19 @@ float64 z
     if args or kwds:
       super(BodyPart, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.id is None:
-        self.id = 0
-      if self.link_id is None:
-        self.link_id = 0
+      if self.roboy_id is None:
+        self.roboy_id = 0
+      if self.link is None:
+        self.link = ''
       if self.position is None:
         self.position = geometry_msgs.msg.Point()
+      if self.mass is None:
+        self.mass = 0.
     else:
-      self.id = 0
-      self.link_id = 0
+      self.roboy_id = 0
+      self.link = ''
       self.position = geometry_msgs.msg.Point()
+      self.mass = 0.
 
   def _get_types(self):
     """
@@ -65,8 +69,15 @@ float64 z
     :param buff: buffer, ``StringIO``
     """
     try:
+      buff.write(_get_struct_i().pack(self.roboy_id))
+      _x = self.link
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_2i3d().pack(_x.id, _x.link_id, _x.position.x, _x.position.y, _x.position.z))
+      buff.write(_get_struct_4d().pack(_x.position.x, _x.position.y, _x.position.z, _x.mass))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -79,10 +90,22 @@ float64 z
       if self.position is None:
         self.position = geometry_msgs.msg.Point()
       end = 0
+      start = end
+      end += 4
+      (self.roboy_id,) = _get_struct_i().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.link = str[start:end].decode('utf-8')
+      else:
+        self.link = str[start:end]
       _x = self
       start = end
       end += 32
-      (_x.id, _x.link_id, _x.position.x, _x.position.y, _x.position.z,) = _get_struct_2i3d().unpack(str[start:end])
+      (_x.position.x, _x.position.y, _x.position.z, _x.mass,) = _get_struct_4d().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -95,8 +118,15 @@ float64 z
     :param numpy: numpy python module
     """
     try:
+      buff.write(_get_struct_i().pack(self.roboy_id))
+      _x = self.link
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_2i3d().pack(_x.id, _x.link_id, _x.position.x, _x.position.y, _x.position.z))
+      buff.write(_get_struct_4d().pack(_x.position.x, _x.position.y, _x.position.z, _x.mass))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -110,10 +140,22 @@ float64 z
       if self.position is None:
         self.position = geometry_msgs.msg.Point()
       end = 0
+      start = end
+      end += 4
+      (self.roboy_id,) = _get_struct_i().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.link = str[start:end].decode('utf-8')
+      else:
+        self.link = str[start:end]
       _x = self
       start = end
       end += 32
-      (_x.id, _x.link_id, _x.position.x, _x.position.y, _x.position.z,) = _get_struct_2i3d().unpack(str[start:end])
+      (_x.position.x, _x.position.y, _x.position.z, _x.mass,) = _get_struct_4d().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -122,9 +164,15 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2i3d = None
-def _get_struct_2i3d():
-    global _struct_2i3d
-    if _struct_2i3d is None:
-        _struct_2i3d = struct.Struct("<2i3d")
-    return _struct_2i3d
+_struct_i = None
+def _get_struct_i():
+    global _struct_i
+    if _struct_i is None:
+        _struct_i = struct.Struct("<i")
+    return _struct_i
+_struct_4d = None
+def _get_struct_4d():
+    global _struct_4d
+    if _struct_4d is None:
+        _struct_4d = struct.Struct("<4d")
+    return _struct_4d

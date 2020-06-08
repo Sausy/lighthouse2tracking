@@ -25,7 +25,9 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
 
   if ((offset != 0xffffff) && (beam_word != 0xffffff) ){ // && (beam_word != 0xffffff)
     uint8_t sensor_temp = first_word & 0x03;
-    int8_t sensor_add = offset - 1;//((offset >> 17) & 0x03 ) - 1;
+    int8_t sensor_add = ((offset >> 18) & 0xff) - 1;//((offset >> 17) & 0x03 ) - 1;
+
+    offset = offset & 0x01ffff;
 
     /*
     Serial.print("\n\nNO: ");Serial.print(sensor, HEX);
@@ -41,7 +43,7 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
     Serial.print(" BW: ");Serial.print(beam_word, HEX);*/
 
     //if ((offset & 0xffff00) != 0 ){
-    if ((beam_word & 0x00007f) != 0 ){
+    //if ((beam_word & 0x00007f) != 0 ){
       //Serial.print("\n[ERROR] (offset & 0xffff00) != 0: ");Serial.print(offset, HEX);
       /*
       Serial.print(" ID: ");Serial.print(sensor, HEX);
@@ -52,18 +54,21 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
       Serial.print(" TS: ");Serial.print(timestamp, HEX);
     */
 
-      return -1;
-    }
+    //  return -1;
+    //}
 
 
     if(sensor_add < 0){
-      //Serial.print("\n Might be an erro pls restart: ");
+      Serial.print("\n Might be an erro pls restart: ");
+      return -1;
       sensor = sensor_temp;
     }else{
       sensor = (sensor_add * 4) + sensor_temp;
     }
 
     width = (first_word >> 8) & 0xffff;
+
+    //if offset > (lastMeasurements[channel]+10000):
 
     /*
     Serial.print("\nTS: ");Serial.print(timestamp, HEX);
@@ -80,34 +85,64 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
 
 
 
-    if(identity < 32){
+    if(identity < 32 && sensor < 16){
+      if (offset > (prevOfset[identity]+10000)){
+
+        msg.SensorID = sensor;
+        msg.BeamWord = offset;
+        msg.Timestamp = timestamp;
+        msg.E_width = prevOfset[identity];//width;
+        msg.BaseStationID = channel + 1;
+        msg.BaseStationChanel = slow_bit;
+
+        prevOfset[identity] = offset;
+
+        return 1;
+      }
+      prevOfset[identity] = offset;
+
+      prevSweepTime[identity] = timestamp;
+      prevBeamWord[identity] = beam_word;
+      prevEwidth[identity] = width;
+
+      return -1;
+    }
+    /*
       if ((nPoly_ok)){
+        if (offset > (prevOfset[identity][sensor]+10000)){
+
+
+        }
         if(prevEwidth[identity] > width){
           divTime = timestamp - prevSweepTime[identity];
 
-          /*
-          //Serial.print("\n\nID_raw: ");Serial.print(sensor_temp, HEX);
-          Serial.print("\n\nID: ");Serial.print(sensor, HEX);
 
-          //Serial.print(" ID_add: ");Serial.print(sensor_add, HEX);
+          ////Serial.print("\n\nID_raw: ");Serial.print(sensor_temp, HEX);
+          //Serial.print("\n\nID: ");Serial.print(sensor, HEX);
 
-          Serial.print(" OF: ");Serial.print(offset, HEX);
-          //Serial.print(" sensor_add: ");Serial.print(sensor_add, HEX);
-          //Serial.print(" identity: ");Serial.print(identity,HEX);
-          Serial.print(" TS: ");Serial.print(timestamp, HEX);
-          Serial.print(" TS-last : ");Serial.print(prevSweepTime[identity], HEX);
-          Serial.print(" TimeDiv: ");Serial.print(divTime);
-          Serial.print(" BW: ");Serial.print(beam_word, HEX);
-          */
+          ////Serial.print(" ID_add: ");Serial.print(sensor_add, HEX);
+
+          //Serial.print(" OF: ");Serial.print(offset, HEX);
+          ////Serial.print(" sensor_add: ");Serial.print(sensor_add, HEX);
+          ////Serial.print(" identity: ");Serial.print(identity,HEX);
+          //Serial.print(" TS: ");Serial.print(timestamp, HEX);
+          //Serial.print(" TS-last : ");Serial.print(prevSweepTime[identity], HEX);
+          //Serial.print(" TimeDiv: ");Serial.print(divTime);
+          //Serial.print(" BW: ");Serial.print(beam_word, HEX);
+
 
           if(divTime < MAX_DELTA_TIME  && divTime > 30){//divTime < MAX_DELTA_TIME && divTime > 10){
             Serial.print("\nTimeDiv: ");Serial.print(divTime);
           //}
           //if(1){
+
+
+            //prevOfset
+
             msg.SensorID = sensor;
-            msg.BeamWord = beam_word;
+            msg.BeamWord = offset;
             msg.Timestamp = timestamp;
-            msg.E_width = prevBeamWord[identity];//width;
+            msg.E_width = prevOfset[identity];//width;
             msg.BaseStationID = channel + 1;
             msg.BaseStationChanel = slow_bit;
 
@@ -116,16 +151,17 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
             prevSweepTime[identity] = timestamp;
             prevBeamWord[identity] = beam_word;
             prevEwidth[identity] = width;
+            prevOfset[identity] = offset;
 
-            /*
-            Serial.print("\n\nSensor ");Serial.print(sensor, HEX);
-            Serial.print(" BW: ");Serial.print(beam_word, HEX);
-            Serial.print(" TS: ");Serial.print(timestamp, HEX);
-            Serial.print(" TS-last : ");Serial.print(prevSweepTime[identity], HEX);
-            Serial.print(" TimeDiv: ");Serial.print(divTime);
-            Serial.print(" IDEN: ");Serial.print(identity);
-            Serial.print(" SBit: ");Serial.print(slow_bit);
-            */
+
+            //Serial.print("\n\nSensor ");Serial.print(sensor, HEX);
+            //Serial.print(" BW: ");Serial.print(beam_word, HEX);
+            //Serial.print(" TS: ");Serial.print(timestamp, HEX);
+            //Serial.print(" TS-last : ");Serial.print(prevSweepTime[identity], HEX);
+            //Serial.print(" TimeDiv: ");Serial.print(divTime);
+            //Serial.print(" IDEN: ");Serial.print(identity);
+            //Serial.print(" SBit: ");Serial.print(slow_bit);
+
 
             return 1;
           }
@@ -134,19 +170,22 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
             prevBeamWord[identity] = beam_word;
             prevEwidth[identity] = width;
             init_Done[identity] = 1;
+            prevOfset[identity] = offset;
           //}
         }else{
 
           prevSweepTime[identity] = timestamp;
           prevBeamWord[identity] = beam_word;
           prevEwidth[identity] = width;
+          prevOfset[identity] = offset;
         }
 
 
       }else{
         prevEwidth[identity] = 0;
       }
-   }
+      */
+   //}
 
  }else {
    /*
@@ -157,6 +196,7 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
    */
 
    //return -1;
+   return 0;
  }
 
   return 0;

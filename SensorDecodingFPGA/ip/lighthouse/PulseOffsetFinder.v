@@ -1102,7 +1102,25 @@ module PulseOffsetFinder (
   reg [111:0] fsm_stateNext_string;
   `endif
 
-  assign _zz_4_ = (io_pulseOut_valid && io_pulseOut_ready);
+
+  wire dump_data;
+  //reg valid_found_flag = 1'b0;
+  reg io_pulseOut_valid_dump = 0;
+  /*
+  always @ ( posedge Slow_clk ) begin
+    if(offsetFinder_1__io_found)begin
+      valid_found_flag <= 1'b1;
+    end
+    if(io_pulseOut_valid_dump)begin
+      valid_found_flag <= 1'b0;
+    end
+  end
+  */
+
+  assign dump_data = ( io_pulseOut_valid | io_pulseOut_valid_dump );
+
+
+  assign _zz_4_ = (dump_data && io_pulseOut_ready);
   assign _zz_5_ = ((io_pulseIn_payload_npoly != (6'b111111)) && (((22'b0000000000100000000000) < _zz_6_) || (io_pulseIn_payload_npoly != lastNPoly)));
   assign _zz_6_ = (pulseDelta >>> 2);
   OffsetFinder offsetFinder_1_ (
@@ -1141,7 +1159,26 @@ module PulseOffsetFinder (
       `fsm_enumDefinition_1_defaultEncoding_fsm_waitFinder : begin
       end
       `fsm_enumDefinition_1_defaultEncoding_fsm_sendResult : begin
-        io_pulseOut_valid = 1'b1;
+        if(io_pulseOut_payload_offset != 17'd0)begin
+          io_pulseOut_valid = 1'b1;
+        end
+      end
+      default : begin
+      end
+    endcase
+  end
+
+  always @ (*) begin
+    io_pulseOut_valid_dump = 1'b0;
+    case(fsm_stateReg)
+      `fsm_enumDefinition_1_defaultEncoding_fsm_idle : begin
+      end
+      `fsm_enumDefinition_1_defaultEncoding_fsm_testDelta : begin
+      end
+      `fsm_enumDefinition_1_defaultEncoding_fsm_waitFinder : begin
+      end
+      `fsm_enumDefinition_1_defaultEncoding_fsm_sendResult : begin
+          io_pulseOut_valid_dump = 1'b1;
       end
       default : begin
       end

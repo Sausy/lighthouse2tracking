@@ -7,11 +7,11 @@ C_FLAGS =  -Wall -Werror -g -O0
 
 C_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"roboy_lighthouse2\"
 
-C_INCLUDES = -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_lighthouse2/nanopb -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_lighthouse2 -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_lighthouse2/lib -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_middleware_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+C_INCLUDES = -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_lighthouse2/nanopb -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_lighthouse2 -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_lighthouse2/lib -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_middleware_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
 CXX_FLAGS =  -std=c++11 -g  
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"roboy_lighthouse2\"
 
-CXX_INCLUDES = -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_lighthouse2/nanopb -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_lighthouse2 -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_lighthouse2/lib -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_middleware_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_lighthouse2/nanopb -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_lighthouse2 -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_lighthouse2/lib -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_middleware_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

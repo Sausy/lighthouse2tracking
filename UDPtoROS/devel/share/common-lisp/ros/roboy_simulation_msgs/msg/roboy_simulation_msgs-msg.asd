@@ -33,8 +33,6 @@
     (:file "_package_Model" :depends-on ("_package"))
     (:file "MotorControl" :depends-on ("_package_MotorControl"))
     (:file "_package_MotorControl" :depends-on ("_package"))
-    (:file "Point32Array" :depends-on ("_package_Point32Array"))
-    (:file "_package_Point32Array" :depends-on ("_package"))
     (:file "RecordingControl" :depends-on ("_package_RecordingControl"))
     (:file "_package_RecordingControl" :depends-on ("_package"))
     (:file "Tendon" :depends-on ("_package_Tendon"))

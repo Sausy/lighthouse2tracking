@@ -188,19 +188,51 @@ void udpInterface::receiveData(){
             ROS_ERROR("[SID:%d]there was an incorrect Beamword ... [Second] %x",msg.SensorID, msg.BeamWord);
           }
 
+
           if(lut_Poly_id < 32){
+                //firstBeam = ((lastMeasurements[channel] * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
+                //secondBeam = ((offset * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
+                ///azimuth, elevation = calculateAE(firstBeam, secondBeam)
+
+                acalc.angleCalc(msg.BeamWord,msg.E_width, msg.BaseStationID, &aData);
+
+                //printf("\n");
+                //printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
+                //printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
+                //printf(" BeamWord %x", msg.BeamWord);
+                //printf(" LastBeamWord %x", msg.E_width);
+                //printf(" Timestamp %x", msg.Timestamp);
+                //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
+                //std::cout << aData.elevation;
+                //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
+                std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
+                std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
+
+                std::stringstream ss_;
+                ss_ << "LightHouseV2_Position_" << client_ip;
+
+                ros_msg.object_id = ss_.str();
+                ros_msg.base = (uint8_t)msg.BaseStationID;
+                ros_msg.SensorID =  (uint8_t)msg.SensorID;
+                ros_msg.elevation = aData.azimuth;
+                ros_msg.azimuth = aData.elevation;
+
+                pubHandl_Sensor.publish(ros_msg);
+
+
+                  /*
             for (lut_iteration_first = 0; lut_iteration_first < LFSR_MAX_ITERATION; lut_iteration_first++) {
               if(readInData[lut_Poly_id][lut_iteration_first] == msg.E_width ){
                 //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
                 for (lut_iteration_second = lut_iteration_first+2; lut_iteration_second < LFSR_MAX_ITERATION; lut_iteration_second++) {
                   if(readInData[lut_Poly_id][lut_iteration_second] ==  msg.BeamWord ){
 
-                    /*printf("\n");
-                    printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
-                    printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
-                    printf(" BeamWord %x", msg.BeamWord);
-                    printf(" LastBeamWord %x", msg.E_width);
-                    printf(" Timestamp %x", msg.Timestamp);*/
+                    //printf("\n");
+                    //printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
+                    //printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
+                    //printf(" BeamWord %x", msg.BeamWord);
+                    //printf(" LastBeamWord %x", msg.E_width);
+                    //printf(" Timestamp %x", msg.Timestamp);
                     //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
                     acalc.angleCalc(lut_iteration_first,lut_iteration_second, msg.BaseStationID, &aData);
                     //std::cout << aData.elevation;
@@ -219,12 +251,12 @@ void udpInterface::receiveData(){
 
                     pubHandl_Sensor.publish(ros_msg);
 
-                      /*
-                      std_msgs::String msg;
-                      std::stringstream ss;
-                      ss << "Hello world";
-                      msg.data = ss.str();
-                      pub_handler.publish(msg);*/
+
+                      //std_msgs::String msg;
+                      //std::stringstream ss;
+                      //ss << "Hello world";
+                      //msg.data = ss.str();
+                      //pub_handler.publish(msg);
 
                     break;
                   }
@@ -232,6 +264,7 @@ void udpInterface::receiveData(){
                 break;
               }
             }
+            */
 
 
           }
@@ -270,7 +303,7 @@ void udpInterface::sendConfigObject (int32_t logginPort_l, int32_t sensorPort_l,
 
     //(void)sendData(buffer,sizeof(buffer));
     (void)sendData(buffer,msg_len);
-    std::this_thread::sleep_for(std::chrono::seconds(5));
+    std::this_thread::sleep_for(std::chrono::seconds(30));
   }
 
 

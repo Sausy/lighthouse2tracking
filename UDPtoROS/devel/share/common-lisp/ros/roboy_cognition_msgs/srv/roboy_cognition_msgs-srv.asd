@@ -68,6 +68,8 @@
     (:file "_package_ShowPropertyValue" :depends-on ("_package"))
     (:file "Talk" :depends-on ("_package_Talk"))
     (:file "_package_Talk" :depends-on ("_package"))
+    (:file "TalkToFile" :depends-on ("_package_TalkToFile"))
+    (:file "_package_TalkToFile" :depends-on ("_package"))
     (:file "TrainSeq2Seq" :depends-on ("_package_TrainSeq2Seq"))
     (:file "_package_TrainSeq2Seq" :depends-on ("_package"))
     (:file "WhichTones" :depends-on ("_package_WhichTones"))

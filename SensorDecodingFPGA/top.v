@@ -520,7 +520,7 @@ module top (
     inout io_e_7,
     inout io_d_7,
     output io_e_8,
-    output io_d_8,
+    input io_d_8,
 
     output NinaUartRx,
     input NinaUartTx,
@@ -573,13 +573,18 @@ module top (
     wire reconfig_cmd;
 
     assign NinaUartRx = io_uart_txd;
+    assign io_e_8 = io_uart_txd;
     //assign io_d_8 = io_uart_txd;
     //assign io_e_8 = NinaUartRx;
     //assign io_uart_rxd = NinaUartTx;
-    assign io_d_8 = NinaUartTx;
+
+
+    //assign io_d_8 = NinaUartTx;
     //assign rx = io_e_8;
-    assign io_e_8 = reconfig_cmd;
+    //assign io_e_8 = reconfig_cmd;
+
     assign rx = NinaUartTx;
+    //assign rx = io_d_8;
 
 
     //assign io_d_8 = io_output_fifo_1__io_pop_valid1;

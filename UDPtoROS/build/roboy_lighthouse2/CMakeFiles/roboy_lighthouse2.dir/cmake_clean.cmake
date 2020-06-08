@@ -13,8 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/roboy_lighthouse2.dir/nanopb/pb_decode.c.o"
   "CMakeFiles/roboy_lighthouse2.dir/nanopb/pb_encode.c.o"
   "CMakeFiles/roboy_lighthouse2.dir/nanopb/pb_common.c.o"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/lib/roboy_lighthouse2/roboy_lighthouse2.pdb"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/lib/roboy_lighthouse2/roboy_lighthouse2"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/lib/roboy_lighthouse2/roboy_lighthouse2.pdb"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/lib/roboy_lighthouse2/roboy_lighthouse2"
 )
 
 # Per-language clean rules from dependency scanning.

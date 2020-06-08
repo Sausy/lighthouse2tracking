@@ -284,8 +284,8 @@ void setup()
 
 
     //Serial1.write(reset_frame);
-    Serial1.write(cmd_sende,4);
-    Serial.println("\n[INFO] Starting Connection to FPGA...Done");
+    //Serial1.write(cmd_sende,4);
+    //Serial.println("\n[INFO] Starting Connection to FPGA...Done");
 
 
 
@@ -365,6 +365,7 @@ static void reconfigTs4231(void * parameter){
   }*/
   uint8_t i = 0;
 
+  /*
   for (i = 0; i < 4; i++) {
     //vTaskDelay(pdMS_TO_TICKS(5000));
     vTaskDelay(5000 / portTICK_PERIOD_MS);
@@ -387,7 +388,7 @@ static void reconfigTs4231(void * parameter){
     //Serial1.write(0b10111101);
 
 
-  }
+  }*/
 
 
   Serial.print("\n[SYSTEM] ENDING RECONFIG TASK");
@@ -482,13 +483,14 @@ static void readRx_buffer( size_t size_max ){
 
   size_t amount_of_data_rdy = Serial1.available();
   size_t cnt = 0;
-  buffer_Cnt = 0;
-  size_t dump_cnt = 0;
+  //buffer_Cnt = 0;
+  int dump_cnt = 0;
   syncCnt = 0;
   int shiftcount = 0;
 
-  if(amount_of_data_rdy < DATA_LENGTH){
-    //buffer_Cnt = 0;
+  if(amount_of_data_rdy < DATA_LENGTH-1){
+    buffer_Cnt = 0;
+      //Serial.print("\nNewBuffer: RESET");
     //Serial.print(amount_of_data_rdy);
     return;
   }
@@ -500,7 +502,10 @@ static void readRx_buffer( size_t size_max ){
 
   if( dump_cnt > 0){
     for (size_t i = 0; i < dump_cnt; i++) {
-      buffer[0] = Serial1.read();
+      for (size_t j = 0; j < 12; j++) {
+        buffer[0] = Serial1.read();
+        i++;
+      }
     }
   }
 
@@ -517,6 +522,10 @@ static void readRx_buffer( size_t size_max ){
     cnt++;
 
     if(syncCnt >= DATA_LENGTH){
+      buffer_Cnt=0;
+      //cnt = 0;
+      buffer[buffer_Cnt] = 0;
+      /*
       if(buffer_Cnt <= DATA_LENGTH){
         buffer_Cnt = 0;
       }else{
@@ -531,7 +540,7 @@ static void readRx_buffer( size_t size_max ){
         //  buffer[j] = 0;
         //}
 
-      }
+      }*/
       syncCnt = 0;
     }
 
@@ -658,9 +667,10 @@ Serial.print(BUFFER_SIZE);
           offset_temp = (buffer[5]<<16) | (buffer[4]<<8) | (buffer[3]);
           first_word_temp  = (buffer[2]<<16) | (buffer[1]<<8) | (buffer[0]);
 
-          sensor_add = offset_temp - 1;//((offset >> 17) & 0x03 ) - 1;
+          //sensor_add = offset_temp - 1;//((offset >> 17) & 0x03 ) - 1;
+          sensor_add = ((offset_temp >> 18) & 0xff) - 1;
 
-
+          /*
           Serial.print("\nxTS: ");Serial.print(timestamp_temp, HEX);
           Serial.print("\nxBW: ");Serial.print(beam_word_temp, HEX);
           Serial.print("\nxOF: ");Serial.print(offset_temp, HEX);
@@ -668,25 +678,31 @@ Serial.print(BUFFER_SIZE);
           Serial.print("\n");
           Serial.print(buffer_Cnt);
           Serial.print("++");
+          */
 
           //(offset_temp & 0xffff00) == 0 && (offset_temp & 0x0000ff) != 0 &&
-          if((beam_word_temp & 0x00007f) == 0 && (beam_word_temp & 0xffff00) != 0 && sensor_add >= 0 && sensor_add < 16 && timestamp_temp > 20){ // buffer[2]  >= 0xf0
-
+          // Hier koennte sich ein decoding fehler eingeschlichen haben
+          // (beam_word_temp & 0x00007f) == 0 sollte glaube ich  (beam_word_temp & 0xfe0000) == 0 sein
+          if((beam_word_temp & 0xfe0000) == 0 && (beam_word_temp & 0x01ffff) != 0 && (offset_temp & 0xf20000) == 0 && sensor_add >= 0 && sensor_add < 2 && timestamp_temp > 20){ // buffer[2]  >= 0xf0
+            offset_temp = offset_temp & 0x01ffff;
             sensor_temp = buffer[0] & 0x03;
 
             //buffer_Cnt = 0;
               //Serial.print("\n====[SUCESS] === ");Serial.print(buffer_Cnt);
               xBit_block_udp = 0;
-              for (size_t i = 0; i < buffer_Cnt; i=i+12) {
+              uint16_t sent_count = 0;
+              for (size_t i = 12; i <= buffer_Cnt; i=i+12) {
 
               //  data_inputs[]
                 while(xBit_block_udp){
                   vTaskDelay(1 / portTICK_PERIOD_MS);
                 }
+                sent_count = i;
                 xBit_block_udp++;
                 currentSensorID = (sensor_add * 4) + sensor_temp;
                 //buffer_Cnt = 0;
                 //taskENTER_CRITICAL(&myMuex);
+                vTaskDelay(1 / portTICK_PERIOD_MS);
                 int8_t ret = lh2d[currentSensorID].pushUartData(&buffer[i]);
                 if (ret == 1){//(offset[0] != 0xffffff)){ // && (width >= 10) and (beam_word != 0xffffff)){
                     //Serial.print("\nlh2d\n");
@@ -709,7 +725,7 @@ Serial.print(BUFFER_SIZE);
                     Serial.print(" BeamWord2: ");
                     Serial.print(lh2d[currentSensorID].msg.E_width, HEX);
 
-                    //Serial.print("\n");
+                    Serial.print("\n");
 
 
                     (void)whylove.lighthouse2DataStream(lh2d[currentSensorID].msg);
@@ -719,6 +735,7 @@ Serial.print(BUFFER_SIZE);
                     }
                     //vTaskDelay(10 / portTICK_PERIOD_MS);
 
+                    vTaskDelay(5 / portTICK_PERIOD_MS);
 
 
 
@@ -732,17 +749,55 @@ Serial.print(BUFFER_SIZE);
                   //taskEXIT_CRITICAL(&myMuex);
                   xBit_block_udp = 0;
             }
-            //Serial.print("\nSyncSuccess ");
+
+            //TODO clear out remaining buffer data
+            buffer_Cnt = buffer_Cnt - sent_count;// - 1;
+            for (size_t i = 0; i < buffer_Cnt; i++) {
+              /* code */
+            }
+
+
+
+            //for (size_t i = 0; i < buffer_Cnt; i++) {
+          //   buffer[i] = buffer[i+1];
+          //  }
+
+
+            Serial.print("\nNewBuffer: ");Serial.print(buffer_Cnt);
             //buffer_Cnt = 0;
             break;
           }else{
             if(buffer_Cnt > 11){
+              if ((beam_word_temp & 0xfe0000) == 0)
+                Serial.print("\ntest 1");
+              if ((beam_word_temp & 0x01ffff) != 0)
+                Serial.print("\ntest 2");
+              if ((offset_temp & 0xf20000) == 0)
+                Serial.print("\ntest 3");
+              if (sensor_add >= 0)
+                Serial.print("\ntest 4");
+              if ( sensor_add < 2)
+                Serial.print("\ntest 5");
+              if ( timestamp_temp > 20)
+                Serial.print("\ntest 6");
+
+                Serial.print("\nxTS: ");Serial.print(timestamp_temp, HEX);
+                Serial.print("\nxBW: ");Serial.print(beam_word_temp, HEX);
+                Serial.print("\nxOF: ");Serial.print(offset_temp, HEX);
+                Serial.print("\nxFW: ");Serial.print(first_word_temp, HEX);
+                Serial.print("\n");
+                Serial.print(buffer_Cnt);
+                Serial.print("++");
+
               for (size_t i = 0; i < buffer_Cnt; i++) {
                 buffer[i] = buffer[i+1];
               }
+              //Serial.print("\nBuffer -1");
               buffer_Cnt--;
+
+
             }else{
-              //Serial.print("\nNo valid data found ");
+              Serial.print("\nNo valid data found ");
               buffer_Cnt = 0;
               //break;
             }

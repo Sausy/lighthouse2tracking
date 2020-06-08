@@ -3884,7 +3884,7 @@ module LighthouseTopLevel (
     .Slow_clk(Slow_clk)
   )/* synthesis syn_noprune=1 */;
 
-  assign slowArea_identifiedBeamStream_valid = slowArea_pulseIdentifier_io_pulseOut_valid;//slowArea_pulseOffsetFinder_io_pulseOut_valid;
+  assign slowArea_identifiedBeamStream_valid = slowArea_pulseOffsetFinder_io_pulseOut_valid;//slowArea_pulseIdentifier_io_pulseOut_valid;//slowArea_pulseOffsetFinder_io_pulseOut_valid;
   wire [6:0] ex_module_identifyer;
   wire [16:0] ex_module_identifyer2;
   assign ex_module_identifyer2 = ( temp_id4[4:2] << 1 ) | !temp_id4[2] ;
@@ -3892,7 +3892,7 @@ module LighthouseTopLevel (
 
   //slowArea_pulseIdentifier_io_pulseOut_payload_beamWord
   //slowArea_pulseOffsetFinder_io_pulseOut_payload_beamWord
-  assign slowArea_identifiedBeamStream_payload = {{{{{{{slowArea_pulseIdentifier_io_pulseOut_payload_pulse_timestamp,(7'b0000000)},slowArea_pulseOffsetFinder_io_pulseOut_payload_beamWord},(ex_module_identifyer)},slowArea_pulseOffsetFinder_io_pulseOut_payload_offset},slowArea_pulseIdentifier_io_pulseOut_payload_pulse_width},slowArea_pulseIdentifier_io_pulseOut_payload_npoly},temp_id4[1:0]};
+  assign slowArea_identifiedBeamStream_payload = {{{{{{{slowArea_pulseOffsetFinder_io_pulseOut_payload_pulse_timestamp,(7'b0000000)},slowArea_pulseOffsetFinder_io_pulseOut_payload_beamWord},(ex_module_identifyer)},slowArea_pulseOffsetFinder_io_pulseOut_payload_offset},slowArea_pulseOffsetFinder_io_pulseOut_payload_pulse_width},slowArea_pulseOffsetFinder_io_pulseOut_payload_npoly},temp_id4[1:0]};
 
   //assign slowArea_identifiedBeamStream_payload = {{{{{{{slowArea_pulseIdentifier_io_pulseOut_payload_pulse_timestamp,(7'b0000000)},slowArea_pulseIdentifier_io_pulseOut_payload_beamWord},(5'b0000000), module_identifyer},17'd0},slowArea_pulseIdentifier_io_pulseOut_payload_pulse_width},slowArea_pulseIdentifier_io_pulseOut_payload_npoly},slowArea_pulseIdentifier_io_pulseOut_payload_id};
 

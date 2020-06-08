@@ -1,8 +1,8 @@
-# Install script for directory: /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_lighthouse2
+# Install script for directory: /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_lighthouse2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_lighthouse2/catkin_generated/installspace/roboy_lighthouse2.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_lighthouse2/catkin_generated/installspace/roboy_lighthouse2.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_lighthouse2/cmake" TYPE FILE FILES
-    "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_lighthouse2/catkin_generated/installspace/roboy_lighthouse2Config.cmake"
-    "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_lighthouse2/catkin_generated/installspace/roboy_lighthouse2Config-version.cmake"
+    "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_lighthouse2/catkin_generated/installspace/roboy_lighthouse2Config.cmake"
+    "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_lighthouse2/catkin_generated/installspace/roboy_lighthouse2Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_lighthouse2" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_lighthouse2/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_lighthouse2" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_lighthouse2/package.xml")
 endif()
 

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "message_runtime;roboy_middleware_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "roboy_lighthouse2"
-PROJECT_SPACE_DIR = "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/install"
+PROJECT_SPACE_DIR = "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/install"
 PROJECT_VERSION = "0.0.0"

@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "roboy_cognition_msgs: 18 messages, 33 services")
+message(STATUS "roboy_cognition_msgs: 18 messages, 34 services")
 
-set(MSG_I_FLAGS "-Iroboy_cognition_msgs:/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg;-Iroboy_cognition_msgs:/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iroboy_cognition_msgs:/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg;-Iroboy_cognition_msgs:/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,259 +17,264 @@ add_custom_target(roboy_cognition_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" "roboy_cognition_msgs/FacialFeatures"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_cognition_msgs/OrderIceCreamResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_cognition_msgs/OrderIceCreamResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" "geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_cognition_msgs/OrderIceCreamFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" "roboy_cognition_msgs/FacialFeatures"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" "geometry_msgs/Pose:std_msgs/Float32MultiArray:std_msgs/MultiArrayLayout:geometry_msgs/Point:std_msgs/MultiArrayDimension:geometry_msgs/Quaternion"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" "geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" "actionlib_msgs/GoalID:roboy_cognition_msgs/OrderIceCreamFeedback:roboy_cognition_msgs/OrderIceCreamActionResult:actionlib_msgs/GoalStatus:roboy_cognition_msgs/OrderIceCreamResult:roboy_cognition_msgs/OrderIceCreamActionGoal:roboy_cognition_msgs/OrderIceCreamActionFeedback:std_msgs/Header:roboy_cognition_msgs/OrderIceCreamGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_cognition_msgs/OrderIceCreamFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" "roboy_cognition_msgs/FacialFeatures"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" "actionlib_msgs/GoalID:roboy_cognition_msgs/OrderIceCreamGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" "roboy_cognition_msgs/FacialFeatures"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" "actionlib_msgs/GoalID:roboy_cognition_msgs/OrderIceCreamResult:roboy_cognition_msgs/OrderIceCreamGoal:actionlib_msgs/GoalStatus:roboy_cognition_msgs/OrderIceCreamActionFeedback:roboy_cognition_msgs/OrderIceCreamActionGoal:roboy_cognition_msgs/OrderIceCreamFeedback:std_msgs/Header:roboy_cognition_msgs/OrderIceCreamActionResult"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" "geometry_msgs/Pose:std_msgs/Float32MultiArray:std_msgs/MultiArrayLayout:geometry_msgs/Point:std_msgs/MultiArrayDimension:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
 add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" ""
+)
+
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_cognition_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" "actionlib_msgs/GoalID:roboy_cognition_msgs/OrderIceCreamGoal:std_msgs/Header"
 )
 
 #
@@ -279,309 +284,315 @@ add_custom_target(_roboy_cognition_msgs_generate_messages_check_deps_${_filename
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32MultiArray.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayLayout.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayDimension.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_cpp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_cpp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_cognition_msgs
@@ -599,107 +610,109 @@ add_custom_target(roboy_cognition_msgs_generate_messages_cpp
 add_dependencies(roboy_cognition_msgs_generate_messages roboy_cognition_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_cpp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -712,309 +725,315 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_cognition_msgs_generate_messa
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32MultiArray.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayLayout.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayDimension.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_eus(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_eus(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_cognition_msgs
@@ -1032,107 +1051,109 @@ add_custom_target(roboy_cognition_msgs_generate_messages_eus
 add_dependencies(roboy_cognition_msgs_generate_messages roboy_cognition_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_eus _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1145,309 +1166,315 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_cognition_msgs_generate_messa
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32MultiArray.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayLayout.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayDimension.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_lisp(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_lisp(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_cognition_msgs
@@ -1465,107 +1492,109 @@ add_custom_target(roboy_cognition_msgs_generate_messages_lisp
 add_dependencies(roboy_cognition_msgs_generate_messages roboy_cognition_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_lisp _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1578,309 +1607,315 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_cognition_msgs_generate_messa
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32MultiArray.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayLayout.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayDimension.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_nodejs(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_nodejs(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_cognition_msgs
@@ -1898,107 +1933,109 @@ add_custom_target(roboy_cognition_msgs_generate_messages_nodejs
 add_dependencies(roboy_cognition_msgs_generate_messages roboy_cognition_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_nodejs _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -2011,309 +2048,315 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_cognition_msgs_generate_messa
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32MultiArray.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayLayout.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/MultiArrayDimension.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_msg_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_msg_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 
 ### Generating Services
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
-)
-_generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
 )
 _generate_srv_py(roboy_cognition_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
+)
+_generate_srv_py(roboy_cognition_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_cognition_msgs
@@ -2331,107 +2374,109 @@ add_custom_target(roboy_cognition_msgs_generate_messages_py
 add_dependencies(roboy_cognition_msgs_generate_messages roboy_cognition_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioInfo.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CreateInstance.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/CheckQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/SaveObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CheckProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/Faces.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowPropertyValue.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamResult.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIceCream.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/FindObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DataQuery.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeSpeech.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/DirectionVector.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectIntent.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/EvalSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/Payment.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedFaces.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/PlaySound.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DescribeScene.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTone.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TalkToFile.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/RecognizeFaces.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamAction.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/FaceCoordinates.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/IceCream.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GetObject.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/LocalizeObject.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowInstances.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DriveToLocation.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/QualityOfTones.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioLocation.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/Talk.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/CallQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/AssertProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/DetectFace.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/RecognizedSpeech.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/AudioData.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ApplyFilter.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/devel/share/roboy_cognition_msgs/msg/OrderIceCreamFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/WhichTones.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/TrainSeq2Seq.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/msg/SpeechSynthesis.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/GenerateAnswer.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/FindInstances.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/srv/LookAtSpeaker.srv" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs/srv/ShowProperty.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs/msg/FacialFeatures.msg" NAME_WE)
+add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/devel/share/roboy_cognition_msgs/msg/OrderIceCreamActionGoal.msg" NAME_WE)
 add_dependencies(roboy_cognition_msgs_generate_messages_py _roboy_cognition_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

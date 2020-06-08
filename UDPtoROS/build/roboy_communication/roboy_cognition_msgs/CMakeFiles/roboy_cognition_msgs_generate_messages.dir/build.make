@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src
+CMAKE_SOURCE_DIR = /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build
+CMAKE_BINARY_DIR = /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build
 
 # Utility rule file for roboy_cognition_msgs_generate_messages.
 
@@ -63,10 +63,10 @@ roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generat
 .PHONY : roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/build
 
 roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/clean:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_communication/roboy_cognition_msgs && $(CMAKE_COMMAND) -P CMakeFiles/roboy_cognition_msgs_generate_messages.dir/cmake_clean.cmake
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_communication/roboy_cognition_msgs && $(CMAKE_COMMAND) -P CMakeFiles/roboy_cognition_msgs_generate_messages.dir/cmake_clean.cmake
 .PHONY : roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/clean
 
 roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/depend:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/src/roboy_communication/roboy_cognition_msgs /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_communication/roboy_cognition_msgs /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/ws/build/roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/src/roboy_communication/roboy_cognition_msgs /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_communication/roboy_cognition_msgs /home/userdev/Projects/lighthouse/lighthouse2tracking/UDPtoROS/build/roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : roboy_communication/roboy_cognition_msgs/CMakeFiles/roboy_cognition_msgs_generate_messages.dir/depend
 
