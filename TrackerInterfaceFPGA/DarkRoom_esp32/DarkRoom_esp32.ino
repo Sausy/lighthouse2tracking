@@ -39,6 +39,7 @@ const uint8_t cmd_sende[4] = {0xff,0xff,0xbc,0xcf};
 
 
 static bool xbit_cfgserial = 0;
+static bool xbit_watchdogsensor = 0;
 
 //uninitalised pointers to SPI objects
 SPIClass * vspi = NULL;
@@ -321,6 +322,13 @@ void setup()
                     //NULL,             /* Parameter passed as input of the task */
                     //5,                /* Priority of the task. */
                     //NULL);            /* Task handle. */
+  xTaskCreate(
+                  watchdog_sensor,          /* Task function. */
+                  "watchdog_sensor",        /* String with name of task. */
+                  10000,            /* Stack size in bytes. */
+                  NULL,             /* Parameter passed as input of the task */
+                  1,                /* Priority of the task. */
+                  NULL);
   xTaskCreatePinnedToCore(
                   sensorReadIn,          /* Task function. */
                   "sensorReadIn",        /* String with name of task. */
@@ -330,11 +338,79 @@ void setup()
                   NULL,
                   ARDUINO_RUNNING_CORE);            /* Task handle. */
 
+
+
     //vTaskStartScheduler();
     //WifiCheckHostIp();
 
 
 
+}
+
+SemaphoreHandle_t xSemaphore = NULL;
+
+static void watchdog_sensor(void * parameter){
+  static uint8_t time_out_cnt = 0;
+
+  xSemaphore = xSemaphoreCreateMutex();
+
+  //vTaskSuspend( NULL );
+
+  if( xSemaphore != NULL )
+    {
+        /* See if we can obtain the semaphore.  If the semaphore is not
+        available wait 10 ticks to see if it becomes free. */
+        if( xSemaphoreTake( xSemaphore, ( TickType_t ) 10 ) == pdTRUE )
+        {
+
+            /* We were able to obtain the semaphore and can now access the
+            shared resource. */
+
+            xbit_watchdogsensor = 1;
+
+            /* We have finished accessing the shared resource.  Release the
+            semaphore. */
+            xSemaphoreGive( xSemaphore );
+        }
+    }
+
+
+  while(1){
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    time_out_cnt++;
+
+    if( xSemaphore != NULL )
+      {
+          if( xSemaphoreTake( xSemaphore, ( TickType_t ) 10 ) == pdTRUE )
+          {
+              if(xbit_watchdogsensor == 0){
+                xbit_watchdogsensor = 1;
+                time_out_cnt = 0;
+              }
+              xSemaphoreGive( xSemaphore );
+          }
+      }
+      /*
+    if(xbit_watchdogsensor == 0){
+      xbit_watchdogsensor = 1;
+      time_out_cnt = 0;
+    }
+    */
+    if(time_out_cnt == 20){
+      Serial.print("\n[WARNING] no sensor Data ");
+      Serial1.write(reset_frame);
+      Serial.flush();
+      Serial1.flush();
+    }
+    if(time_out_cnt > 30){
+      Serial.print("\n[SYSTEM] restarting ...");
+      Serial.flush();
+      ESP.restart();
+    }
+
+  }
+
+  vTaskSuspend( NULL );
 }
 
 static uint16_t xCnt_restart = 0;
@@ -489,7 +565,7 @@ static void readRx_buffer( size_t size_max ){
   int shiftcount = 0;
 
   if(amount_of_data_rdy < DATA_LENGTH-1){
-    buffer_Cnt = 0;
+    //buffer_Cnt = 0;
       //Serial.print("\nNewBuffer: RESET");
     //Serial.print(amount_of_data_rdy);
     return;
@@ -691,6 +767,17 @@ Serial.print(BUFFER_SIZE);
               //Serial.print("\n====[SUCESS] === ");Serial.print(buffer_Cnt);
               xBit_block_udp = 0;
               uint16_t sent_count = 0;
+              xbit_watchdogsensor = 0 ;
+
+              if( xSemaphore != NULL )
+                {
+                    if( xSemaphoreTake( xSemaphore, ( TickType_t ) 10 ) == pdTRUE )
+                    {
+                        xbit_watchdogsensor = 0 ;
+                        xSemaphoreGive( xSemaphore );
+                    }
+                }
+
               for (size_t i = 12; i <= buffer_Cnt; i=i+12) {
 
               //  data_inputs[]
@@ -728,12 +815,14 @@ Serial.print(BUFFER_SIZE);
                     Serial.print("\n");
 
 
+
                     (void)whylove.lighthouse2DataStream(lh2d[currentSensorID].msg);
 
                     if(xBit_block_udp > 1){
                         Serial.print("\n===== WE FOUND THE ERROR ");
                     }
                     //vTaskDelay(10 / portTICK_PERIOD_MS);
+
 
                     vTaskDelay(5 / portTICK_PERIOD_MS);
 
@@ -747,27 +836,30 @@ Serial.print(BUFFER_SIZE);
 
                 }
                   //taskEXIT_CRITICAL(&myMuex);
-                  xBit_block_udp = 0;
+
+
+                //TODO clear out remaining buffer data
+                buffer_Cnt = buffer_Cnt - 12;// - 1;
+                for (size_t i = 0; i < buffer_Cnt; i++) {
+                  buffer[i] = buffer[12+i];
+                }
+
+                xBit_block_udp = 0;
+
+                //Serial.print("\nNewBuffer: ");Serial.print(buffer_Cnt);
             }
-
-            //TODO clear out remaining buffer data
-            buffer_Cnt = buffer_Cnt - sent_count;// - 1;
-            for (size_t i = 0; i < buffer_Cnt; i++) {
-              /* code */
-            }
-
-
 
             //for (size_t i = 0; i < buffer_Cnt; i++) {
           //   buffer[i] = buffer[i+1];
           //  }
 
 
-            Serial.print("\nNewBuffer: ");Serial.print(buffer_Cnt);
+
             //buffer_Cnt = 0;
             break;
           }else{
-            if(buffer_Cnt > 11){
+            if(buffer_Cnt >= 12){
+            /*
               if ((beam_word_temp & 0xfe0000) == 0)
                 Serial.print("\ntest 1");
               if ((beam_word_temp & 0x01ffff) != 0)
@@ -793,7 +885,9 @@ Serial.print(BUFFER_SIZE);
                 buffer[i] = buffer[i+1];
               }
               //Serial.print("\nBuffer -1");
-              buffer_Cnt--;
+              */
+              buffer_Cnt= buffer_Cnt - 12;
+
 
 
             }else{

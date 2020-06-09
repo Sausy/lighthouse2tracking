@@ -2150,7 +2150,7 @@ module CommandHandler (
       `fsm_enumDefinition_2_defaultEncoding_fsm_receiveArg : begin
         if(io_input_valid)begin
           if(_zz_1_)begin
-            if((command == (8'b10111101)))begin
+            if((command == (8'b10111100)))begin
               resetCommandValid = 1'b1;
             end
           end
@@ -2169,7 +2169,7 @@ module CommandHandler (
       `fsm_enumDefinition_2_defaultEncoding_fsm_receiveArg : begin
         if(io_input_valid)begin
           if(_zz_1_)begin
-            if((command == (8'b10111100)))begin
+            if((command == (8'b10111101)))begin
               reconfig_cmd_valid = 1'b1;
             end
           end
