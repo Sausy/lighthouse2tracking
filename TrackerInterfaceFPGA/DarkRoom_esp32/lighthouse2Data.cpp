@@ -9,7 +9,8 @@ LIGHTHOUSEDATACONV::LIGHTHOUSEDATACONV(){
 }
 
 int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
-  uint8_t buffer [UART_FRAME_SIZE];
+  static uint8_t buffer [UART_FRAME_SIZE];
+  uint8_t identity_swap = 0;
 
   int32_t divTime = 0;
 
@@ -24,7 +25,8 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
   first_word = (buffer[2]<<16) | (buffer[1]<<8) | (buffer[0]);
 
   if ((offset != 0xffffff) && (beam_word != 0xffffff) ){ // && (beam_word != 0xffffff)
-    uint8_t sensor_temp = first_word & 0x03;
+    //uint8_t sensor_temp = first_word & 0x03;
+    sensor = first_word & 0x03;
     int8_t sensor_add = ((offset >> 18) & 0xff) - 1;//((offset >> 17) & 0x03 ) - 1;
 
     offset = offset & 0x01ffff;
@@ -61,9 +63,9 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
     if(sensor_add < 0){
       Serial.print("\n Might be an erro pls restart: ");
       return -1;
-      sensor = sensor_temp;
+      //sensor = sensor_temp;
     }else{
-      sensor = (sensor_add * 4) + sensor_temp;
+      sensor = (sensor_add * 4) + sensor;//sensor_temp;
     }
 
     width = (first_word >> 8) & 0xffff;
@@ -83,9 +85,21 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
     channel = identity >> 1;
     slow_bit = identity & 0x01;
 
+    identity_swap = identity & (0xfe);
+    identity_swap = identity_swap | ( !slow_bit );
+
+
 
 
     if(identity < 32 && sensor < 16){
+      /*Serial.print(" [ID:");
+      Serial.print(sensor);
+      Serial.print("] ");
+      Serial.print(" Chan: ");
+      Serial.print(channel + 1);
+      Serial.print(" (");
+      Serial.print(slow_bit);
+      Serial.print(")");*/
       if (offset > (prevOfset[identity]+10000)){
 
         msg.SensorID = sensor;
@@ -96,9 +110,32 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
         msg.BaseStationChanel = slow_bit;
 
         prevOfset[identity] = offset;
+        prevSweepTime[identity] = timestamp;
 
         return 1;
       }
+      else if (prevOfset[identity_swap] > (offset+10000)) {
+        Serial.print("!!REV");
+        msg.SensorID = sensor;
+        msg.BeamWord = prevOfset[identity_swap]; //offset
+        msg.Timestamp = prevSweepTime[identity_swap];//timestamp
+        msg.E_width = offset; //offset
+        msg.BaseStationID = channel + 1;
+        msg.BaseStationChanel = slow_bit;
+
+        prevOfset[identity] = offset;
+
+        prevSweepTime[identity] = timestamp;
+        prevBeamWord[identity] = beam_word;
+        prevEwidth[identity] = width;
+
+        return 1;
+      }
+      //Serial.print("\nOFSET ERROR: ");Serial.print(offset);
+      //Serial.print("\nPREV: ");Serial.print(prevOfset[identity]);
+      //Serial.flush();
+
+
       prevOfset[identity] = offset;
 
       prevSweepTime[identity] = timestamp;
@@ -107,6 +144,9 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
 
       return -1;
     }
+
+    Serial.print("\nID ERROR: ");Serial.print(identity);
+    Serial.print("\nSensor: ");Serial.print(sensor);
     /*
       if ((nPoly_ok)){
         if (offset > (prevOfset[identity][sensor]+10000)){
@@ -188,6 +228,7 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
    //}
 
  }else {
+   Serial.print("\n[ERROR] (offset != 0xffffff) && (beam_word != 0xffffff) : \nOFSET: ");
    /*
    Serial.print("\n[ERROR] (offset != 0xffffff) && (beam_word != 0xffffff) : \nOFSET: ");
    Serial.print(offset, HEX);
