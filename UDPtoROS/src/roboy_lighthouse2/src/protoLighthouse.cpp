@@ -1,4 +1,5 @@
 #include "protoLighthouse.h"
+#define BUFF_SIZE 1024
 
 PROTO_LOVE::PROTO_LOVE()
 {
@@ -17,7 +18,7 @@ void PROTO_LOVE::clearProtos()
 bool PROTO_LOVE::ecode_config_Proto(uint32_t ip, int32_t logginPort_l,int32_t sensorPort_l,int32_t imuPort_l, pb_byte_t *buffer, size_t &msg_len )
 {
 
-    pb_ostream_t stream = pb_ostream_from_buffer(buffer, 512);
+    pb_ostream_t stream = pb_ostream_from_buffer(buffer, BUFF_SIZE);
 
     DarkRoomProtobuf_configObject msg = DarkRoomProtobuf_configObject_init_zero;
 
@@ -107,7 +108,7 @@ bool PROTO_LOVE::encode_trackedObjConfig(uint32_t ip, uint16_t cmndPort_l, pb_by
     LOG_d(logVERBOSE, "Local Command Port from the MKR: ", cmndPort_l);
 
 
-    pb_ostream_t stream = pb_ostream_from_buffer(buffer, 512);
+    pb_ostream_t stream = pb_ostream_from_buffer(buffer, BUFF_SIZE);
 
     trackedObjConfMsg.ip = ip;
     trackedObjConfMsg.command_port = cmndPort_l;
@@ -130,7 +131,7 @@ bool PROTO_LOVE::encode_loggingObject(const char * msg, pb_byte_t *buffer, size_
     #ifdef System_IS_ESP
     LOG(logINFO, "Encode Logging Object");
 
-    pb_ostream_t stream = pb_ostream_from_buffer(buffer, 512);
+    pb_ostream_t stream = pb_ostream_from_buffer(buffer, BUFF_SIZE);
 
     strncpy(loggingObjMsg.message, msg, sizeof loggingObjMsg.message);
     bool status = pb_encode(&stream, DarkRoomProtobuf_loggingObject_fields, &loggingObjMsg);
@@ -151,7 +152,7 @@ bool PROTO_LOVE::encode_loggingObject(const char * msg, pb_byte_t *buffer, size_
 bool PROTO_LOVE::encode_imuObjConfig(Quaternion &q, VectorInt16 &acc, VectorFloat &gravity, pb_byte_t *buffer, size_t &msg_len ){
 
     imuObjMsg = DarkRoomProtobuf_imuObject_init_zero;
-    pb_ostream_t stream = pb_ostream_from_buffer(buffer, 512);
+    pb_ostream_t stream = pb_ostream_from_buffer(buffer, BUFF_SIZE);
 
     imuObjMsg.quaternion[0]=q.x;
     imuObjMsg.quaternion[1]=q.y;

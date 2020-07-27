@@ -1,5 +1,5 @@
 #include <udpInterface.hpp>
-
+#define BUFF_SIZE 1024
 #define localIP "192.168.1.1"
 
 udpInterface::udpInterface(const char * localIP_){
@@ -73,11 +73,12 @@ void udpInterface::initClientSocket(const char* hostname, const char* port){
 }
 
 //=============================================================================
+
 int udpInterface::initServerSocket(const char* port){
   int PORT = std::stoi(port);
   printf("\nStartingSocketServer with Port %d\n", PORT);
   int result = 0;
-  char buffer[512] = {0};
+  char buffer[BUFF_SIZE] = {0};
 
   ServerFd = socket(AF_INET, SOCK_DGRAM, 0);
 
@@ -114,7 +115,7 @@ int udpInterface::initServerSocket(const char* port){
 void udpInterface::receiveData(){
 
       do{
-        char msgbuf[512];
+        char msgbuf[BUFF_SIZE];
         socklen_t addrlen = sizeof(ClientSockAddr);
 
         struct sockaddr_in* pV4Addr = (struct sockaddr_in*)&ClientSockAddr;
@@ -125,7 +126,7 @@ void udpInterface::receiveData(){
         int nbytes = recvfrom(
             ServerFd,
             msgbuf,
-            512,
+            BUFF_SIZE,
             0,
             (struct sockaddr *) &ClientSockAddr,
             &addrlen
@@ -145,9 +146,9 @@ void udpInterface::receiveData(){
         //*rx_data = msgbuf;
         //rx_data++;
 
-        pb_byte_t buffer[512];
+        pb_byte_t buffer[BUFF_SIZE];
 
-        for (size_t i = 0; i < 512; i++) {
+        for (size_t i = 0; i < BUFF_SIZE; i++) {
           buffer[i] = msgbuf[i];
         }
         // = msgbuf;
@@ -206,7 +207,7 @@ void udpInterface::receiveData(){
                 //std::cout << aData.elevation;
                 //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
                 std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
-                std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
+                //std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
 
                 std::stringstream ss_;
                 ss_ << "LightHouseV2_Position_" << client_ip;
@@ -293,7 +294,7 @@ void udpInterface::sendConfigObject (int32_t logginPort_l, int32_t sensorPort_l,
     //ip_address
 
 
-    pb_byte_t buffer[512] = {0};
+    pb_byte_t buffer[BUFF_SIZE] = {0};
     //const uint8_t buffer[] = "HelloFucker";
 
     size_t msg_len;
@@ -303,7 +304,7 @@ void udpInterface::sendConfigObject (int32_t logginPort_l, int32_t sensorPort_l,
 
     //(void)sendData(buffer,sizeof(buffer));
     (void)sendData(buffer,msg_len);
-    std::this_thread::sleep_for(std::chrono::seconds(30));
+    std::this_thread::sleep_for(std::chrono::seconds(40));
   }
 
 

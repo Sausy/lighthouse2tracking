@@ -1,0 +1,303 @@
+module DataBuffer_sync (
+      input io_dataIn_valid,
+      output io_dataIn_ready,
+      input [5:0] ioINPUT_npoly,
+      input [15:0] ioINPUT_pulse_width,
+      input [23:0] ioINPUT_pulse_timestamp,
+      input [16:0] ioINPUT_beamWord,
+      input [4:0] ioINPUT_id,
+      //Second Input
+      input [15:0] ioINPUT2_pulse_width,
+      input [23:0] ioINPUT2_pulse_timestamp,
+      input [16:0] ioINPUT2_beamWord,
+      input [4:0] ioINPUT2_id,
+      //outData
+      output io_dataOut_valid,
+      input   io_dataOut_ready,
+      output [5:0] io_npoly,
+      output [15:0] io_pulse_width,
+      output [23:0] io_pulse_timestamp,
+      output [16:0] io_beamWord,
+      output [4:0] io_id,
+
+
+      input   Slow_clk);
+
+      //=================================
+      //====Pre dev's ====
+      reg [5:0] outBuffer_npoly;
+      reg [15:0] outBuffer_pulse_width;
+      reg [23:0] outBuffer_pulse_timestamp;
+      reg [16:0] outBuffer_beamWord;
+      reg [4:0] outBuffer_id;
+      assign io_npoly = outBuffer_npoly;
+      assign io_pulse_width = outBuffer_pulse_width;
+      assign io_pulse_timestamp = outBuffer_pulse_timestamp;
+      assign io_beamWord = outBuffer_beamWord;
+      assign io_id = outBuffer_id;
+
+      reg [2:0] dataSelect;
+
+      //=================================
+      //----Combinatorical logic block
+      wire SyncInputEvent;
+      wire SyncOutputEvent;
+      assign SyncInputEvent = (io_dataIn_valid && io_dataIn_ready);
+      assign SyncOutputEvent = (io_dataOut_valid && io_dataOut_ready);
+
+      reg reg_dataIn_ready;
+      reg reg_dataOut_valid;
+      assign io_dataIn_ready = reg_dataIn_ready;
+      assign io_dataOut_valid = reg_dataOut_valid;
+
+      wire flagEqualData;
+      assign flagEqualData = (ioINPUT2_pulse_timestamp == ioINPUT_pulse_timestamp);
+
+      wire processingDone;
+      assign processingDone = ((dataSelect == 3'd1) || flagEqualData);
+
+
+
+      always @ ( * ) begin
+        //if we get a valid data from the preveouse
+        //module, the processing and the folowing module is allowed to
+        //proced
+
+        reg_dataOut_valid = 1'b0;
+        if(io_dataIn_valid)begin
+          reg_dataOut_valid = 1'b1;
+        end
+      end
+
+
+      always @ ( * ) begin
+        reg_dataOut_valid = 1'b0;
+
+        if(SyncOutputEvent)begin
+          if(processingDone)begin //processingDone
+            reg_dataIn_ready = 1'b1;
+          end
+        end
+      end
+
+
+      always @ ( * ) begin
+        outBuffer_npoly = ioINPUT_npoly;
+        case (state)
+          3'd0: begin
+            outBuffer_pulse_width = ioINPUT2_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT2_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT2_beamWord;
+            outBuffer_id = ioINPUT2_id;
+          end
+          3'd1: begin
+            outBuffer_pulse_width = ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT_beamWord;
+            outBuffer_id = ioINPUT_id;
+          end
+          default: begin
+            outBuffer_pulse_width = ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT_beamWord;
+            outBuffer_id = ioINPUT_id;
+          end
+        endcase
+      end
+
+      //=================================
+      //----Sequential Logic blocks
+      always @ ( posedge Slow_clk ) begin
+        if(SyncOutputEvent)begin
+          if(flagEqualData) begin
+            dataSelect <= 3'd1;
+          end else begin
+            dataSelect <= dataSelect + 3'd1;
+            if(processingDone)begin
+              dataSelect <= 3'd0;
+            end
+          end
+        end
+      end
+endmodule
+
+
+
+
+
+
+
+
+      /*
+      assign io_dataOut_valid = io_dataIn_valid;
+      assign io_dataIn_ready = io_dataOut_ready;
+
+      assign io_npoly = ioINPUT_npoly;
+      assign io_pulse_width = ioINPUT_pulse_width;
+      assign io_pulse_timestamp = ioINPUT_pulse_timestamp;
+      assign io_beamWord = ioINPUT_beamWord;
+      assign io_id = ioINPUT_id;
+      */
+
+
+
+
+      //=================================
+      //====Pre dev's ====
+      reg [5:0] outBuffer_npoly;
+      reg [15:0] outBuffer_pulse_width;
+      reg [23:0] outBuffer_pulse_timestamp;
+      reg [16:0] outBuffer_beamWord;
+      reg [4:0] outBuffer_id;
+      assign io_npoly = outBuffer_npoly;
+      assign io_pulse_width = outBuffer_pulse_width;
+      assign io_pulse_timestamp = outBuffer_pulse_timestamp;
+      assign io_beamWord = outBuffer_beamWord;
+      assign io_id = outBuffer_id;
+
+      reg [2:0] dataSelect = 3'd0;
+
+      reg reg_dataIn_ready;
+      reg reg_dataOut_valid;
+      assign io_dataIn_ready = reg_dataIn_ready;
+      assign io_dataOut_valid = reg_dataOut_valid;
+
+
+      //=========================================================
+      //----Combinatorical logic block
+      //======
+      wire SyncInputEvent;
+      wire SyncOutputEvent;
+      assign SyncInputEvent = (io_dataIn_valid && io_dataIn_ready);
+      assign SyncOutputEvent = (io_dataOut_valid && io_dataOut_ready);
+
+      //wire flagEqualData;
+      //assign flagEqualData = (ioINPUT2_pulse_timestamp == ioINPUT_pulse_timestamp);
+
+      //wire processingDone;
+      //assign processingDone = ((dataSelect == 3'd1) || flagEqualData);
+      //assign processingDone = (dataSelect == 3'd1);
+      //reg pushOut;
+      reg dataRdy = 1'b0;
+
+      always @ ( * ) begin
+        //if we get a valid data from the preveouse
+        //module, the processing and the folowing module is allowed to
+        //proced
+
+        reg_dataOut_valid = 1'b0;
+        if(io_dataIn_valid)begin
+          //if(dataRdy)begin //dataRdy
+          if(!io_dataOut_ready)begin
+            reg_dataOut_valid = 1'b1;
+          end
+          //end
+        end
+      end
+
+
+
+      always @ ( * ) begin
+        reg_dataIn_ready = 1'b0;
+
+        if(SyncOutputEvent)begin
+          if(dataSelect == 3'd1)begin //processingDone
+            reg_dataIn_ready = 1'b1;
+          end
+        end
+      end
+
+
+      /*
+
+      reg OutFoo 1'b0;
+      reg OutFooNext;
+
+      always @ ( posedge Slow_clk  ) begin
+        OutFoo <= OutFooNext;
+      end
+
+      always @ ( * ) begin
+        OutFooNext = OutFoo;
+        if(io_dataIn_valid)begin
+          //OutFooNext = 1'b0;
+          if(OutFoo)begin
+            OutFooNext = 1'b0;
+          end
+          if(io_dataOut_ready)begin
+            OutFooNext = 1'b1;
+          end
+        end else begin
+          OutFooNext = 1'b0;
+        end
+      end
+
+
+
+
+      */
+
+      always @ ( * ) begin
+        //reg_dataIn_ready = 1'b0;
+        case (dataSelect)
+          3'd0: begin
+            outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT_beamWord;
+            outBuffer_id = 5'b00010; //ioINPUT_id
+            //reg_dataOut_valid = 1'b1;
+          end
+          3'd1: begin
+            /*outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT2_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT2_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT2_beamWord;
+            outBuffer_id = ioINPUT2_id;
+            */
+            outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT_beamWord;
+            outBuffer_id = 5'b00100;
+            //reg_dataOut_valid = 1'b1;
+
+            //if(SyncOutputEvent)begin
+            //  reg_dataIn_ready = 1'b1;
+            //end
+
+          end
+          default: begin
+          end
+        endcase
+      end
+
+      //=================================
+      //----Sequential Logic blocks
+      //wire [2:0] fooN = (dataSelect ^  3'b);
+      always @ ( posedge Slow_clk  ) begin
+
+        if(SyncOutputEvent)begin
+          dataSelect <= dataSelect + 3'd1;
+          if(dataSelect == 3'd1)begin //processingDone
+            dataSelect <= 3'd0;
+          end
+        end
+
+      end
+
+
+      /*
+      always @ ( posedge Slow_clk ) begin
+        if(SyncOutputEvent)begin
+          //if(flagEqualData) begin
+          //  dataSelect <= 3'd1;
+          //end else begin
+            dataSelect <= dataSelect + 3'd1;
+            if(processingDone)begin
+              dataSelect <= 3'd0;
+            end
+          //end
+        end
+      end
+      */

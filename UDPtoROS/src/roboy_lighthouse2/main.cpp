@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
     ros::init(argc, argv, "lighthouse2ToRosMainFrame");
   }
   ros::NodeHandle nh;
-  ros::Rate loop_rate(10);
+  ros::Rate loop_rate(200);
 
   //ros::Subscriber sub_handler = nh.subscribe("/test/path2", 1, sub_callback);
 

@@ -1,0 +1,222 @@
+module DataBuffer_sync (
+      input io_dataIn_valid,
+      output io_dataIn_ready,
+      input [5:0] ioINPUT_npoly,
+      input [15:0] ioINPUT_pulse_width,
+      input [23:0] ioINPUT_pulse_timestamp,
+      input [16:0] ioINPUT_beamWord,
+      input [4:0] ioINPUT_id,
+      //Second Input
+      input [15:0] ioINPUT2_pulse_width,
+      input [23:0] ioINPUT2_pulse_timestamp,
+      input [16:0] ioINPUT2_beamWord,
+      input [4:0] ioINPUT2_id,
+      //outData
+      output io_dataOut_valid,
+      input   io_dataOut_ready,
+      output [5:0] io_npoly,
+      output [15:0] io_pulse_width,
+      output [23:0] io_pulse_timestamp,
+      output [16:0] io_beamWord,
+      output [4:0] io_id,
+
+
+      input   Slow_clk);
+
+      wire SyncInputEvent;
+      wire SyncOutputEvent;
+      assign SyncInputEvent = (io_dataIn_valid && io_dataIn_ready);
+      assign SyncOutputEvent = (io_dataOut_valid && io_dataOut_ready);
+
+      reg reg_dataIn_ready;
+      reg reg_dataOut_valid;
+      assign io_dataIn_ready = reg_dataIn_ready;
+      assign io_dataOut_valid = reg_dataOut_valid;
+      //assign io_dataIn_ready = io_dataOut_ready;
+      //assign io_dataOut_valid = io_dataIn_valid;
+
+
+      reg [5:0] outBuffer_npoly;
+      reg [15:0] outBuffer_pulse_width;
+      reg [23:0] outBuffer_pulse_timestamp;
+      reg [16:0] outBuffer_beamWord;
+      reg [4:0] outBuffer_id;
+
+
+      assign io_npoly = outBuffer_npoly;
+      assign io_pulse_width = outBuffer_pulse_width;
+      assign io_pulse_timestamp = outBuffer_pulse_timestamp;
+      assign io_beamWord = outBuffer_beamWord;
+      assign io_id = outBuffer_id;
+
+
+      reg [7:0] fsm_state = 8'd0;
+      reg [3:0] BufferCnt;
+      wire BufferEmptyFlag;
+      assign BufferEmptyFlag = (BufferCnt == 4'b1111);
+
+      //reg InSyncFlag;
+      //reg OutSyncFlag;
+      wire InSyncFlag;
+      wire WriteOutFlag;
+      assign WriteOutFlag = (fsm_state == 8'd3);
+      assign InSyncFlag = (WriteOutFlag && SyncOutputEvent);
+
+      always @ ( * ) begin
+        reg_dataOut_valid = 1'b0;
+        if(WriteOutFlag)begin
+          reg_dataOut_valid = 1'b1;
+        end
+      end
+      always @ ( * ) begin
+        reg_dataIn_ready = 1'b1;
+        if(InSyncFlag)begin
+          reg_dataOut_valid = 1'b1;
+        end
+      end
+
+      /*
+      always @ ( * ) begin
+        //reg_dataIn_ready = 1'b0;
+
+        case (fsm_state)
+          8'd0: begin
+            //InSyncFlag <= 1'b0;
+          end
+          8'd1: begin
+            //InSyncFlag <= 1'b0;
+          end
+          8'd2: begin
+          end
+          8'd3: begin
+            //reg_dataOut_valid = 1'b1;
+            if(SyncOutputEvent)begin
+              //fsm_state <= 8'd2;
+              if(BufferEmptyFlag)begin
+                //InSyncFlag <= 1'b1;
+                reg_dataIn_ready = 1'b1;
+              end
+            end
+          end
+          8'd4: begin
+          end
+          default: begin
+          end
+        endcase
+      end*/
+
+
+
+
+      /*
+      always @ ( * ) begin
+        reg_dataOut_valid = 1'b0;
+        case (fsm_state)
+          8'd0: begin
+          end
+          8'd1: begin
+          end
+          8'd2: begin
+          end
+          8'd3: begin
+            //if(reg_dataOut_valid) begin
+            //  reg_dataOut_valid <= 1'b0;
+            //end else begin
+              //reg_dataOut_valid <= 1'b1;
+            //end
+            reg_dataOut_valid = 1'b1;
+            //if(SyncOutputEvent)begin
+            //  reg_dataOut_valid <= 1'b0;
+            //end
+          end
+          8'd4: begin
+          end
+          default: begin
+          end
+        endcase
+      end*/
+
+
+      always @ ( posedge Slow_clk ) begin
+        //reg_dataOut_valid = 1'b0;
+        //reg_dataIn_ready <= 1'b0;
+        case (fsm_state)
+          8'd0: begin
+            if(io_dataIn_valid)begin
+              fsm_state <= 8'd1;
+            end
+            BufferCnt <= 4'd0;
+          end
+          8'd1: begin
+            if(SyncOutputEvent)begin
+              fsm_state <= 8'd1;
+            end else begin
+              fsm_state <= 8'd2;
+            end
+            //fsm_state <= 8'd2;
+          end
+          8'd2: begin
+
+
+            /*outBuffer_npoly <= ioINPUT_npoly;
+            outBuffer_pulse_width <= ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp <= ioINPUT_pulse_timestamp;
+            outBuffer_beamWord <= ioINPUT_beamWord;
+            outBuffer_id <= ioINPUT_id;
+            BufferCnt <= 4'b1111;*/
+
+            case(BufferCnt)
+              4'd0: begin
+                outBuffer_npoly <= ioINPUT_npoly;
+                outBuffer_pulse_width <= ioINPUT_pulse_width;
+                outBuffer_pulse_timestamp <= ioINPUT_pulse_timestamp;
+                outBuffer_beamWord <= ioINPUT_beamWord;
+                outBuffer_id <= ioINPUT_id;
+                BufferCnt <= 4'd1;
+                //ADD if input2 equals current buffer
+                //then
+                //BufferCnt <= 4'b1111;
+                //else
+                //BufferCnt <= 4'd1;
+              end
+              4'd1: begin
+                outBuffer_npoly <= ioINPUT_npoly;
+                outBuffer_pulse_width <= ioINPUT2_pulse_width;
+                outBuffer_pulse_timestamp <= ioINPUT2_pulse_timestamp;
+                outBuffer_beamWord <= ioINPUT2_beamWord;
+                outBuffer_id <= ioINPUT2_id;
+                BufferCnt <= 4'b1111;
+              end
+              default: begin
+                BufferCnt <= 4'd0;
+              end
+            endcase
+
+            fsm_state <= 8'd3;
+          end
+          8'd3: begin
+            //reg_dataOut_valid = 1'b1;
+            if(SyncOutputEvent)begin
+              //reg_dataOut_valid <= 1'b0;
+              //reg_dataIn_ready <= 1'b1;
+              fsm_state <= 8'd1;
+              //if(BufferCnt == 4'b1111)begin
+              if(BufferEmptyFlag)begin
+                BufferCnt <= 4'd0;
+                fsm_state <= 8'd0;
+              end
+
+            end
+          end
+          8'd4: begin
+          end
+          default: begin
+            fsm_state <= 8'd0;
+            //io_dataIn_ready = 1'b0;
+            //io_dataOut_valid = 1'b0;
+          end
+        endcase
+      end
+
+
+endmodule

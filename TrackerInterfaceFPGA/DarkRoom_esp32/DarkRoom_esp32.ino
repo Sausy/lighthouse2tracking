@@ -835,7 +835,7 @@ Serial.print(BUFFER_SIZE);
                 //Serial.print(" | Of: ");
                 //Serial.print(offset_temp);
 
-                vTaskDelay(1 / portTICK_PERIOD_MS);
+                //vTaskDelay(1 / portTICK_PERIOD_MS);
                 int8_t ret = lh2d[currentSensorID].pushUartData(&buffer[frameLoopCnt-12]);
                 if (ret == 1){//(offset[0] != 0xffffff)){ // && (width >= 10) and (beam_word != 0xffffff)){
                     //Serial.print("\nlh2d\n");
@@ -873,7 +873,7 @@ Serial.print(BUFFER_SIZE);
                     //vTaskDelay(10 / portTICK_PERIOD_MS);
 
 
-                    vTaskDelay(5 / portTICK_PERIOD_MS);
+                    vTaskDelay(1 / portTICK_PERIOD_MS);
 
 
 

@@ -124,6 +124,7 @@ int8_t LIGHTHOUSEDATACONV::pushUartData(char *data){
         msg.BaseStationChanel = slow_bit;
 
         prevOfset[identity] = offset;
+        prevOfset[identity_swap] = offset;
 
         prevSweepTime[identity] = timestamp;
         prevBeamWord[identity] = beam_word;

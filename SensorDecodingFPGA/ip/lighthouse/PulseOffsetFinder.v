@@ -108,134 +108,7 @@ module OffsetFinder (
   wire  _zz_61_;
   wire  _zz_62_;
   wire  _zz_63_;
-  wire [16:0] lfsrLut_0;
-  wire [16:0] lfsrLut_1;
-  wire [16:0] lfsrLut_2;
-  wire [16:0] lfsrLut_3;
-  wire [16:0] lfsrLut_4;
-  wire [16:0] lfsrLut_5;
-  wire [16:0] lfsrLut_6;
-  wire [16:0] lfsrLut_7;
-  wire [16:0] lfsrLut_8;
-  wire [16:0] lfsrLut_9;
-  wire [16:0] lfsrLut_10;
-  wire [16:0] lfsrLut_11;
-  wire [16:0] lfsrLut_12;
-  wire [16:0] lfsrLut_13;
-  wire [16:0] lfsrLut_14;
-  wire [16:0] lfsrLut_15;
-  wire [16:0] lfsrLut_16;
-  wire [16:0] lfsrLut_17;
-  wire [16:0] lfsrLut_18;
-  wire [16:0] lfsrLut_19;
-  wire [16:0] lfsrLut_20;
-  wire [16:0] lfsrLut_21;
-  wire [16:0] lfsrLut_22;
-  wire [16:0] lfsrLut_23;
-  wire [16:0] lfsrLut_24;
-  wire [16:0] lfsrLut_25;
-  wire [16:0] lfsrLut_26;
-  wire [16:0] lfsrLut_27;
-  wire [16:0] lfsrLut_28;
-  wire [16:0] lfsrLut_29;
-  wire [16:0] lfsrLut_30;
-  wire [16:0] lfsrLut_31;
-  wire [16:0] lfsrLut_32;
-  wire [16:0] lfsrLut_33;
-  wire [16:0] lfsrLut_34;
-  wire [16:0] lfsrLut_35;
-  wire [16:0] lfsrLut_36;
-  wire [16:0] lfsrLut_37;
-  wire [16:0] lfsrLut_38;
-  wire [16:0] lfsrLut_39;
-  wire [16:0] lfsrLut_40;
-  wire [16:0] lfsrLut_41;
-  wire [16:0] lfsrLut_42;
-  wire [16:0] lfsrLut_43;
-  wire [16:0] lfsrLut_44;
-  wire [16:0] lfsrLut_45;
-  wire [16:0] lfsrLut_46;
-  wire [16:0] lfsrLut_47;
-  wire [16:0] lfsrLut_48;
-  wire [16:0] lfsrLut_49;
-  wire [16:0] lfsrLut_50;
-  wire [16:0] lfsrLut_51;
-  wire [16:0] lfsrLut_52;
-  wire [16:0] lfsrLut_53;
-  wire [16:0] lfsrLut_54;
-  wire [16:0] lfsrLut_55;
-  wire [16:0] lfsrLut_56;
-  wire [16:0] lfsrLut_57;
-  wire [16:0] lfsrLut_58;
-  wire [16:0] lfsrLut_59;
-  wire [16:0] lfsrLut_60;
-  wire [16:0] lfsrLut_61;
-  wire [16:0] lfsrLut_62;
-  wire [16:0] lfsrLut_63;
-  wire [16:0] lfsrLut_64;
-  wire [16:0] lfsrLut_65;
-  wire [16:0] lfsrLut_66;
-  wire [16:0] lfsrLut_67;
-  wire [16:0] lfsrLut_68;
-  wire [16:0] lfsrLut_69;
-  wire [16:0] lfsrLut_70;
-  wire [16:0] lfsrLut_71;
-  wire [16:0] lfsrLut_72;
-  wire [16:0] lfsrLut_73;
-  wire [16:0] lfsrLut_74;
-  wire [16:0] lfsrLut_75;
-  wire [16:0] lfsrLut_76;
-  wire [16:0] lfsrLut_77;
-  wire [16:0] lfsrLut_78;
-  wire [16:0] lfsrLut_79;
-  wire [16:0] lfsrLut_80;
-  wire [16:0] lfsrLut_81;
-  wire [16:0] lfsrLut_82;
-  wire [16:0] lfsrLut_83;
-  wire [16:0] lfsrLut_84;
-  wire [16:0] lfsrLut_85;
-  wire [16:0] lfsrLut_86;
-  wire [16:0] lfsrLut_87;
-  wire [16:0] lfsrLut_88;
-  wire [16:0] lfsrLut_89;
-  wire [16:0] lfsrLut_90;
-  wire [16:0] lfsrLut_91;
-  wire [16:0] lfsrLut_92;
-  wire [16:0] lfsrLut_93;
-  wire [16:0] lfsrLut_94;
-  wire [16:0] lfsrLut_95;
-  wire [16:0] lfsrLut_96;
-  wire [16:0] lfsrLut_97;
-  wire [16:0] lfsrLut_98;
-  wire [16:0] lfsrLut_99;
-  wire [16:0] lfsrLut_100;
-  wire [16:0] lfsrLut_101;
-  wire [16:0] lfsrLut_102;
-  wire [16:0] lfsrLut_103;
-  wire [16:0] lfsrLut_104;
-  wire [16:0] lfsrLut_105;
-  wire [16:0] lfsrLut_106;
-  wire [16:0] lfsrLut_107;
-  wire [16:0] lfsrLut_108;
-  wire [16:0] lfsrLut_109;
-  wire [16:0] lfsrLut_110;
-  wire [16:0] lfsrLut_111;
-  wire [16:0] lfsrLut_112;
-  wire [16:0] lfsrLut_113;
-  wire [16:0] lfsrLut_114;
-  wire [16:0] lfsrLut_115;
-  wire [16:0] lfsrLut_116;
-  wire [16:0] lfsrLut_117;
-  wire [16:0] lfsrLut_118;
-  wire [16:0] lfsrLut_119;
-  wire [16:0] lfsrLut_120;
-  wire [16:0] lfsrLut_121;
-  wire [16:0] lfsrLut_122;
-  wire [16:0] lfsrLut_123;
-  wire [16:0] lfsrLut_124;
-  wire [16:0] lfsrLut_125;
-  wire [16:0] lfsrLut_126;
-  wire [16:0] lfsrLut_127;
+
   reg [3:0] done;
   reg  found = 1'b0;
   reg [16:0] offset = (17'b00000000000000000);
@@ -345,225 +218,6 @@ module OffsetFinder (
     end
   end
 
-  `ifndef SYNTHESIS
-  always @(*) begin
-    case(_zz_25_)
-      `StateMachineEnum_defaultEncoding_boot : _zz_25__string = "boot";
-      `StateMachineEnum_defaultEncoding_e1 : _zz_25__string = "e1  ";
-      `StateMachineEnum_defaultEncoding_e2 : _zz_25__string = "e2  ";
-      `StateMachineEnum_defaultEncoding_e3 : _zz_25__string = "e3  ";
-      `StateMachineEnum_defaultEncoding_e4 : _zz_25__string = "e4  ";
-      `StateMachineEnum_defaultEncoding_e5 : _zz_25__string = "e5  ";
-      default : _zz_25__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_26_)
-      `StateMachineEnum_defaultEncoding_boot : _zz_26__string = "boot";
-      `StateMachineEnum_defaultEncoding_e1 : _zz_26__string = "e1  ";
-      `StateMachineEnum_defaultEncoding_e2 : _zz_26__string = "e2  ";
-      `StateMachineEnum_defaultEncoding_e3 : _zz_26__string = "e3  ";
-      `StateMachineEnum_defaultEncoding_e4 : _zz_26__string = "e4  ";
-      `StateMachineEnum_defaultEncoding_e5 : _zz_26__string = "e5  ";
-      default : _zz_26__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_28_)
-      `StateMachineEnum_1_defaultEncoding_boot : _zz_28__string = "boot";
-      `StateMachineEnum_1_defaultEncoding_e1 : _zz_28__string = "e1  ";
-      `StateMachineEnum_1_defaultEncoding_e2 : _zz_28__string = "e2  ";
-      `StateMachineEnum_1_defaultEncoding_e3 : _zz_28__string = "e3  ";
-      `StateMachineEnum_1_defaultEncoding_e4 : _zz_28__string = "e4  ";
-      `StateMachineEnum_1_defaultEncoding_e5 : _zz_28__string = "e5  ";
-      default : _zz_28__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_29_)
-      `StateMachineEnum_1_defaultEncoding_boot : _zz_29__string = "boot";
-      `StateMachineEnum_1_defaultEncoding_e1 : _zz_29__string = "e1  ";
-      `StateMachineEnum_1_defaultEncoding_e2 : _zz_29__string = "e2  ";
-      `StateMachineEnum_1_defaultEncoding_e3 : _zz_29__string = "e3  ";
-      `StateMachineEnum_1_defaultEncoding_e4 : _zz_29__string = "e4  ";
-      `StateMachineEnum_1_defaultEncoding_e5 : _zz_29__string = "e5  ";
-      default : _zz_29__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_31_)
-      `StateMachineEnum_2_defaultEncoding_boot : _zz_31__string = "boot";
-      `StateMachineEnum_2_defaultEncoding_e1 : _zz_31__string = "e1  ";
-      `StateMachineEnum_2_defaultEncoding_e2 : _zz_31__string = "e2  ";
-      `StateMachineEnum_2_defaultEncoding_e3 : _zz_31__string = "e3  ";
-      `StateMachineEnum_2_defaultEncoding_e4 : _zz_31__string = "e4  ";
-      `StateMachineEnum_2_defaultEncoding_e5 : _zz_31__string = "e5  ";
-      default : _zz_31__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_32_)
-      `StateMachineEnum_2_defaultEncoding_boot : _zz_32__string = "boot";
-      `StateMachineEnum_2_defaultEncoding_e1 : _zz_32__string = "e1  ";
-      `StateMachineEnum_2_defaultEncoding_e2 : _zz_32__string = "e2  ";
-      `StateMachineEnum_2_defaultEncoding_e3 : _zz_32__string = "e3  ";
-      `StateMachineEnum_2_defaultEncoding_e4 : _zz_32__string = "e4  ";
-      `StateMachineEnum_2_defaultEncoding_e5 : _zz_32__string = "e5  ";
-      default : _zz_32__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_34_)
-      `StateMachineEnum_3_defaultEncoding_boot : _zz_34__string = "boot";
-      `StateMachineEnum_3_defaultEncoding_e1 : _zz_34__string = "e1  ";
-      `StateMachineEnum_3_defaultEncoding_e2 : _zz_34__string = "e2  ";
-      `StateMachineEnum_3_defaultEncoding_e3 : _zz_34__string = "e3  ";
-      `StateMachineEnum_3_defaultEncoding_e4 : _zz_34__string = "e4  ";
-      `StateMachineEnum_3_defaultEncoding_e5 : _zz_34__string = "e5  ";
-      default : _zz_34__string = "????";
-    endcase
-  end
-  always @(*) begin
-    case(_zz_35_)
-      `StateMachineEnum_3_defaultEncoding_boot : _zz_35__string = "boot";
-      `StateMachineEnum_3_defaultEncoding_e1 : _zz_35__string = "e1  ";
-      `StateMachineEnum_3_defaultEncoding_e2 : _zz_35__string = "e2  ";
-      `StateMachineEnum_3_defaultEncoding_e3 : _zz_35__string = "e3  ";
-      `StateMachineEnum_3_defaultEncoding_e4 : _zz_35__string = "e4  ";
-      `StateMachineEnum_3_defaultEncoding_e5 : _zz_35__string = "e5  ";
-      default : _zz_35__string = "????";
-    endcase
-  end
-  `endif
-
-  assign lfsrLut_0 = (17'b11101001001011000);
-  assign lfsrLut_1 = (17'b11001011000111111);
-  assign lfsrLut_2 = (17'b01110001100110111);
-  assign lfsrLut_3 = (17'b11001010111101010);
-  assign lfsrLut_4 = (17'b10111111000000100);
-  assign lfsrLut_5 = (17'b01011100011011101);
-  assign lfsrLut_6 = (17'b00110000001000011);
-  assign lfsrLut_7 = (17'b01100101001101100);
-  assign lfsrLut_8 = (17'b11111111101101011);
-  assign lfsrLut_9 = (17'b11100011110110100);
-  assign lfsrLut_10 = (17'b00000100111010110);
-  assign lfsrLut_11 = (17'b11111101011111110);
-  assign lfsrLut_12 = (17'b10011111101100111);
-  assign lfsrLut_13 = (17'b00111110100011000);
-  assign lfsrLut_14 = (17'b01111000100001011);
-  assign lfsrLut_15 = (17'b01101010110111111);
-  assign lfsrLut_16 = (17'b11011100111101110);
-  assign lfsrLut_17 = (17'b10010001111000001);
-  assign lfsrLut_18 = (17'b10001010101110100);
-  assign lfsrLut_19 = (17'b10100101011010100);
-  assign lfsrLut_20 = (17'b11001100011010001);
-  assign lfsrLut_21 = (17'b10110111001101000);
-  assign lfsrLut_22 = (17'b00011101101100001);
-  assign lfsrLut_23 = (17'b10100110001010000);
-  assign lfsrLut_24 = (17'b10111100011000111);
-  assign lfsrLut_25 = (17'b11100010011100000);
-  assign lfsrLut_26 = (17'b01001100010010010);
-  assign lfsrLut_27 = (17'b01000110011011001);
-  assign lfsrLut_28 = (17'b11000101001010101);
-  assign lfsrLut_29 = (17'b00011100110001100);
-  assign lfsrLut_30 = (17'b00100001101010101);
-  assign lfsrLut_31 = (17'b00110001011011110);
-  assign lfsrLut_32 = (17'b10101011101110111);
-  assign lfsrLut_33 = (17'b11101111011000001);
-  assign lfsrLut_34 = (17'b01110100001110111);
-  assign lfsrLut_35 = (17'b01011001111001000);
-  assign lfsrLut_36 = (17'b11101100100010001);
-  assign lfsrLut_37 = (17'b11000111100101000);
-  assign lfsrLut_38 = (17'b00110001111101101);
-  assign lfsrLut_39 = (17'b01011110011110010);
-  assign lfsrLut_40 = (17'b10101011101101001);
-  assign lfsrLut_41 = (17'b10110110111101111);
-  assign lfsrLut_42 = (17'b01011101000010110);
-  assign lfsrLut_43 = (17'b00011100101010111);
-  assign lfsrLut_44 = (17'b11001100100011111);
-  assign lfsrLut_45 = (17'b10111100011001011);
-  assign lfsrLut_46 = (17'b01010000000110111);
-  assign lfsrLut_47 = (17'b11001100001000011);
-  assign lfsrLut_48 = (17'b10010101111010000);
-  assign lfsrLut_49 = (17'b00010000110000101);
-  assign lfsrLut_50 = (17'b00001101100110000);
-  assign lfsrLut_51 = (17'b11001000010000111);
-  assign lfsrLut_52 = (17'b11100111101110011);
-  assign lfsrLut_53 = (17'b00001001100010010);
-  assign lfsrLut_54 = (17'b00000011101110100);
-  assign lfsrLut_55 = (17'b01000001101100001);
-  assign lfsrLut_56 = (17'b10011011001011101);
-  assign lfsrLut_57 = (17'b10100101100010101);
-  assign lfsrLut_58 = (17'b11000000101011110);
-  assign lfsrLut_59 = (17'b10101110001001110);
-  assign lfsrLut_60 = (17'b11001011111110101);
-  assign lfsrLut_61 = (17'b10011111110011000);
-  assign lfsrLut_62 = (17'b11011000100001001);
-  assign lfsrLut_63 = (17'b11111100100000100);
-  assign lfsrLut_64 = (17'b11001010010100000);
-  assign lfsrLut_65 = (17'b01100100001110101);
-  assign lfsrLut_66 = (17'b11010011100110010);
-  assign lfsrLut_67 = (17'b00000100000100100);
-  assign lfsrLut_68 = (17'b11011001001111001);
-  assign lfsrLut_69 = (17'b10001111001011001);
-  assign lfsrLut_70 = (17'b11101101100010010);
-  assign lfsrLut_71 = (17'b01010000111000110);
-  assign lfsrLut_72 = (17'b10011101000110100);
-  assign lfsrLut_73 = (17'b01101011111010110);
-  assign lfsrLut_74 = (17'b11011010010001110);
-  assign lfsrLut_75 = (17'b00111110011100111);
-  assign lfsrLut_76 = (17'b11010111001000001);
-  assign lfsrLut_77 = (17'b00010000000010101);
-  assign lfsrLut_78 = (17'b11101011110011011);
-  assign lfsrLut_79 = (17'b11000111111100111);
-  assign lfsrLut_80 = (17'b11000000011010100);
-  assign lfsrLut_81 = (17'b10100000001111011);
-  assign lfsrLut_82 = (17'b11000111101111000);
-  assign lfsrLut_83 = (17'b11111111101100101);
-  assign lfsrLut_84 = (17'b10111100010010001);
-  assign lfsrLut_85 = (17'b10100010000001010);
-  assign lfsrLut_86 = (17'b11111100110001100);
-  assign lfsrLut_87 = (17'b00010000100000010);
-  assign lfsrLut_88 = (17'b10010111001100100);
-  assign lfsrLut_89 = (17'b10110111100010010);
-  assign lfsrLut_90 = (17'b00101111011101100);
-  assign lfsrLut_91 = (17'b10000010011011011);
-  assign lfsrLut_92 = (17'b10111110001110010);
-  assign lfsrLut_93 = (17'b01101010011011100);
-  assign lfsrLut_94 = (17'b01101001100001101);
-  assign lfsrLut_95 = (17'b11100001010101011);
-  assign lfsrLut_96 = (17'b11001110001101101);
-  assign lfsrLut_97 = (17'b11110110010110001);
-  assign lfsrLut_98 = (17'b00001100100011001);
-  assign lfsrLut_99 = (17'b00100000101110010);
-  assign lfsrLut_100 = (17'b10011111100110010);
-  assign lfsrLut_101 = (17'b11101010001001111);
-  assign lfsrLut_102 = (17'b00100111111000100);
-  assign lfsrLut_103 = (17'b11111011000100001);
-  assign lfsrLut_104 = (17'b11010111000010100);
-  assign lfsrLut_105 = (17'b11000000111100001);
-  assign lfsrLut_106 = (17'b11001010001001111);
-  assign lfsrLut_107 = (17'b01111001001001011);
-  assign lfsrLut_108 = (17'b10100111001110110);
-  assign lfsrLut_109 = (17'b00011101100111110);
-  assign lfsrLut_110 = (17'b01111011100000111);
-  assign lfsrLut_111 = (17'b11100010000011111);
-  assign lfsrLut_112 = (17'b10011110010010111);
-  assign lfsrLut_113 = (17'b00000010101111101);
-  assign lfsrLut_114 = (17'b10110001001001111);
-  assign lfsrLut_115 = (17'b00111110001001100);
-  assign lfsrLut_116 = (17'b10011000011001011);
-  assign lfsrLut_117 = (17'b10110000101101110);
-  assign lfsrLut_118 = (17'b11011001100011110);
-  assign lfsrLut_119 = (17'b11111010000001001);
-  assign lfsrLut_120 = (17'b10011011101010000);
-  assign lfsrLut_121 = (17'b10011000111111010);
-  assign lfsrLut_122 = (17'b01000001100011110);
-  assign lfsrLut_123 = (17'b11111001101011011);
-  assign lfsrLut_124 = (17'b11100101110001101);
-  assign lfsrLut_125 = (17'b00011100110110010);
-  assign lfsrLut_126 = (17'b10011001110110111);
-  assign lfsrLut_127 = (17'b10010101001011000);
   always @ (*) begin
     done = (4'b0000);
     case(_zz_25_)
@@ -1092,6 +746,7 @@ module PulseOffsetFinder (
   wire  _zz_5_;
   wire [21:0] _zz_6_;
   reg [23:0] lastTimestamp;
+  reg [4:0] lastID;
   wire [23:0] pulseDelta;
   reg [5:0] lastNPoly;
   wire  fsm_wantExit;
@@ -1121,6 +776,11 @@ module PulseOffsetFinder (
 
 
   assign _zz_4_ = (dump_data && io_pulseOut_ready);
+  //((22'b0000000000100000000000) < _zz_6_) ||
+  //((22'b0000000000000000000001) < _zz_6_) || lastID != io_pulseIn_payload_pulse_timestamp;
+  //wire timeMax;
+  //assign timeMax = (((22'b0000000000100000000000) < _zz_6_) || (io_pulseIn_payload_id != lastID));
+  //assign _zz_5_ = ((io_pulseIn_payload_npoly != (6'b111111)) && ((io_pulseIn_payload_npoly != lastNPoly)));
   assign _zz_5_ = ((io_pulseIn_payload_npoly != (6'b111111)) && (((22'b0000000000100000000000) < _zz_6_) || (io_pulseIn_payload_npoly != lastNPoly)));
   assign _zz_6_ = (pulseDelta >>> 2);
   OffsetFinder offsetFinder_1_ (
@@ -1297,6 +957,7 @@ module PulseOffsetFinder (
           lastTimestamp <= io_pulseIn_payload_pulse_timestamp;
         end
         lastNPoly <= io_pulseIn_payload_npoly;
+        lastID <= io_pulseIn_payload_id;
       end
       default : begin
       end

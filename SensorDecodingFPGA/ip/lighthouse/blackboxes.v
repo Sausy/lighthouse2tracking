@@ -71,7 +71,7 @@ module TS4231_init #(parameter CLK_FREQ_HZ = 48_000_000)
 
   TS4231_init_delay #(
       .CLK_FREQ_HZ(CLK_FREQ_HZ),
-      .WAITING_TIME_uS(600_000)
+      .WAITING_TIME_uS(800_000)
     ) TS4231_init_U0 (
       .clk   (clk),
       .start (reset),
@@ -518,7 +518,7 @@ module TS4231_init_delay(
 
 
   parameter CLK_FREQ_HZ = 48_000_000;
-  parameter WAITING_TIME_uS = 10_000;
+  parameter WAITING_TIME_uS = 100_000;
 
   localparam CNT_MAX = WAITING_TIME_uS * (CLK_FREQ_HZ / 1_000_000);
 

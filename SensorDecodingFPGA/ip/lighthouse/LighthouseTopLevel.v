@@ -1664,6 +1664,586 @@ module StreamFifo_4_ (
 
 endmodule
 
+module DataBuffer_sync (
+      input io_dataIn_valid,
+      output io_dataIn_ready,
+      input [5:0] ioINPUT_npoly,
+      input [15:0] ioINPUT_pulse_width,
+      input [23:0] ioINPUT_pulse_timestamp,
+      input [16:0] ioINPUT_beamWord,
+      input [4:0] ioINPUT_id,
+      //Second Input
+      input [15:0] ioINPUT2_pulse_width,
+      input [23:0] ioINPUT2_pulse_timestamp,
+      input [16:0] ioINPUT2_beamWord,
+      input [4:0] ioINPUT2_id,
+      //outData
+      output io_dataOut_valid,
+      input   io_dataOut_ready,
+      output [5:0] io_npoly,
+      output [15:0] io_pulse_width,
+      output [23:0] io_pulse_timestamp,
+      output [16:0] io_beamWord,
+      output [4:0] io_id,
+
+
+      input   Slow_clk);
+
+      /*
+      assign io_dataOut_valid = io_dataIn_valid;
+      assign io_dataIn_ready = io_dataOut_ready;
+
+      assign io_npoly = ioINPUT_npoly;
+      assign io_pulse_width = ioINPUT_pulse_width;
+      assign io_pulse_timestamp = ioINPUT_pulse_timestamp;
+      assign io_beamWord = ioINPUT_beamWord;
+      assign io_id = ioINPUT_id;
+      */
+
+
+
+
+
+      //=================================
+      //====Pre dev's ====
+      reg [23:0] LastTimestamp;
+      reg [23:0] LastTimestampBuffer;
+
+      reg [5:0] outBuffer_npoly;
+      reg [15:0] outBuffer_pulse_width;
+      reg [23:0] outBuffer_pulse_timestamp;
+      reg [16:0] outBuffer_beamWord;
+      reg [4:0] outBuffer_id;
+      assign io_npoly = outBuffer_npoly;
+      assign io_pulse_width = outBuffer_pulse_width;
+      assign io_pulse_timestamp = outBuffer_pulse_timestamp;
+      assign io_beamWord = outBuffer_beamWord;
+      assign io_id = outBuffer_id;
+
+      reg [2:0] dataSelect = 3'd0;
+
+      reg reg_dataIn_ready;
+      reg reg_dataOut_valid;
+      assign io_dataIn_ready = reg_dataIn_ready;
+      assign io_dataOut_valid = reg_dataOut_valid;
+
+
+      //=========================================================
+      //----Combinatorical logic block
+      //======
+      wire SyncInputEvent;
+      wire SyncOutputEvent;
+      assign SyncInputEvent = (io_dataIn_valid && io_dataIn_ready);
+      assign SyncOutputEvent = (io_dataOut_valid && io_dataOut_ready);
+
+      //wire flagEqualData;
+      //assign flagEqualData = (ioINPUT2_pulse_timestamp == ioINPUT_pulse_timestamp);
+
+      //wire processingDone;
+      //assign processingDone = ((dataSelect == 3'd1) || flagEqualData);
+      //assign processingDone = (dataSelect == 3'd1);
+      //reg pushOut;
+      reg dataRdy = 1'b0;
+      reg initDone = 1'b0;
+
+      always @ ( * ) begin
+        //if we get a valid data from the preveouse
+        //module, the processing and the folowing module is allowed to
+        //proced
+
+        reg_dataOut_valid = 1'b0;
+        if(io_dataIn_valid)begin
+          if(dataRdy)begin //dataRdy
+          //if(!io_dataOut_ready)begin
+            reg_dataOut_valid = 1'b1;
+          //end
+          end
+        end
+      end
+
+
+
+      always @ ( * ) begin
+        reg_dataIn_ready = 1'b0;
+
+        if(SyncOutputEvent)begin
+          if(dataSelect == 3'd2)begin //processingDone
+            reg_dataIn_ready = 1'b1;
+          end else begin
+
+          end
+        end
+      end
+
+
+
+
+      //reg OutFoo 1'b0;
+      //reg OutFooNext;
+
+      //always @ ( posedge Slow_clk  ) begin
+      //  OutFoo <= OutFooNext;
+      //end
+
+      //always @ ( * ) begin
+      //  OutFooNext = OutFoo;
+      //  if(io_dataIn_valid)begin
+      //    //OutFooNext = 1'b0;
+      //    if(OutFoo)begin
+      //      OutFooNext = 1'b0;
+      //    end
+      //    if(io_dataOut_ready)begin
+      //      OutFooNext = 1'b1;
+      //    end
+      //  end else begin
+      //    OutFooNext = 1'b0;
+      //  end
+      //end
+
+
+
+
+
+
+      //====================================================
+      //
+      //      TODO: add LastTimestamp to compare it
+      //      currently there is a dataflood
+      //
+      //====================================================
+
+      always @ ( * ) begin
+        //reg_dataIn_ready = 1'b0;
+        case (dataSelect)
+          3'd0: begin
+            outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT_beamWord;
+            outBuffer_id = ioINPUT_id;//5'b00001; //ioINPUT2_id
+            //reg_dataOut_valid = 1'b1;
+          end
+          3'd1: begin
+            outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT2_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT2_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT2_beamWord;
+            outBuffer_id = ioINPUT2_id;//5'b00010;
+
+
+
+          end
+          3'd2: begin
+            outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT2_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT2_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT2_beamWord;
+            outBuffer_id = ioINPUT2_id;//5'b00010;
+          end
+          default: begin
+            outBuffer_npoly = ioINPUT_npoly;
+            outBuffer_pulse_width = ioINPUT_pulse_width;
+            outBuffer_pulse_timestamp = ioINPUT_pulse_timestamp;
+            outBuffer_beamWord = ioINPUT_beamWord;
+            outBuffer_id = ioINPUT_id;
+          end
+        endcase
+      end
+
+
+      //=================================
+      //----Sequential Logic blocks
+      //wire [2:0] fooN = (dataSelect ^  3'b);
+      reg sync_foo = 1'b1;
+      always @ ( posedge Slow_clk  ) begin
+        dataRdy <= 1'b1;
+        if(sync_foo)begin
+          if(SyncOutputEvent)begin
+            dataRdy <= 1'b0;
+            sync_foo <= 1'b0;
+            dataSelect <= dataSelect + 3'd1;
+            if(ioINPUT2_pulse_timestamp == LastTimestamp)begin
+              dataSelect <= 3'd2;
+            end
+            if(dataSelect == 3'd2)begin //processingDone
+              dataSelect <= 3'd0;
+              LastTimestamp <= LastTimestampBuffer;
+            end else begin
+              LastTimestampBuffer <= ioINPUT2_pulse_timestamp;
+            end
+          end
+        end else begin
+          dataRdy <= 1'b0;
+          if(!io_dataOut_ready)begin
+            dataRdy <= 1'b1;
+            sync_foo <= 1'b1;
+          end
+        end
+
+      end
+
+
+
+
+      /*
+      always @ ( posedge Slow_clk ) begin
+        if(SyncOutputEvent)begin
+          //if(flagEqualData) begin
+          //  dataSelect <= 3'd1;
+          //end else begin
+            dataSelect <= dataSelect + 3'd1;
+            if(processingDone)begin
+              dataSelect <= 3'd0;
+            end
+          //end
+        end
+      end
+      */
+
+endmodule
+
+module PulseIdentifier (
+      input   io_pulseIn_valid,
+      output reg  io_pulseIn_ready,
+      input  [4:0] io_pulseIn_payload_id,
+      input  [15:0] io_pulseIn_payload_pulse_width,
+      input  [23:0] io_pulseIn_payload_pulse_timestamp,
+      input  [16:0] io_pulseIn_payload_beamWord,
+      output reg  io_pulseOut_valid,
+      input   io_pulseOut_ready,
+
+      //VALID POLYNOM
+      output [5:0] io_pulseOut_payload_npoly,
+      //Forwarding most current impuls
+      output [15:0] io_pulseOut_payload_pulse_width,
+      output [23:0] io_pulseOut_payload_pulse_timestamp,
+      output [16:0] io_pulseOut_payload_beamWord,
+      output [4:0] io_pulseOut_payload_id,
+
+      input   Slow_clk
+      );
+
+
+      wire PulsIdent1_valid;
+      wire PulsIdent1_ready;
+
+      wire [5:0] npoly;
+
+      wire [15:0] BUFFER1_pulse_width;
+      wire [23:0] BUFFER1_pulse_timestamp;
+      wire [16:0] BUFFER1_beamWord;
+      wire [4:0] BUFFER1_id;
+
+      wire [15:0] BUFFER2_pulse_width;
+      wire [23:0] BUFFER2_pulse_timestamp;
+      wire [16:0] BUFFER2_beamWord;
+      wire [4:0] BUFFER2_id;
+
+      PulseIdentifier_new PulsIdent1 (
+        .io_pulseIn_valid(io_pulseIn_valid),
+        .io_pulseIn_ready(io_pulseIn_ready),
+        .io_pulseIn_payload_id(io_pulseIn_payload_id),
+        .io_pulseIn_payload_pulse_width(io_pulseIn_payload_pulse_width),
+        .io_pulseIn_payload_pulse_timestamp(io_pulseIn_payload_pulse_timestamp),
+        .io_pulseIn_payload_beamWord(io_pulseIn_payload_beamWord),
+
+        .io_pulseOut_valid(PulsIdent1_valid),//io_pulseOut_valid
+        .io_pulseOut_ready(PulsIdent1_ready),//io_pulseOut_ready
+        .io_pulseOut_payload_npoly(npoly),
+        .io_pulseOut_payload_pulse_width(BUFFER1_pulse_width),
+        .io_pulseOut_payload_pulse_timestamp(BUFFER1_pulse_timestamp),
+        .io_pulseOut_payload_beamWord(BUFFER1_beamWord),
+        .io_pulseOut_payload_id(BUFFER1_id),
+
+        /*
+        .io_pulseOut_valid(io_pulseOut_valid),//
+        .io_pulseOut_ready(io_pulseOut_ready),//
+        .io_pulseOut_payload_npoly(io_pulseOut_payload_npoly),
+        .io_pulseOut_payload_pulse_width(io_pulseOut_payload_pulse_width),
+        .io_pulseOut_payload_pulse_timestamp(io_pulseOut_payload_pulse_timestamp),
+        .io_pulseOut_payload_beamWord(io_pulseOut_payload_beamWord),
+        .io_pulseOut_payload_id(io_pulseOut_payload_id),
+        */
+        //To also get the data from the old impuls
+        .io_pulseOut_payload_pulse_width_OLD(BUFFER2_pulse_width),
+        .io_pulseOut_payload_pulse_timestamp_OLD(BUFFER2_pulse_timestamp),
+        .io_pulseOut_payload_beamWord_OLD(BUFFER2_beamWord),
+        .io_pulseOut_payload_id_OLD(BUFFER2_id),
+
+        .Slow_clk(Slow_clk)
+
+      )/* synthesis syn_noprune=1 */;
+
+      //If we get valid data we have to check if the "old information was alread solved"
+      //otherwise we would get an huge amount of data...
+      //to do so we need a simple comparison and a stack buffer
+
+      DataBuffer_sync DB_sync (
+            .io_dataIn_valid(PulsIdent1_valid),
+            .io_dataIn_ready(PulsIdent1_ready),
+            .ioINPUT_npoly(npoly),
+            .ioINPUT_pulse_width(BUFFER1_pulse_width),
+            .ioINPUT_pulse_timestamp(BUFFER1_pulse_timestamp),
+            .ioINPUT_beamWord(BUFFER1_beamWord),
+            .ioINPUT_id(BUFFER1_id),
+
+            .ioINPUT2_pulse_width(BUFFER2_pulse_width),
+            .ioINPUT2_pulse_timestamp(BUFFER2_pulse_timestamp),
+            .ioINPUT2_beamWord(BUFFER2_beamWord),
+            .ioINPUT2_id(BUFFER2_id),
+            //.ioINPUT2_pulse_width(BUFFER1_pulse_width),
+            //.ioINPUT2_pulse_timestamp(BUFFER1_pulse_timestamp),
+            //.ioINPUT2_beamWord(BUFFER1_beamWord),
+            //.ioINPUT2_id(BUFFER1_id),
+
+            .io_dataOut_valid(io_pulseOut_valid),
+            .io_dataOut_ready(io_pulseOut_ready),
+            .io_npoly(io_pulseOut_payload_npoly),
+            .io_pulse_width(io_pulseOut_payload_pulse_width),
+            .io_pulse_timestamp(io_pulseOut_payload_pulse_timestamp),
+            .io_beamWord(io_pulseOut_payload_beamWord),
+            .io_id(io_pulseOut_payload_id),
+
+
+            .Slow_clk(Slow_clk)
+          )/* synthesis syn_noprune=1 */;
+
+endmodule
+
+
+module PulseIdentifier_new (
+      input   io_pulseIn_valid,
+      output reg  io_pulseIn_ready,
+      input  [4:0] io_pulseIn_payload_id,
+      input  [15:0] io_pulseIn_payload_pulse_width,
+      input  [23:0] io_pulseIn_payload_pulse_timestamp,
+      input  [16:0] io_pulseIn_payload_beamWord,
+      output reg  io_pulseOut_valid,
+      input   io_pulseOut_ready,
+
+      //VALID POLYNOM
+      output [5:0] io_pulseOut_payload_npoly,
+      //Forwarding most current impuls
+      output [15:0] io_pulseOut_payload_pulse_width,
+      output [23:0] io_pulseOut_payload_pulse_timestamp,
+      output [16:0] io_pulseOut_payload_beamWord,
+      output [4:0] io_pulseOut_payload_id,
+
+      //Forwarding last impuls
+      output [15:0] io_pulseOut_payload_pulse_width_OLD,
+      output [23:0] io_pulseOut_payload_pulse_timestamp_OLD,
+      output [16:0] io_pulseOut_payload_beamWord_OLD,
+      output [4:0] io_pulseOut_payload_id_OLD,
+
+      input   Slow_clk);
+  wire [9:0] _zz_1_;
+  reg  _zz_2_;
+  wire  _zz_3_;
+  wire  polyFinder_1__io_start_ready;
+  wire  polyFinder_1__io_found;
+  wire [4:0] polyFinder_1__io_polyFound;
+  wire  polyFinder_1__io_done_valid;
+  wire  _zz_4_;
+  wire  _zz_5_;
+  wire  _zz_6_;
+  wire [21:0] _zz_7_;
+  wire [21:0] _zz_8_;
+  wire [21:0] _zz_9_;
+
+  //iteration buffers
+  reg [15:0] lastWidth;
+  reg [23:0] lastTimestamp;
+  reg [16:0] lastState;
+  reg [4:0] lastId;
+
+  reg [15:0] pulse_width_OLD;
+  reg [23:0] pulse_timestamp_OLD;
+  reg [16:0] beamWord_OLD;
+  reg [4:0] id_OLD;
+  assign io_pulseOut_payload_pulse_width_OLD = pulse_width_OLD;
+  assign io_pulseOut_payload_pulse_timestamp_OLD = pulse_timestamp_OLD;
+  assign io_pulseOut_payload_beamWord_OLD = beamWord_OLD;
+  assign io_pulseOut_payload_id_OLD = id_OLD;
+
+  //reg [16:0] lastState_OLD;
+  //reg [23:0] lastTimestamp_OLD;
+
+  wire [23:0] pulseDelta;
+  reg [5:0] nPoly;
+  wire  fsm_wantExit;
+  reg `fsm_enumDefinition_defaultEncoding_type fsm_stateReg = `fsm_enumDefinition_defaultEncoding_boot;
+  reg `fsm_enumDefinition_defaultEncoding_type fsm_stateNext;
+  `ifndef SYNTHESIS
+  reg [111:0] fsm_stateReg_string;
+  reg [111:0] fsm_stateNext_string;
+  `endif
+
+  assign _zz_4_ = (io_pulseOut_valid && io_pulseOut_ready);
+  assign _zz_5_ = (_zz_9_ < (22'b0000000000010000000000));
+  assign _zz_6_ = (polyFinder_1__io_done_valid && _zz_3_);
+  assign _zz_7_ = (_zz_8_ + (22'b0000000000000000000010));
+  assign _zz_8_ = (pulseDelta >>> 2);
+  assign _zz_9_ = (pulseDelta >>> 2);
+  PolyFinder polyFinder_1_ (
+    .io_startState(lastState),
+    .io_targetState(io_pulseIn_payload_beamWord),
+    .io_maxTick(_zz_1_),
+    .io_start_valid(_zz_2_),
+    .io_start_ready(polyFinder_1__io_start_ready),
+    .io_found(polyFinder_1__io_found),
+    .io_polyFound(polyFinder_1__io_polyFound),
+    .io_done_valid(polyFinder_1__io_done_valid),
+    .io_done_ready(_zz_3_),
+    .Slow_clk(Slow_clk)
+ )/* synthesis syn_noprune=1 */;
+
+  assign _zz_3_ = 1'b1;
+  assign pulseDelta = (io_pulseIn_payload_pulse_timestamp - lastTimestamp);
+  assign _zz_1_ = _zz_7_[9:0];
+  assign io_pulseOut_payload_npoly = nPoly;
+  assign io_pulseOut_payload_pulse_width = io_pulseIn_payload_pulse_width;
+  assign io_pulseOut_payload_pulse_timestamp = io_pulseIn_payload_pulse_timestamp;
+  assign io_pulseOut_payload_beamWord = io_pulseIn_payload_beamWord;
+  assign io_pulseOut_payload_id = io_pulseIn_payload_id;
+  assign fsm_wantExit = 1'b0;
+
+  always @ (*) begin
+    io_pulseOut_valid = 1'b0;
+    case(fsm_stateReg)
+      `fsm_enumDefinition_defaultEncoding_fsm_idle : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_testDelta : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_waitFinder : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_sendResult : begin
+        io_pulseOut_valid = 1'b1;
+      end
+      default : begin
+      end
+    endcase
+  end
+
+
+
+  always @ (*) begin
+    io_pulseIn_ready = 1'b0;
+    case(fsm_stateReg)
+      `fsm_enumDefinition_defaultEncoding_fsm_idle : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_testDelta : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_waitFinder : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_sendResult : begin
+        if(_zz_4_)begin
+          io_pulseIn_ready = 1'b1;
+        end
+      end
+      default : begin
+      end
+    endcase
+  end
+
+  always @ (*) begin
+    _zz_2_ = 1'b0;
+    case(fsm_stateReg)
+      `fsm_enumDefinition_defaultEncoding_fsm_idle : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_testDelta : begin
+        if(_zz_5_)begin
+          _zz_2_ = 1'b1;
+        end
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_waitFinder : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_sendResult : begin
+      end
+      default : begin
+      end
+    endcase
+    if(((! (fsm_stateReg == `fsm_enumDefinition_defaultEncoding_fsm_waitFinder)) && (fsm_stateNext == `fsm_enumDefinition_defaultEncoding_fsm_waitFinder)))begin
+      _zz_2_ = 1'b1;
+    end
+  end
+
+  always @ (*) begin
+    fsm_stateNext = fsm_stateReg;
+    case(fsm_stateReg)
+      `fsm_enumDefinition_defaultEncoding_fsm_idle : begin
+        if(io_pulseIn_valid)begin
+          fsm_stateNext = `fsm_enumDefinition_defaultEncoding_fsm_testDelta;
+        end
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_testDelta : begin
+        if(_zz_5_)begin
+          fsm_stateNext = `fsm_enumDefinition_defaultEncoding_fsm_waitFinder;
+        end else begin
+          fsm_stateNext = `fsm_enumDefinition_defaultEncoding_fsm_sendResult;
+        end
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_waitFinder : begin
+        if(_zz_6_)begin
+          fsm_stateNext = `fsm_enumDefinition_defaultEncoding_fsm_sendResult;
+        end
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_sendResult : begin
+        if(_zz_4_)begin
+          fsm_stateNext = `fsm_enumDefinition_defaultEncoding_fsm_idle;
+        end
+      end
+      default : begin
+        fsm_stateNext = `fsm_enumDefinition_defaultEncoding_fsm_idle;
+      end
+    endcase
+  end
+
+  always @ (posedge Slow_clk) begin
+    fsm_stateReg <= fsm_stateNext;
+  end
+
+  always @ (posedge Slow_clk) begin
+    case(fsm_stateReg)
+      `fsm_enumDefinition_defaultEncoding_fsm_idle : begin
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_testDelta : begin
+        if(! _zz_5_) begin
+          nPoly <= (6'b111111);
+        end
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_waitFinder : begin
+        if(_zz_6_)begin
+          pulse_width_OLD <= lastWidth;
+          pulse_timestamp_OLD <= lastTimestamp;
+          beamWord_OLD <= lastState;
+          id_OLD <= lastId;
+
+          //lastWidth <= io_pulseIn_payload_pulse_width;
+          //lastTimestamp <= io_pulseIn_payload_pulse_timestamp;
+          //lastState <= io_pulseIn_payload_beamWord;
+          //lastId <= io_pulseIn_payload_id;
+
+          if(polyFinder_1__io_found)begin
+            nPoly <= {1'd0, polyFinder_1__io_polyFound};
+          end else begin
+            nPoly <= (6'b111111);
+          end
+        end
+      end
+      `fsm_enumDefinition_defaultEncoding_fsm_sendResult : begin
+        lastWidth <= io_pulseIn_payload_pulse_width;
+        lastTimestamp <= io_pulseIn_payload_pulse_timestamp;
+        lastState <= io_pulseIn_payload_beamWord;
+        lastId <= io_pulseIn_payload_id;
+      end
+      default : begin
+      end
+    endcase
+  end
+
+endmodule
+
+/*
 module PulseIdentifier (
       input   io_pulseIn_valid,
       output reg  io_pulseIn_ready,
@@ -1721,7 +2301,7 @@ module PulseIdentifier (
     .io_done_valid(polyFinder_1__io_done_valid),
     .io_done_ready(_zz_3_),
     .Slow_clk(Slow_clk)
- )/* synthesis syn_noprune=1 */;
+ );
   `ifndef SYNTHESIS
   always @(*) begin
     case(fsm_stateReg)
@@ -1875,6 +2455,7 @@ module PulseIdentifier (
   end
 
 endmodule
+*/
 
 module StreamArbiter_1_ (
       input   io_inputs_0_valid,
@@ -3789,7 +4370,7 @@ module LighthouseTopLevel (
     //.io_chosen(streamArbiter_2__io_chosen),
     //.io_chosenOH(streamArbiter_2__io_chosenOH),
     .Slow_clk(Slow_clk)
-  );
+  )/* synthesis syn_noprune=1 */;
   /*
   output [4:0] io_output_payload_id,
   output [15:0] io_output_payload_pulse_width,
@@ -3844,8 +4425,34 @@ module LighthouseTopLevel (
     .io_occupancy(io_output_fifo_io_occupancy),
     .io_availability(io_output_fifo_io_availability),
     .Slow_clk(Slow_clk)
+  )/* synthesis syn_noprune=1 */;
+
+  /*
+
+  PulseIdentifier slowArea_pulseIdentifier (
+    .io_pulseIn_valid(io_output_fifo_io_pop_valid),
+    .io_pulseIn_ready(slowArea_pulseIdentifier_io_pulseIn_ready),
+    .io_pulseIn_payload_id(temp_id2),
+    .io_pulseIn_payload_pulse_width(io_output_fifo_io_pop_payload_pulse_width),
+    .io_pulseIn_payload_pulse_timestamp(io_output_fifo_io_pop_payload_pulse_timestamp),
+    .io_pulseIn_payload_beamWord(io_output_fifo_io_pop_payload_beamWord),
+    .io_pulseOut_valid(slowArea_pulseIdentifier_io_pulseOut_valid),
+    //.io_pulseOut_ready(slowArea_identifiedBeamStream_ready),//slowArea_pulseOffsetFinder_io_pulseIn_ready
+    .io_pulseOut_ready(slowArea_pulseOffsetFinder_io_pulseIn_ready),//slowArea_pulseOffsetFinder_io_pulseIn_ready
+    .io_pulseOut_payload_npoly(slowArea_pulseIdentifier_io_pulseOut_payload_npoly),
+    .io_pulseOut_payload_pulse_width(slowArea_pulseIdentifier_io_pulseOut_payload_pulse_width),
+    .io_pulseOut_payload_pulse_timestamp(slowArea_pulseIdentifier_io_pulseOut_payload_pulse_timestamp),
+    .io_pulseOut_payload_beamWord(slowArea_pulseIdentifier_io_pulseOut_payload_beamWord),
+    .io_pulseOut_payload_id(temp_id3),
+    //To also get the data from the old impuls
+    .io_pulseOut_payload_pulse_width_OLD(),
+    .io_pulseOut_payload_pulse_timestamp_OLD(),
+    .io_pulseOut_payload_beamWord_OLD(),
+    .io_pulseOut_payload_id_OLD(),
+    .Slow_clk(Slow_clk)
   );
 
+  */
 
   PulseIdentifier slowArea_pulseIdentifier (
     .io_pulseIn_valid(io_output_fifo_io_pop_valid),
@@ -3864,6 +4471,7 @@ module LighthouseTopLevel (
     .io_pulseOut_payload_id(temp_id3),
     .Slow_clk(Slow_clk)
   )/* synthesis syn_noprune=1 */;
+
   PulseOffsetFinder slowArea_pulseOffsetFinder (
     .io_pulseIn_valid(slowArea_pulseIdentifier_io_pulseOut_valid),
     .io_pulseIn_ready(slowArea_pulseOffsetFinder_io_pulseIn_ready),

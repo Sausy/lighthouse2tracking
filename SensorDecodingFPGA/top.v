@@ -677,6 +677,7 @@ module top (
 
 
   //assign io_uart_txd = ( module_select ? io_uart_txd_2 : io_uart_txd_1);
+  //wire io_output_fifo_1__io_pop_valid;
 
     UartCtrl slowArea_uartCtrl (
       .io_config_frame_dataLength(io_config_frame_dataLength),
