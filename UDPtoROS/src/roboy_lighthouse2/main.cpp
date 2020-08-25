@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
   std::cout << "\nstart UDP Interface ... ";
   udpInterface *udp = new udpInterface("192.168.1.1");//TODO: set local ip automatically
-  udp->initClientSocket("192.168.1.11","4210"); //IP of client in this case a esp32
+  udp->initClientSocket("192.168.1.10","4210"); //IP of client in this case a esp32
   (void)udp->initServerSocket("8000");
 
   std::thread thread1 = udp->member1Thread(logginPort,sensorPort,imuPort);
@@ -56,10 +56,19 @@ int main(int argc, char *argv[])
     char **argv = NULL;
     ros::init(argc, argv, "lighthouse2ToRosMainFrame");
   }
+
   ros::NodeHandle nh;
   ros::Rate loop_rate(200);
 
+  std::cout << "\nstart Check if master is up";
+  while(!ros::master::check()){
+    loop_rate.sleep();
+  }
+
+
   //ros::Subscriber sub_handler = nh.subscribe("/test/path2", 1, sub_callback);
+
+  
 
 
   while (ros::ok())

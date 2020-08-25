@@ -82,12 +82,14 @@ class udpInterface {
 
     private:
       ros::NodeHandlePtr  nh;
-      ros::Publisher pubHandl_Sensor;
+      ros::Publisher pubHandl_Sensor, pubHandl_Sensor_Raw;
       roboy_middleware_msgs::DarkRoomSensorV2 ros_msg;
       void sendConfigObject (int32_t logginPort_l, int32_t sensorPort_l, int32_t imuPort_l);
 
       uint32_t ipDataConverter(const char * ipAdrresString);
       int resolvehelper(const char* hostname, int family, const char* service, sockaddr_storage* pAddr);
+
+      uint16_t outTimeBufferCnt;
 
 
 };

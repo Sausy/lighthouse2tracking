@@ -16,6 +16,7 @@ udpInterface::udpInterface(const char * localIP_){
   ROS_INFO("init[STARTED]...lighthouse2Data");
 
   pubHandl_Sensor = nh->advertise<roboy_middleware_msgs::DarkRoomSensorV2>("/roboy/middleware/DarkRoom/sensorsLH2", 1);
+  pubHandl_Sensor_Raw = nh->advertise<roboy_middleware_msgs::DarkRoomSensorV2>("/roboy/middleware/DarkRoom/sensorsLH2raw", 1);
 
   ROS_INFO("init[DONE]...lighthouse2Data");
 
@@ -195,6 +196,9 @@ void udpInterface::receiveData(){
                 //secondBeam = ((offset * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
                 ///azimuth, elevation = calculateAE(firstBeam, secondBeam)
 
+
+
+
                 acalc.angleCalc(msg.BeamWord,msg.E_width, msg.BaseStationID, &aData);
 
                 //printf("\n");
@@ -207,6 +211,11 @@ void udpInterface::receiveData(){
                 //std::cout << aData.elevation;
                 //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
                 std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
+                outTimeBufferCnt++;
+                if(outTimeBufferCnt >= 20){
+                  outTimeBufferCnt = 0;
+                  std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
+                }
                 //std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
 
                 std::stringstream ss_;
@@ -219,6 +228,15 @@ void udpInterface::receiveData(){
                 ros_msg.azimuth = aData.elevation;
 
                 pubHandl_Sensor.publish(ros_msg);
+
+                roboy_middleware_msgs::DarkRoomSensorV2 ros_msg_raw;
+                ros_msg.object_id = ss_.str();
+                ros_msg.base = (uint8_t)msg.BaseStationID;
+                ros_msg.SensorID =  (uint8_t)msg.SensorID;
+                ros_msg.elevation = (float)msg.BeamWord;
+                ros_msg.azimuth = (float)msg.E_width;
+
+                pubHandl_Sensor_Raw.publish(ros_msg_raw);
 
 
                   /*
