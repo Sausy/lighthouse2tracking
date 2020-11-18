@@ -67,14 +67,14 @@ set(robots_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(robots_SOURCE_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/robots)
-  set(robots_DEVEL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel)
+  set(robots_SOURCE_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/robots)
+  set(robots_DEVEL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel)
   set(robots_INSTALL_PREFIX "")
   set(robots_PREFIX ${robots_DEVEL_PREFIX})
 else()
   set(robots_SOURCE_PREFIX "")
   set(robots_DEVEL_PREFIX "")
-  set(robots_INSTALL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install)
+  set(robots_INSTALL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install)
   set(robots_PREFIX ${robots_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

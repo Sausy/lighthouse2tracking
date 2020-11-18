@@ -67,14 +67,14 @@ set(darkroom_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(darkroom_SOURCE_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom)
-  set(darkroom_DEVEL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel)
+  set(darkroom_SOURCE_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom)
+  set(darkroom_DEVEL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel)
   set(darkroom_INSTALL_PREFIX "")
   set(darkroom_PREFIX ${darkroom_DEVEL_PREFIX})
 else()
   set(darkroom_SOURCE_PREFIX "")
   set(darkroom_DEVEL_PREFIX "")
-  set(darkroom_INSTALL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install)
+  set(darkroom_INSTALL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install)
   set(darkroom_PREFIX ${darkroom_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(darkroom_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include " STREQUAL " ")
+if(NOT "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include " STREQUAL " ")
   set(darkroom_INCLUDE_DIRS "")
-  set(_include_dirs "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include")
+  set(_include_dirs "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/li
         message(FATAL_ERROR "Project 'darkroom' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'darkroom' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'darkroom' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/${idir}'.  ${_report}")
     endif()
     _list_append_unique(darkroom_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

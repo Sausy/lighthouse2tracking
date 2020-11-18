@@ -2,7 +2,7 @@
 
 message(STATUS "roboy_middleware_msgs: 19 messages, 15 services")
 
-set(MSG_I_FLAGS "-Iroboy_middleware_msgs:/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iroboy_middleware_msgs:/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,174 +17,174 @@ add_custom_target(roboy_middleware_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" "geometry_msgs/Transform:geometry_msgs/Quaternion:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" "roboy_middleware_msgs/MotorConfig"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" "geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" "geometry_msgs/Transform:geometry_msgs/Quaternion:geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" "geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" "roboy_middleware_msgs/MotorConfig"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" "geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" "geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" "geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" "roboy_middleware_msgs/ControllerState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" "roboy_middleware_msgs/ControllerState"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" "geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
 add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_middleware_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" ""
 )
 
 #
@@ -194,115 +194,115 @@ add_custom_target(_roboy_middleware_msgs_generate_messages_check_deps_${_filenam
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
@@ -310,93 +310,93 @@ _generate_msg_cpp(roboy_middleware_msgs
 
 ### Generating Services
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_cpp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_cpp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_middleware_msgs
 )
 
@@ -412,73 +412,73 @@ add_custom_target(roboy_middleware_msgs_generate_messages_cpp
 add_dependencies(roboy_middleware_msgs_generate_messages roboy_middleware_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_cpp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -491,115 +491,115 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_middleware_msgs_generate_mess
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
@@ -607,93 +607,93 @@ _generate_msg_eus(roboy_middleware_msgs
 
 ### Generating Services
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_eus(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_eus(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_middleware_msgs
 )
 
@@ -709,73 +709,73 @@ add_custom_target(roboy_middleware_msgs_generate_messages_eus
 add_dependencies(roboy_middleware_msgs_generate_messages roboy_middleware_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_eus _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -788,115 +788,115 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_middleware_msgs_generate_mess
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
@@ -904,93 +904,93 @@ _generate_msg_lisp(roboy_middleware_msgs
 
 ### Generating Services
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_lisp(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_lisp(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_middleware_msgs
 )
 
@@ -1006,73 +1006,73 @@ add_custom_target(roboy_middleware_msgs_generate_messages_lisp
 add_dependencies(roboy_middleware_msgs_generate_messages roboy_middleware_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_lisp _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1085,115 +1085,115 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_middleware_msgs_generate_mess
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
@@ -1201,93 +1201,93 @@ _generate_msg_nodejs(roboy_middleware_msgs
 
 ### Generating Services
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_nodejs(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_nodejs(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_middleware_msgs
 )
 
@@ -1303,73 +1303,73 @@ add_custom_target(roboy_middleware_msgs_generate_messages_nodejs
 add_dependencies(roboy_middleware_msgs_generate_messages roboy_middleware_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_nodejs _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1382,115 +1382,115 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_middleware_msgs_generate_mess
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_msg_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_msg_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
@@ -1498,93 +1498,93 @@ _generate_msg_py(roboy_middleware_msgs
 
 ### Generating Services
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
+)
+_generate_srv_py(roboy_middleware_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 _generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
-)
-_generate_srv_py(roboy_middleware_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_middleware_msgs
 )
 
@@ -1600,73 +1600,73 @@ add_custom_target(roboy_middleware_msgs_generate_messages_py
 add_dependencies(roboy_middleware_msgs_generate_messages roboy_middleware_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomOOTX.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/LighthousePoseCorrection.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorConfigService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MagneticSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematicsMultipleFrames.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ADCvalue.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensor.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DanceCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/ControllerState.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ForwardKinematics.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/InverseKinematics.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/ControlMode.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/EmergencyStop.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/FrameIK.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/MotorConfig.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/ArucoPose.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/HandCommand.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoom.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/JointController.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/MotorAngle.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/TorqueControl.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MotorCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/DanceTrajectory.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/srv/SystemCheck.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/MyoBrickCalibrationService.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomSensorV2.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/msg/JointStatus.msg" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/msg/DarkRoomStatistics.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/srv/XL320.srv" NAME_WE)
 add_dependencies(roboy_middleware_msgs_generate_messages_py _roboy_middleware_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

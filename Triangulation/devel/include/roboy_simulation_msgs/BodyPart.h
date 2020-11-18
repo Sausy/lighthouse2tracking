@@ -25,27 +25,32 @@ struct BodyPart_
   typedef BodyPart_<ContainerAllocator> Type;
 
   BodyPart_()
-    : id(0)
-    , link_id(0)
-    , position()  {
+    : roboy_id(0)
+    , link()
+    , position()
+    , mass(0.0)  {
     }
   BodyPart_(const ContainerAllocator& _alloc)
-    : id(0)
-    , link_id(0)
-    , position(_alloc)  {
+    : roboy_id(0)
+    , link(_alloc)
+    , position(_alloc)
+    , mass(0.0)  {
   (void)_alloc;
     }
 
 
 
-   typedef int32_t _id_type;
-  _id_type id;
+   typedef int32_t _roboy_id_type;
+  _roboy_id_type roboy_id;
 
-   typedef int32_t _link_id_type;
-  _link_id_type link_id;
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _link_type;
+  _link_type link;
 
    typedef  ::geometry_msgs::Point_<ContainerAllocator>  _position_type;
   _position_type position;
+
+   typedef double _mass_type;
+  _mass_type mass;
 
 
 
@@ -76,9 +81,10 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::roboy_simulation_msgs::BodyPart_<ContainerAllocator1> & lhs, const ::roboy_simulation_msgs::BodyPart_<ContainerAllocator2> & rhs)
 {
-  return lhs.id == rhs.id &&
-    lhs.link_id == rhs.link_id &&
-    lhs.position == rhs.position;
+  return lhs.roboy_id == rhs.roboy_id &&
+    lhs.link == rhs.link &&
+    lhs.position == rhs.position &&
+    lhs.mass == rhs.mass;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -101,12 +107,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::roboy_simulation_msgs::BodyPart_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::roboy_simulation_msgs::BodyPart_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -135,12 +141,12 @@ struct MD5Sum< ::roboy_simulation_msgs::BodyPart_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "4f76706811fad63028450434bc8c147d";
+    return "7ea6a0636760eaf5fe7e84691fe02368";
   }
 
   static const char* value(const ::roboy_simulation_msgs::BodyPart_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x4f76706811fad630ULL;
-  static const uint64_t static_value2 = 0x28450434bc8c147dULL;
+  static const uint64_t static_value1 = 0x7ea6a0636760eaf5ULL;
+  static const uint64_t static_value2 = 0xfe7e84691fe02368ULL;
 };
 
 template<class ContainerAllocator>
@@ -159,9 +165,10 @@ struct Definition< ::roboy_simulation_msgs::BodyPart_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int32 id\n"
-"int32 link_id\n"
+    return "int32 roboy_id\n"
+"string link\n"
 "geometry_msgs/Point position\n"
+"float64 mass\n"
 "\n"
 "================================================================================\n"
 "MSG: geometry_msgs/Point\n"
@@ -187,9 +194,10 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.id);
-      stream.next(m.link_id);
+      stream.next(m.roboy_id);
+      stream.next(m.link);
       stream.next(m.position);
+      stream.next(m.mass);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -208,13 +216,15 @@ struct Printer< ::roboy_simulation_msgs::BodyPart_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::roboy_simulation_msgs::BodyPart_<ContainerAllocator>& v)
   {
-    s << indent << "id: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.id);
-    s << indent << "link_id: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.link_id);
+    s << indent << "roboy_id: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.roboy_id);
+    s << indent << "link: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.link);
     s << indent << "position: ";
     s << std::endl;
     Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.position);
+    s << indent << "mass: ";
+    Printer<double>::stream(s, indent + "  ", v.mass);
   }
 };
 

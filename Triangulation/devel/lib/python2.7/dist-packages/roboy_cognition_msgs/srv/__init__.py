@@ -29,5 +29,6 @@ from ._ShowInstances import *
 from ._ShowProperty import *
 from ._ShowPropertyValue import *
 from ._Talk import *
+from ._TalkToFile import *
 from ._TrainSeq2Seq import *
 from ._WhichTones import *

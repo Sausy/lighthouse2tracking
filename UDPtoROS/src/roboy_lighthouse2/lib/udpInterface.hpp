@@ -54,6 +54,8 @@
 #include "lighthouse2Data.hpp"
 #include <ros/ros.h>
 #include <roboy_middleware_msgs/DarkRoomSensorV2.h>
+#include <roboy_middleware_msgs/LighthousePoseCorrection.h>
+#include <tf/tf.h>
 #include <ros/package.h>
 
 class udpInterface {
@@ -82,7 +84,7 @@ class udpInterface {
 
     private:
       ros::NodeHandlePtr  nh;
-      ros::Publisher pubHandl_Sensor, pubHandl_Sensor_Raw;
+      ros::Publisher pubHandl_Sensor, pubHandl_Sensor_Raw, pubHandl_Sensor_IMU, pubHandl_correctBase;
       roboy_middleware_msgs::DarkRoomSensorV2 ros_msg;
       void sendConfigObject (int32_t logginPort_l, int32_t sensorPort_l, int32_t imuPort_l);
 

@@ -20,7 +20,7 @@ broadcastIP(broadcastIP){
     WiFi.mode(WIFI_STA);
     WiFi.begin(SSID, PASSWD);
 
-    hostIP = IPAddress(192,168,1,1);
+    hostIP = IPAddress(10,0,0,1);
     //hostIP_static = IPAddress(192,168,1,1);
     xBit_blocking--;
 }
@@ -34,7 +34,7 @@ void WIFI_LOVE::DBG_func(){
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, pass);
 
-  hostIP = IPAddress(192,168,1,1);
+  hostIP = IPAddress(10,0,0,1);
 
   //Serial.print("SSID");Serial.print(ssid);Serial.print("\n");
   //printIP(hostIP);
@@ -152,7 +152,7 @@ int WIFI_LOVE::lighthouse2DataStream(DarkRoomProtobuf_lighthouseMsg msg)
     msg_static = msg;
     uint8_t res_static = ES_WIFI_ERROR;
 
-    hostIP_static = IPAddress(192,168,1,1);
+    hostIP_static = IPAddress(10,0,0,1);
 
     pb_ostream_t stream = pb_ostream_from_buffer(buffer_static, 512);
     status_static = pb_encode(&stream, DarkRoomProtobuf_lighthouseMsg_fields, &msg_static);

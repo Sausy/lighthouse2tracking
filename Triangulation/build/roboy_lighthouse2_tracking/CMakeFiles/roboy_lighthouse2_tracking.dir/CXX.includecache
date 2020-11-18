@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_control_msgs/SetControllerParameters.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_control_msgs/SetControllerParameters.h
 ros/service_traits.h
 -
 roboy_control_msgs/SetControllerParametersRequest.h
@@ -14,7 +14,7 @@ roboy_control_msgs/SetControllerParametersRequest.h
 roboy_control_msgs/SetControllerParametersResponse.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_control_msgs/SetControllerParametersRequest.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_control_msgs/SetControllerParametersRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_control_msgs/SetControllerParametersResponse.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_control_msgs/SetControllerParametersResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ArucoPose.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/ArucoPose.h
 string
 -
 vector
@@ -66,7 +66,7 @@ geometry_msgs/Pose.h
 geometry_msgs/Point.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ControlMode.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/ControlMode.h
 ros/service_traits.h
 -
 roboy_middleware_msgs/ControlModeRequest.h
@@ -74,7 +74,7 @@ roboy_middleware_msgs/ControlModeRequest.h
 roboy_middleware_msgs/ControlModeResponse.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ControlModeRequest.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/ControlModeRequest.h
 string
 -
 vector
@@ -90,7 +90,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/ControlModeResponse.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/ControlModeResponse.h
 string
 -
 vector
@@ -106,7 +106,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoom.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/DarkRoom.h
 string
 -
 vector
@@ -122,7 +122,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomOOTX.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/DarkRoomOOTX.h
 string
 -
 vector
@@ -138,7 +138,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomSensor.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/DarkRoomSensor.h
 string
 -
 vector
@@ -156,7 +156,7 @@ ros/message_operations.h
 geometry_msgs/Vector3.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomSensorV2.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/DarkRoomSensorV2.h
 string
 -
 vector
@@ -172,7 +172,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomStatistics.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/DarkRoomStatistics.h
 string
 -
 vector
@@ -188,7 +188,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/DarkRoomStatus.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/DarkRoomStatus.h
 string
 -
 vector
@@ -204,7 +204,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/LighthousePoseCorrection.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/LighthousePoseCorrection.h
 string
 -
 vector
@@ -222,7 +222,7 @@ ros/message_operations.h
 geometry_msgs/Transform.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorCommand.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/MotorCommand.h
 string
 -
 vector
@@ -238,7 +238,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorConfig.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/MotorConfig.h
 string
 -
 vector
@@ -254,7 +254,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorConfigService.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/MotorConfigService.h
 ros/service_traits.h
 -
 roboy_middleware_msgs/MotorConfigServiceRequest.h
@@ -262,7 +262,7 @@ roboy_middleware_msgs/MotorConfigServiceRequest.h
 roboy_middleware_msgs/MotorConfigServiceResponse.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorConfigServiceRequest.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/MotorConfigServiceRequest.h
 string
 -
 vector
@@ -280,7 +280,7 @@ ros/message_operations.h
 roboy_middleware_msgs/MotorConfig.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include/roboy_middleware_msgs/MotorConfigServiceResponse.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include/roboy_middleware_msgs/MotorConfigServiceResponse.h
 string
 -
 vector
@@ -296,7 +296,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/include/common_utilities/UDPSocket.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/include/common_utilities/UDPSocket.hpp
 stdlib.h
 -
 unistd.h
@@ -350,7 +350,7 @@ vector
 ros/ros.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/include/common_utilities/rviz_visualization.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/include/common_utilities/rviz_visualization.hpp
 ros/ros.h
 -
 ros/package.h
@@ -382,7 +382,7 @@ string
 sys/stat.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/include/common_utilities/CommonDefinitions.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/include/common_utilities/CommonDefinitions.h
 stdint.h
 -
 map
@@ -390,7 +390,7 @@ map
 vector
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -402,9 +402,9 @@ unsupported/Eigen/NumericalDiff
 iostream
 -
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase2.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase2.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -416,9 +416,9 @@ unsupported/Eigen/NumericalDiff
 iostream
 -
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase3.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase3.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -430,9 +430,9 @@ unsupported/Eigen/NumericalDiff
 iostream
 -
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase4.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/InYourGibbousPhase4.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -444,17 +444,17 @@ unsupported/Eigen/NumericalDiff
 iostream
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/LighthouseEstimator.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/LighthouseEstimator.hpp
 darkroom/Transform.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Transform.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Transform.hpp
 darkroom/Triangulation.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Triangulation.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Triangulation.hpp
 darkroom/PoseEstimatorSensorCloud.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/PoseEstimatorSensorCloud.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/PoseEstimatorSensorCloud.hpp
 darkroom/PoseEstimatorMultiLighthouse.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/PoseEstimatorMultiLighthouse.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/PoseEstimatorMultiLighthouse.hpp
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 common_utilities/rviz_visualization.hpp
 -
 common_utilities/CommonDefinitions.h
@@ -478,17 +478,17 @@ atomic
 mutex
 -
 darkroom/InYourGibbousPhase.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase.hpp
 darkroom/InYourGibbousPhase2.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase2.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase2.hpp
 darkroom/InYourGibbousPhase3.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase3.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase3.hpp
 darkroom/InYourGibbousPhase4.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase4.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/InYourGibbousPhase4.hpp
 ros/package.h
 -
 darkroom/Utilities.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Utilities.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Utilities.hpp
 stdlib.h
 -
 stdio.h
@@ -498,7 +498,7 @@ math.h
 libalglib/optimization.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/LighthouseSimulator.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/LighthouseSimulator.hpp
 ros/ros.h
 -
 ros/package.h
@@ -524,19 +524,19 @@ cstdint
 sensor_msgs/Imu.h
 -
 darkroom/Transform.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Transform.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Transform.hpp
 darkroom/Triangulation.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Triangulation.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Triangulation.hpp
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 darkroom/Utilities.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Utilities.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Utilities.hpp
 pcl/PolygonMesh.h
 -
 pcl/io/vtk_lib_io.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/PoseEstimatorMultiLighthouse.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/PoseEstimatorMultiLighthouse.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -548,7 +548,7 @@ unsupported/Eigen/NumericalDiff
 iostream
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/PoseEstimatorSensorCloud.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/PoseEstimatorSensorCloud.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -560,7 +560,7 @@ unsupported/Eigen/NumericalDiff
 iostream
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/Sensor.hpp
 ros/ros.h
 -
 Eigen/Core
@@ -570,13 +570,13 @@ Eigen/Dense
 Eigen/Geometry
 -
 ../../../yamc/include/alternate_shared_mutex.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
 vector
 -
 chrono
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/TrackedObject.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/TrackedObject.hpp
 ros/ros.h
 -
 ros/package.h
@@ -586,6 +586,8 @@ roboy_middleware_msgs/DarkRoom.h
 roboy_middleware_msgs/DarkRoomStatistics.h
 -
 roboy_middleware_msgs/DarkRoomSensorV2.h
+-
+std_msgs/Bool.h
 -
 Eigen/Core
 -
@@ -608,11 +610,11 @@ common_utilities/rviz_visualization.hpp
 common_utilities/UDPSocket.hpp
 -
 darkroom/LighthouseEstimator.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/LighthouseEstimator.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/LighthouseEstimator.hpp
 robot_localization/ros_filter_types.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/Transform.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/Transform.hpp
 Eigen/Core
 -
 Eigen/Dense
@@ -626,27 +628,27 @@ tf/transform_broadcaster.h
 tf/transform_listener.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/Triangulation.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/Triangulation.hpp
 Eigen/Core
 -
 Eigen/Dense
 -
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/Utilities.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/Utilities.hpp
 fstream
 -
 darkroom/Triangulation.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Triangulation.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Triangulation.hpp
 yaml-cpp/yaml.h
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/yaml-cpp/yaml.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/yaml-cpp/yaml.h
 sys/stat.h
 -
 boost/filesystem.hpp
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
 cassert
 -
 chrono
@@ -656,11 +658,11 @@ condition_variable
 mutex
 -
 yamc_rwlock_sched.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_lighthouse2_tracking/main.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_lighthouse2_tracking/main.cpp
 thread
 -
 roboy_middleware_msgs/MotorCommand.h
@@ -676,6 +678,12 @@ roboy_middleware_msgs/DarkRoomStatistics.h
 roboy_middleware_msgs/DarkRoomStatus.h
 -
 roboy_middleware_msgs/DarkRoomOOTX.h
+-
+roboy_middleware_msgs/DarkRoomSensor.h
+-
+roboy_middleware_msgs/DarkRoomSensorV2.h
+-
+roboy_middleware_msgs/LighthousePoseCorrection.h
 -
 common_utilities/CommonDefinitions.h
 -
@@ -2366,6 +2374,22 @@ std_msgs/Header.h
 geometry_msgs/Point32.h
 -
 sensor_msgs/ChannelFloat32.h
+-
+
+/opt/ros/melodic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/melodic/include/std_msgs/ColorRGBA.h

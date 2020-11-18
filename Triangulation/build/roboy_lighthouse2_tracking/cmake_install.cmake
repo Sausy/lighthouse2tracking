@@ -1,8 +1,8 @@
-# Install script for directory: /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_lighthouse2_tracking
+# Install script for directory: /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_lighthouse2_tracking
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install")
+  set(CMAKE_INSTALL_PREFIX "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/roboy_lighthouse2_tracking/catkin_generated/installspace/roboy_lighthouse2_tracking.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/roboy_lighthouse2_tracking/catkin_generated/installspace/roboy_lighthouse2_tracking.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_lighthouse2_tracking/cmake" TYPE FILE FILES
-    "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/roboy_lighthouse2_tracking/catkin_generated/installspace/roboy_lighthouse2_trackingConfig.cmake"
-    "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/roboy_lighthouse2_tracking/catkin_generated/installspace/roboy_lighthouse2_trackingConfig-version.cmake"
+    "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/roboy_lighthouse2_tracking/catkin_generated/installspace/roboy_lighthouse2_trackingConfig.cmake"
+    "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/roboy_lighthouse2_tracking/catkin_generated/installspace/roboy_lighthouse2_trackingConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_lighthouse2_tracking" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_lighthouse2_tracking/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboy_lighthouse2_tracking" TYPE FILE FILES "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_lighthouse2_tracking/package.xml")
 endif()
 

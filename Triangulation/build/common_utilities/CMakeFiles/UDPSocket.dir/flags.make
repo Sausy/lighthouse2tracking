@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -g -g -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"common_utilities\" -DUDPSocket_EXPORTS
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/include -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/include -I/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/include -I/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include 
 

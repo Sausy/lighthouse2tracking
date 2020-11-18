@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/testMe.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/testMe.cpp
 stdafx.h
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/stdafx.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/stdafx.h
 stdlib.h
 -
 stdio.h
@@ -16,7 +16,7 @@ stdio.h
 math.h
 -
 optimization.h
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/optimization.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/optimization.h
 
 /usr/include/libalglib/alglibinternal.h
 ap.h

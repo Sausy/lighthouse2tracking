@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build"
-export PYTHONPATH="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src:$ROS_PACKAGE_PATH"

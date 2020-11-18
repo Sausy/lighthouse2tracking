@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src
+CMAKE_SOURCE_DIR = /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build
+CMAKE_BINARY_DIR = /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/CMakeFiles /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/common_utilities/CMakeFiles/progress.marks
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/CMakeFiles 0
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/CMakeFiles /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/common_utilities/CMakeFiles/progress.marks
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/clean
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/preinstall
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/preinstall
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ actionlib_generate_messages_py: common_utilities/CMakeFiles/actionlib_generate_m
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 .PHONY : common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ actionlib_generate_messages_lisp: common_utilities/CMakeFiles/actionlib_generate
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ sensor_msgs_generate_messages_lisp: common_utilities/CMakeFiles/sensor_msgs_gene
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ sensor_msgs_generate_messages_eus: common_utilities/CMakeFiles/sensor_msgs_gener
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ tf_generate_messages_cpp: common_utilities/CMakeFiles/tf_generate_messages_cpp.d
 
 # fast build rule for target.
 tf_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_cpp.dir/build
 .PHONY : tf_generate_messages_cpp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ sensor_msgs_generate_messages_cpp: common_utilities/CMakeFiles/sensor_msgs_gener
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_eus.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ tf_generate_messages_eus: common_utilities/CMakeFiles/tf_generate_messages_eus.d
 
 # fast build rule for target.
 tf_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_eus.dir/build
 .PHONY : tf_generate_messages_eus/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 .PHONY : common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ actionlib_generate_messages_eus: common_utilities/CMakeFiles/actionlib_generate_
 
 # fast build rule for target.
 actionlib_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 .PHONY : common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ actionlib_generate_messages_cpp: common_utilities/CMakeFiles/actionlib_generate_
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ sensor_msgs_generate_messages_nodejs: common_utilities/CMakeFiles/sensor_msgs_ge
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_py.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ tf_generate_messages_py: common_utilities/CMakeFiles/tf_generate_messages_py.dir
 
 # fast build rule for target.
 tf_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_py.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_py.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ sensor_msgs_generate_messages_py: common_utilities/CMakeFiles/sensor_msgs_genera
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make common_utilities/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ tf_generate_messages_lisp: common_utilities/CMakeFiles/tf_generate_messages_lisp
 
 # fast build rule for target.
 tf_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_lisp.dir/build
 .PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ tf2_msgs_generate_messages_eus: common_utilities/CMakeFiles/tf2_msgs_generate_me
 
 # fast build rule for target.
 tf2_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ tf_generate_messages_nodejs: common_utilities/CMakeFiles/tf_generate_messages_no
 
 # fast build rule for target.
 tf_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/tf_generate_messages_nodejs.dir/build
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ tf2_msgs_generate_messages_nodejs: common_utilities/CMakeFiles/tf2_msgs_generate
 
 # fast build rule for target.
 tf2_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ tf2_msgs_generate_messages_py: common_utilities/CMakeFiles/tf2_msgs_generate_mes
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ tf2_msgs_generate_messages_lisp: common_utilities/CMakeFiles/tf2_msgs_generate_m
 
 # fast build rule for target.
 tf2_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 .PHONY : common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ visualization_msgs_generate_messages_cpp: common_utilities/CMakeFiles/visualizat
 
 # fast build rule for target.
 visualization_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 .PHONY : common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ visualization_msgs_generate_messages_eus: common_utilities/CMakeFiles/visualizat
 
 # fast build rule for target.
 visualization_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 .PHONY : common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ visualization_msgs_generate_messages_lisp: common_utilities/CMakeFiles/visualiza
 
 # fast build rule for target.
 visualization_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
 .PHONY : visualization_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 .PHONY : common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ visualization_msgs_generate_messages_nodejs: common_utilities/CMakeFiles/visuali
 
 # fast build rule for target.
 visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ visualization_msgs_generate_messages_py: common_utilities/CMakeFiles/visualizati
 
 # fast build rule for target.
 visualization_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make common_utilities/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/UDPSocket.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/UDPSocket.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/UDPSocket.dir/rule
 .PHONY : common_utilities/CMakeFiles/UDPSocket.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ UDPSocket: common_utilities/CMakeFiles/UDPSocket.dir/rule
 
 # fast build rule for target.
 UDPSocket/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/build
 .PHONY : UDPSocket/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/rule
 .PHONY : common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ ROS_MASTER_URI_broadcaster: common_utilities/CMakeFiles/ROS_MASTER_URI_broadcast
 
 # fast build rule for target.
 ROS_MASTER_URI_broadcaster/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build
 .PHONY : ROS_MASTER_URI_broadcaster/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/rule
 .PHONY : common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ ROS_MASTER_URI_receiver: common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir
 
 # fast build rule for target.
 ROS_MASTER_URI_receiver/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build
 .PHONY : ROS_MASTER_URI_receiver/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/rviz_visualization.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/rviz_visualization.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/rviz_visualization.dir/rule
 .PHONY : common_utilities/CMakeFiles/rviz_visualization.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ rviz_visualization: common_utilities/CMakeFiles/rviz_visualization.dir/rule
 
 # fast build rule for target.
 rviz_visualization/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/build
 .PHONY : rviz_visualization/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/MotorConfig.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/MotorConfig.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/MotorConfig.dir/rule
 .PHONY : common_utilities/CMakeFiles/MotorConfig.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ MotorConfig: common_utilities/CMakeFiles/MotorConfig.dir/rule
 
 # fast build rule for target.
 MotorConfig/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/build
 .PHONY : MotorConfig/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ tf2_msgs_generate_messages_cpp: common_utilities/CMakeFiles/tf2_msgs_generate_me
 
 # fast build rule for target.
 tf2_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make common_utilities/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/rfid_unlocker.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/rfid_unlocker.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/rfid_unlocker.dir/rule
 .PHONY : common_utilities/CMakeFiles/rfid_unlocker.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ rfid_unlocker: common_utilities/CMakeFiles/rfid_unlocker.dir/rule
 
 # fast build rule for target.
 rfid_unlocker/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/build
 .PHONY : rfid_unlocker/fast
 
 # Convenience name for target.
 common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -629,7 +629,7 @@ actionlib_generate_messages_nodejs: common_utilities/CMakeFiles/actionlib_genera
 
 # fast build rule for target.
 actionlib_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make common_utilities/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 src/MotorConfig.o: src/MotorConfig.cpp.o
@@ -638,7 +638,7 @@ src/MotorConfig.o: src/MotorConfig.cpp.o
 
 # target to build an object file
 src/MotorConfig.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.o
 .PHONY : src/MotorConfig.cpp.o
 
 src/MotorConfig.i: src/MotorConfig.cpp.i
@@ -647,7 +647,7 @@ src/MotorConfig.i: src/MotorConfig.cpp.i
 
 # target to preprocess a source file
 src/MotorConfig.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.i
 .PHONY : src/MotorConfig.cpp.i
 
 src/MotorConfig.s: src/MotorConfig.cpp.s
@@ -656,7 +656,7 @@ src/MotorConfig.s: src/MotorConfig.cpp.s
 
 # target to generate assembly for a file
 src/MotorConfig.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/MotorConfig.dir/build.make common_utilities/CMakeFiles/MotorConfig.dir/src/MotorConfig.cpp.s
 .PHONY : src/MotorConfig.cpp.s
 
 src/ROS_MASTER_URI_broadcaster.o: src/ROS_MASTER_URI_broadcaster.cpp.o
@@ -665,7 +665,7 @@ src/ROS_MASTER_URI_broadcaster.o: src/ROS_MASTER_URI_broadcaster.cpp.o
 
 # target to build an object file
 src/ROS_MASTER_URI_broadcaster.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.o
 .PHONY : src/ROS_MASTER_URI_broadcaster.cpp.o
 
 src/ROS_MASTER_URI_broadcaster.i: src/ROS_MASTER_URI_broadcaster.cpp.i
@@ -674,7 +674,7 @@ src/ROS_MASTER_URI_broadcaster.i: src/ROS_MASTER_URI_broadcaster.cpp.i
 
 # target to preprocess a source file
 src/ROS_MASTER_URI_broadcaster.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.i
 .PHONY : src/ROS_MASTER_URI_broadcaster.cpp.i
 
 src/ROS_MASTER_URI_broadcaster.s: src/ROS_MASTER_URI_broadcaster.cpp.s
@@ -683,7 +683,7 @@ src/ROS_MASTER_URI_broadcaster.s: src/ROS_MASTER_URI_broadcaster.cpp.s
 
 # target to generate assembly for a file
 src/ROS_MASTER_URI_broadcaster.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_broadcaster.dir/src/ROS_MASTER_URI_broadcaster.cpp.s
 .PHONY : src/ROS_MASTER_URI_broadcaster.cpp.s
 
 src/ROS_MASTER_URI_receiver.o: src/ROS_MASTER_URI_receiver.cpp.o
@@ -692,7 +692,7 @@ src/ROS_MASTER_URI_receiver.o: src/ROS_MASTER_URI_receiver.cpp.o
 
 # target to build an object file
 src/ROS_MASTER_URI_receiver.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.o
 .PHONY : src/ROS_MASTER_URI_receiver.cpp.o
 
 src/ROS_MASTER_URI_receiver.i: src/ROS_MASTER_URI_receiver.cpp.i
@@ -701,7 +701,7 @@ src/ROS_MASTER_URI_receiver.i: src/ROS_MASTER_URI_receiver.cpp.i
 
 # target to preprocess a source file
 src/ROS_MASTER_URI_receiver.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.i
 .PHONY : src/ROS_MASTER_URI_receiver.cpp.i
 
 src/ROS_MASTER_URI_receiver.s: src/ROS_MASTER_URI_receiver.cpp.s
@@ -710,7 +710,7 @@ src/ROS_MASTER_URI_receiver.s: src/ROS_MASTER_URI_receiver.cpp.s
 
 # target to generate assembly for a file
 src/ROS_MASTER_URI_receiver.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/build.make common_utilities/CMakeFiles/ROS_MASTER_URI_receiver.dir/src/ROS_MASTER_URI_receiver.cpp.s
 .PHONY : src/ROS_MASTER_URI_receiver.cpp.s
 
 src/UDPSocket.o: src/UDPSocket.cpp.o
@@ -719,7 +719,7 @@ src/UDPSocket.o: src/UDPSocket.cpp.o
 
 # target to build an object file
 src/UDPSocket.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/src/UDPSocket.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/src/UDPSocket.cpp.o
 .PHONY : src/UDPSocket.cpp.o
 
 src/UDPSocket.i: src/UDPSocket.cpp.i
@@ -728,7 +728,7 @@ src/UDPSocket.i: src/UDPSocket.cpp.i
 
 # target to preprocess a source file
 src/UDPSocket.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/src/UDPSocket.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/src/UDPSocket.cpp.i
 .PHONY : src/UDPSocket.cpp.i
 
 src/UDPSocket.s: src/UDPSocket.cpp.s
@@ -737,7 +737,7 @@ src/UDPSocket.s: src/UDPSocket.cpp.s
 
 # target to generate assembly for a file
 src/UDPSocket.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/src/UDPSocket.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/UDPSocket.dir/build.make common_utilities/CMakeFiles/UDPSocket.dir/src/UDPSocket.cpp.s
 .PHONY : src/UDPSocket.cpp.s
 
 src/rfid_unlocker.o: src/rfid_unlocker.cpp.o
@@ -746,7 +746,7 @@ src/rfid_unlocker.o: src/rfid_unlocker.cpp.o
 
 # target to build an object file
 src/rfid_unlocker.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.o
 .PHONY : src/rfid_unlocker.cpp.o
 
 src/rfid_unlocker.i: src/rfid_unlocker.cpp.i
@@ -755,7 +755,7 @@ src/rfid_unlocker.i: src/rfid_unlocker.cpp.i
 
 # target to preprocess a source file
 src/rfid_unlocker.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.i
 .PHONY : src/rfid_unlocker.cpp.i
 
 src/rfid_unlocker.s: src/rfid_unlocker.cpp.s
@@ -764,7 +764,7 @@ src/rfid_unlocker.s: src/rfid_unlocker.cpp.s
 
 # target to generate assembly for a file
 src/rfid_unlocker.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rfid_unlocker.dir/build.make common_utilities/CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.s
 .PHONY : src/rfid_unlocker.cpp.s
 
 src/rviz_visualization.o: src/rviz_visualization.cpp.o
@@ -773,7 +773,7 @@ src/rviz_visualization.o: src/rviz_visualization.cpp.o
 
 # target to build an object file
 src/rviz_visualization.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/src/rviz_visualization.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/src/rviz_visualization.cpp.o
 .PHONY : src/rviz_visualization.cpp.o
 
 src/rviz_visualization.i: src/rviz_visualization.cpp.i
@@ -782,7 +782,7 @@ src/rviz_visualization.i: src/rviz_visualization.cpp.i
 
 # target to preprocess a source file
 src/rviz_visualization.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/src/rviz_visualization.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/src/rviz_visualization.cpp.i
 .PHONY : src/rviz_visualization.cpp.i
 
 src/rviz_visualization.s: src/rviz_visualization.cpp.s
@@ -791,7 +791,7 @@ src/rviz_visualization.s: src/rviz_visualization.cpp.s
 
 # target to generate assembly for a file
 src/rviz_visualization.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/src/rviz_visualization.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f common_utilities/CMakeFiles/rviz_visualization.dir/build.make common_utilities/CMakeFiles/rviz_visualization.dir/src/rviz_visualization.cpp.s
 .PHONY : src/rviz_visualization.cpp.s
 
 # Help Target
@@ -867,6 +867,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

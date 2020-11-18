@@ -63,31 +63,51 @@ LightHouseDataProcessing::LightHouseDataProcessing(){
 
 }
 
-#define P (60 * M_PI / 180)
-#define P1 (120 * M_PI / 180)
-#define P2 (tan( P / 2 ))
-#define PREBEAM (8.0 * 2 * M_PI)
+#define P (60.0 * M_PI / 180.0)
+#define P1 (120.0 * M_PI / 180.0)
+#define P2 (tan( P / 2.0 ))
+#define PREBEAM (8.0 * 2.0 * M_PI)
 void LightHouseDataProcessing::angleCalc(uint32_t firstBeamTick, uint32_t secondBeamTick, uint32_t channel, struct angleData * retAngle){
 
-  
+
     //retAngle->azimuth = 0.1;
     //retAngle->elevation = 0.2;
     //std::cout << "\nFirst TICK: " << firstBeamTick << " Second TICK: " << secondBeamTick;
-    long double BeamBuffer1 = firstBeamTick * PREBEAM;
-    long double BeamBuffer2 = secondBeamTick * PREBEAM;
+    //long double BeamBuffer1 = firstBeamTick * 2 * 2 * M_PI;//* PREBEAM;
+    //long double BeamBuffer2 = secondBeamTick * 2 * 2 * M_PI;// * PREBEAM;
+    long double BeamBuffer1 = (long double)firstBeamTick * 1.0;//* PREBEAM;
+    long double BeamBuffer2 = (long double)secondBeamTick * 1.0;
+
+    BeamBuffer1 = (long double)(BeamBuffer1 * PREBEAM);//* PREBEAM;
+    BeamBuffer2 = (long double)(BeamBuffer2 * PREBEAM);
+
+    /*
+    long double secondBeamBuffer = (secondBeam - PERIODS[channel-1]/2);
+    if(secondBeamBuffer < PERIODS[channel-1]/2){
+      BeamBuffer2 = secondBeamBuffer * PREBEAM;// * PREBEAM;
+    }else{
+      secondBeamBuffer = secondBeam * PREBEAM;// * PREBEAM;
+      BeamBuffer2 = (secondBeamBuffer - PERIODS[channel-1]/2);
+    }*/
+
     long double firstBeam  = (BeamBuffer1  / PERIODS[channel-1]);
     long double secondBeam = (BeamBuffer2  / PERIODS[channel-1]);//((secondBeamTick * 8.0) / PERIODS[channel-1]) * 2 * M_PI;
 
     //std::cout << "\nFirst Beam: " << firstBeam << " Second Beam: " << secondBeam;
 
+
+    //long double BeamDiv = (secondBeamBuffer - firstBeam);
     long double BeamDiv = (secondBeam - firstBeam);
+    //long double BeamAdd = (secondBeamBuffer + firstBeam);
     long double BeamAdd = (secondBeam + firstBeam);
-    long double BeamAddHalf = BeamAdd/2;
+    long double BeamAddHalf = BeamAdd/2.0;
 
     retAngle->azimuth = BeamAddHalf - M_PI;
+
     //double p    = P;
     long double beta = BeamDiv - P1;
-    long double calcBuffer = sin(beta/2);
+    //long double calcBuffer = sin(beta/2);
+    long double calcBuffer = sin(beta/2.0);
     long double calcBuffer2 = calcBuffer/P2;
     //std::cout << "\nP1: " << P1;
     //std::cout << "\ncalc Buffer: " << calcBuffer << "\ncalc Buffer2: " << calcBuffer2;

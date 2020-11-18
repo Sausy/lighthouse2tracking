@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/gazebo/ImuModelPlugin.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/gazebo/ImuModelPlugin.hpp
 ros/ros.h
 -
 gazebo/gazebo.hh
@@ -24,11 +24,11 @@ sensor_msgs/Imu.h
 chrono
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/gazebo/ImuModelPlugin.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/gazebo/ImuModelPlugin.cpp
 tinyxml.h
 -
 darkroom/gazebo/ImuModelPlugin.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/gazebo/darkroom/gazebo/ImuModelPlugin.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/gazebo/darkroom/gazebo/ImuModelPlugin.hpp
 
 /opt/ros/melodic/include/geometry_msgs/Quaternion.h
 string

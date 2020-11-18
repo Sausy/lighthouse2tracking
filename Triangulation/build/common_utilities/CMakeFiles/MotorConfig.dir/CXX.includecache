@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/include/common_utilities/MotorConfig.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/include/common_utilities/MotorConfig.hpp
 ros/ros.h
 -
 map
@@ -24,11 +24,11 @@ unistd.h
 common_utilities/CommonDefinitions.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/src/MotorConfig.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/src/MotorConfig.cpp
 common_utilities/MotorConfig.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/src/common_utilities/MotorConfig.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/src/common_utilities/MotorConfig.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_middleware_msgs/include/common_utilities/CommonDefinitions.h
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_middleware_msgs/include/common_utilities/CommonDefinitions.h
 stdint.h
 -
 map

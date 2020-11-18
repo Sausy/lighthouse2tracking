@@ -1,6 +1,6 @@
 #include <udpInterface.hpp>
 #define BUFF_SIZE 1024
-#define localIP "192.168.1.1"
+#define localIP "10.0.0.1"
 
 udpInterface::udpInterface(const char * localIP_){
   //if(isServer_)
@@ -17,14 +17,17 @@ udpInterface::udpInterface(const char * localIP_){
 
   pubHandl_Sensor = nh->advertise<roboy_middleware_msgs::DarkRoomSensorV2>("/roboy/middleware/DarkRoom/sensorsLH2", 1);
   pubHandl_Sensor_Raw = nh->advertise<roboy_middleware_msgs::DarkRoomSensorV2>("/roboy/middleware/DarkRoom/sensorsLH2raw", 1);
+  pubHandl_Sensor_IMU = nh->advertise<roboy_middleware_msgs::LighthousePoseCorrection>("/roboy/middleware/DarkRoom/imuLH2", 1);
+
+  //pubHandl_correctBase = nh->advertise<roboy_middleware_msgs::LighthousePoseCorrection>("/roboy/middleware/DarkRoom/lhcorrect", 1);
 
   ROS_INFO("init[DONE]...lighthouse2Data");
 
   localIp =ipDataConverter(localIP_);
 
-  uint8_t ipAddr_firstByte = 192;
-  uint8_t ipAddr_seconByte = 168;
-  uint8_t ipAddr_thirdByte = 1;
+  uint8_t ipAddr_firstByte = 10;
+  uint8_t ipAddr_seconByte = 0;
+  uint8_t ipAddr_thirdByte = 0;
   uint8_t ipAddr_fourthByte = 1;
 
   ip_address = (ipAddr_fourthByte<<24) | (ipAddr_thirdByte<<16) | (ipAddr_seconByte<<8) | (ipAddr_firstByte);
@@ -114,6 +117,7 @@ int udpInterface::initServerSocket(const char* port){
 
 
 void udpInterface::receiveData(){
+      static float w,x,y,z;
 
       do{
         char msgbuf[BUFF_SIZE];
@@ -172,119 +176,166 @@ void udpInterface::receiveData(){
           printf(" BaseStationID %4d", msg.BaseStationID);
           printf(" BaseStationChanel %4d", msg.BaseStationChanel);*/
 
-          uint8_t lut_Poly_id = ((msg.BaseStationID-1)<<1) | msg.BaseStationChanel;
-          //printf(" BaseStationID %d(%d) = %d", msg.BaseStationID, msg.BaseStationChanel, lut_Poly_id);
-
-          uint32_t lut_iteration_first = 0;
-          uint32_t lut_iteration_second = 0;
-
-          LightHouseDataProcessing acalc;
-          struct angleData aData;
-          aData.azimuth = 0.7;
-          aData.elevation = 0.7;
-          uint32_t foo_wtf = msg.E_width & 0x00f80000;
-          if( foo_wtf != 0){
-            ROS_ERROR("[SID:%d]there was an incorrect Beamword ... [First] %x ",msg.SensorID, msg.E_width);
-          }
-          if( (msg.BeamWord&0x00f80000) == 0xf80000){
-            ROS_ERROR("[SID:%d]there was an incorrect Beamword ... [Second] %x",msg.SensorID, msg.BeamWord);
-          }
+          if(msg.BaseStationID == 222){
 
 
-          if(lut_Poly_id < 32){
-                //firstBeam = ((lastMeasurements[channel] * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
-                //secondBeam = ((offset * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
-                ///azimuth, elevation = calculateAE(firstBeam, secondBeam)
+            w=(float)(msg.SensorID)/1000.0;
+            w=w-2.0;
+            x=(float)(msg.BeamWord)/1000.0;
+            x=x-2.0;
+            y=(float)(msg.Timestamp)/1000.0;
+            y=y-2.0;
+            z=(float)(msg.E_width)/1000.0;
+            z=z-2.0;
+            printf("IMU DATA: \n");
+            printf("calibrated %d \n", msg.BaseStationChanel);
+            printf("w %f", w); //1000
+            printf("x %f", x);
+            printf("y %f", y);
+            printf("z %f", z);
+
+            roboy_middleware_msgs::LighthousePoseCorrection tf_msg;
+
+            tf::Transform tf;
+            tf::Vector3 position(0,0,0);
+            tf::Quaternion orientation(x,y,z,w);
+            tf.setOrigin(position);
+            tf.setRotation(orientation);
+
+            tf_msg.id = 0;
+            tf_msg.type = 0; //relativ==0 ; absolut ==1
+            tf::transformTFToMsg(tf, tf_msg.tf);
+
+            //int32 id
+            ///uint32 type
+            //geometry_msgs/Transform tf
+
+            pubHandl_Sensor_IMU.publish(tf_msg);
 
 
+            //Serial.print((float)event.orientation.x);
+            //Serial.print(F(" "));
+            //Serial.print((float)event.orientation.y);
+            //Serial.print(F(" "));
+            //Serial.print((float)event.orientation.z);
+            //Serial.println(F(""));
+          }else{
 
+            uint8_t lut_Poly_id = ((msg.BaseStationID-1)<<1) | msg.BaseStationChanel;
+            //printf(" BaseStationID %d(%d) = %d", msg.BaseStationID, msg.BaseStationChanel, lut_Poly_id);
 
-                acalc.angleCalc(msg.BeamWord,msg.E_width, msg.BaseStationID, &aData);
+            uint32_t lut_iteration_first = 0;
+            uint32_t lut_iteration_second = 0;
 
-                //printf("\n");
-                //printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
-                //printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
-                //printf(" BeamWord %x", msg.BeamWord);
-                //printf(" LastBeamWord %x", msg.E_width);
-                //printf(" Timestamp %x", msg.Timestamp);
-                //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
-                //std::cout << aData.elevation;
-                //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
-                std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
-                outTimeBufferCnt++;
-                if(outTimeBufferCnt >= 20){
-                  outTimeBufferCnt = 0;
-                  std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
-                }
-                //std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
-
-                std::stringstream ss_;
-                ss_ << "LightHouseV2_Position_" << client_ip;
-
-                ros_msg.object_id = ss_.str();
-                ros_msg.base = (uint8_t)msg.BaseStationID;
-                ros_msg.SensorID =  (uint8_t)msg.SensorID;
-                ros_msg.elevation = aData.azimuth;
-                ros_msg.azimuth = aData.elevation;
-
-                pubHandl_Sensor.publish(ros_msg);
-
-                roboy_middleware_msgs::DarkRoomSensorV2 ros_msg_raw;
-                ros_msg.object_id = ss_.str();
-                ros_msg.base = (uint8_t)msg.BaseStationID;
-                ros_msg.SensorID =  (uint8_t)msg.SensorID;
-                ros_msg.elevation = (float)msg.BeamWord;
-                ros_msg.azimuth = (float)msg.E_width;
-
-                pubHandl_Sensor_Raw.publish(ros_msg_raw);
-
-
-                  /*
-            for (lut_iteration_first = 0; lut_iteration_first < LFSR_MAX_ITERATION; lut_iteration_first++) {
-              if(readInData[lut_Poly_id][lut_iteration_first] == msg.E_width ){
-                //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
-                for (lut_iteration_second = lut_iteration_first+2; lut_iteration_second < LFSR_MAX_ITERATION; lut_iteration_second++) {
-                  if(readInData[lut_Poly_id][lut_iteration_second] ==  msg.BeamWord ){
-
-                    //printf("\n");
-                    //printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
-                    //printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
-                    //printf(" BeamWord %x", msg.BeamWord);
-                    //printf(" LastBeamWord %x", msg.E_width);
-                    //printf(" Timestamp %x", msg.Timestamp);
-                    //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
-                    acalc.angleCalc(lut_iteration_first,lut_iteration_second, msg.BaseStationID, &aData);
-                    //std::cout << aData.elevation;
-                    //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
-                    std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
-                    std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth << " | " << aData.elevation << " | ip:" << client_ip << "\n";
-
-                    std::stringstream ss_;
-                    ss_ << "LightHouseV2_Position_" << client_ip;
-
-                    ros_msg.object_id = ss_.str();
-                    ros_msg.base = (uint8_t)msg.BaseStationID;
-                    ros_msg.SensorID =  (uint8_t)msg.SensorID;
-                    ros_msg.elevation = aData.azimuth;
-                    ros_msg.azimuth = aData.elevation;
-
-                    pubHandl_Sensor.publish(ros_msg);
-
-
-                      //std_msgs::String msg;
-                      //std::stringstream ss;
-                      //ss << "Hello world";
-                      //msg.data = ss.str();
-                      //pub_handler.publish(msg);
-
-                    break;
-                  }
-                }
-                break;
-              }
+            LightHouseDataProcessing acalc;
+            struct angleData aData;
+            aData.azimuth = 0.7;
+            aData.elevation = 0.7;
+            uint32_t foo_wtf = msg.E_width & 0x00f80000;
+            if( foo_wtf != 0){
+              ROS_ERROR("[SID:%d]there was an incorrect Beamword ... [First] %x ",msg.SensorID, msg.E_width);
             }
-            */
+            if( (msg.BeamWord&0x00f80000) == 0xf80000){
+              ROS_ERROR("[SID:%d]there was an incorrect Beamword ... [Second] %x",msg.SensorID, msg.BeamWord);
+            }
 
+
+            if(lut_Poly_id < 32){
+                  //firstBeam = ((lastMeasurements[channel] * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
+                  //secondBeam = ((offset * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
+                  ///azimuth, elevation = calculateAE(firstBeam, secondBeam)
+
+
+
+
+                  acalc.angleCalc(msg.BeamWord,msg.E_width, msg.BaseStationID, &aData);
+
+                  //printf("\n");
+                  //printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
+                  //printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
+                  //printf(" BeamWord %x", msg.BeamWord);
+                  //printf(" LastBeamWord %x", msg.E_width);
+                  //printf(" Timestamp %x", msg.Timestamp);
+                  //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
+                  //std::cout << aData.elevation;
+                  //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
+                  std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
+                  outTimeBufferCnt++;
+                  if(outTimeBufferCnt >= 20){
+                    outTimeBufferCnt = 0;
+                    std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
+                  }
+                  //std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth*180/3.1415 << " | " << aData.elevation*180/3.1415 << " | ip:" << client_ip << "\n";
+
+                  std::stringstream ss_;
+                  ss_ << "LightHouseV2_Position_" << client_ip;
+
+                  ros_msg.object_id = ss_.str();
+                  ros_msg.base = (uint8_t)msg.BaseStationID;
+                  ros_msg.SensorID =  (uint8_t)msg.SensorID;
+                  ros_msg.elevation = aData.azimuth;
+                  ros_msg.azimuth = aData.elevation;
+
+                  pubHandl_Sensor.publish(ros_msg);
+
+                  roboy_middleware_msgs::DarkRoomSensorV2 ros_msg_raw;
+                  ros_msg_raw.object_id = ss_.str();
+                  ros_msg_raw.base = (uint8_t)msg.BaseStationID;
+                  ros_msg_raw.SensorID =  (uint8_t)msg.SensorID;
+                  ros_msg_raw.elevation = (float)msg.BeamWord;
+                  ros_msg_raw.azimuth = (float)msg.E_width;
+
+                  pubHandl_Sensor_Raw.publish(ros_msg_raw);
+
+
+                    /*
+              for (lut_iteration_first = 0; lut_iteration_first < LFSR_MAX_ITERATION; lut_iteration_first++) {
+                if(readInData[lut_Poly_id][lut_iteration_first] == msg.E_width ){
+                  //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
+                  for (lut_iteration_second = lut_iteration_first+2; lut_iteration_second < LFSR_MAX_ITERATION; lut_iteration_second++) {
+                    if(readInData[lut_Poly_id][lut_iteration_second] ==  msg.BeamWord ){
+
+                      //printf("\n");
+                      //printf(" readInData %x [%d] ", readInData[lut_Poly_id][lut_iteration_first], lut_iteration_first);
+                      //printf(" readInData %x [%d]", readInData[lut_Poly_id][lut_iteration_second], lut_iteration_second);
+                      //printf(" BeamWord %x", msg.BeamWord);
+                      //printf(" LastBeamWord %x", msg.E_width);
+                      //printf(" Timestamp %x", msg.Timestamp);
+                      //printf("\n===========FUCK YEA=========\n%x [%d] %x", msg.BeamWord,i, readInData[lut_Poly_id][i] );
+                      acalc.angleCalc(lut_iteration_first,lut_iteration_second, msg.BaseStationID, &aData);
+                      //std::cout << aData.elevation;
+                      //printf("[Sensor:%2d] Azimuth %.9f | % 3.6f\n",  msg.SensorID, aData.azimuth, aData.elevation);
+                      std::string client_ip = inet_ntoa(ClientSockAddr.sin_addr);
+                      std::cout << "[BID:" << std::setw(2) << msg.BaseStationID << "ID:" << std::setw(1) << msg.SensorID << "] Azimuth " << std::fixed << aData.azimuth << " | " << aData.elevation << " | ip:" << client_ip << "\n";
+
+                      std::stringstream ss_;
+                      ss_ << "LightHouseV2_Position_" << client_ip;
+
+                      ros_msg.object_id = ss_.str();
+                      ros_msg.base = (uint8_t)msg.BaseStationID;
+                      ros_msg.SensorID =  (uint8_t)msg.SensorID;
+                      ros_msg.elevation = aData.azimuth;
+                      ros_msg.azimuth = aData.elevation;
+
+                      pubHandl_Sensor.publish(ros_msg);
+
+
+                        //std_msgs::String msg;
+                        //std::stringstream ss;
+                        //ss << "Hello world";
+                        //msg.data = ss.str();
+                        //pub_handler.publish(msg);
+
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              */
+
+
+            }
 
           }
 

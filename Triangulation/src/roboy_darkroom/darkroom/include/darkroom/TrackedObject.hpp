@@ -40,6 +40,7 @@
 #include <roboy_middleware_msgs/DarkRoom.h>
 #include <roboy_middleware_msgs/DarkRoomStatistics.h>
 #include <roboy_middleware_msgs/DarkRoomSensorV2.h>
+#include <std_msgs/Bool.h>
 #include <Eigen/Core>
 #include <Eigen/Dense>
 #include <Eigen/Geometry>
@@ -102,6 +103,7 @@ private:
      */
     void receiveSensorDataRoboy(const roboy_middleware_msgs::DarkRoom::ConstPtr &msg);
     void receiveSensorDataLH2(const roboy_middleware_msgs::DarkRoomSensorV2::ConstPtr &msg);
+    void lhswap(const std_msgs::Bool &msg);
 
     /**
      * Listen for sensor data via UDP
@@ -128,7 +130,7 @@ private:
     ros::NodeHandlePtr nh;
     ros::Publisher darkroom_statistics_pub;
     boost::shared_ptr<ros::AsyncSpinner> spinner;
-    ros::Subscriber sensor_sub, sensor_sub_lh2;
+    ros::Subscriber sensor_sub, sensor_sub_lh2, lhswap_sub;
     vector<Eigen::Vector3f> object;
     Vector3d origin;
     static bool m_switch;
@@ -139,6 +141,13 @@ private:
     tf::TransformBroadcaster tf_broadcaster;
 
     int8_t firstLighthouseBase = -1;
+    int8_t secondLighthouseBase = -1;
+    int8_t firstLighthouseBase_history = -1;
+    int8_t secondLighthouseBase_history = -1;
+
+    int8_t LighthouseBaseMatch[3];
+    uint8_t LHBaseCnt[32];
+    uint8_t selectCNT = 0;
 };
 
 typedef boost::shared_ptr<TrackedObject> TrackedObjectPtr;

@@ -12,7 +12,6 @@ from ._JointState import *
 from ._LegState import *
 from ._Model import *
 from ._MotorControl import *
-from ._Point32Array import *
 from ._RecordingControl import *
 from ._Tendon import *
 from ._TendonInitialization import *

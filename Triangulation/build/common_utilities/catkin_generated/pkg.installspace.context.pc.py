@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime;roslib".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lrviz_visualization;-lUDPSocket;-lMotorConfig".split(';') if "-lrviz_visualization;-lUDPSocket;-lMotorConfig" != "" else []
 PROJECT_NAME = "common_utilities"
-PROJECT_SPACE_DIR = "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install"
+PROJECT_SPACE_DIR = "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install"
 PROJECT_VERSION = "0.0.0"

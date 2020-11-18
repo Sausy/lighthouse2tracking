@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src
+CMAKE_SOURCE_DIR = /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build
+CMAKE_BINARY_DIR = /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/CMakeFiles /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/roboy_darkroom/darkroom/CMakeFiles/progress.marks
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build/CMakeFiles 0
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/CMakeFiles /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/roboy_darkroom/darkroom/CMakeFiles/progress.marks
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/clean
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/preinstall
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/preinstall
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ DarkRoomVisualPlugin: roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.di
 
 # fast build rule for target.
 DarkRoomVisualPlugin/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build
 .PHONY : DarkRoomVisualPlugin/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ LighthouseEstimator: roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/
 
 # fast build rule for target.
 LighthouseEstimator/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build
 .PHONY : LighthouseEstimator/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ Utilities: roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/rule
 
 # fast build rule for target.
 Utilities/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build
 .PHONY : Utilities/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ Triangulate: roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/rule
 
 # fast build rule for target.
 Triangulate/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build
 .PHONY : Triangulate/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ Sensor: roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/rule
 
 # fast build rule for target.
 Sensor/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build
 .PHONY : Sensor/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ PoseEstimatorMultiLighthouse: roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMu
 
 # fast build rule for target.
 PoseEstimatorMultiLighthouse/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build
 .PHONY : PoseEstimatorMultiLighthouse/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ InYourGibbousPhase4: roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/
 
 # fast build rule for target.
 InYourGibbousPhase4/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build
 .PHONY : InYourGibbousPhase4/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ InYourGibbousPhase3: roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/
 
 # fast build rule for target.
 InYourGibbousPhase3/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build
 .PHONY : InYourGibbousPhase3/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ InYourGibbousPhase: roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/ru
 
 # fast build rule for target.
 InYourGibbousPhase/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build
 .PHONY : InYourGibbousPhase/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ TrackedObject: roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/rule
 
 # fast build rule for target.
 TrackedObject/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build
 .PHONY : TrackedObject/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ PoseEstimatorSensorCloud: roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensor
 
 # fast build rule for target.
 PoseEstimatorSensorCloud/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build
 .PHONY : PoseEstimatorSensorCloud/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ pcl_msgs_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_gener
 
 # fast build rule for target.
 pcl_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
 .PHONY : pcl_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ pcl_msgs_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_gene
 
 # fast build rule for target.
 pcl_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
 .PHONY : pcl_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ topic_tools_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/topic_too
 
 # fast build rule for target.
 topic_tools_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
 .PHONY : topic_tools_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ nodelet_topic_tools_gencfg: roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_too
 
 # fast build rule for target.
 nodelet_topic_tools_gencfg/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
 .PHONY : nodelet_topic_tools_gencfg/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ bond_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/bond_generate_
 
 # fast build rule for target.
 bond_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_nodejs.dir/build
 .PHONY : bond_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ bond_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/bond_generate_me
 
 # fast build rule for target.
 bond_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_lisp.dir/build
 .PHONY : bond_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ bond_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/bond_generate_mes
 
 # fast build rule for target.
 bond_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_eus.dir/build
 .PHONY : bond_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ bond_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/bond_generate_mes
 
 # fast build rule for target.
 bond_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_cpp.dir/build
 .PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/Transform.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Transform.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/Transform.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/Transform.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ Transform: roboy_darkroom/darkroom/CMakeFiles/Transform.dir/rule
 
 # fast build rule for target.
 Transform/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build
 .PHONY : Transform/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ nodelet_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/nodelet_generat
 
 # fast build rule for target.
 nodelet_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_py.dir/build
 .PHONY : nodelet_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ uuid_msgs_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_ge
 
 # fast build rule for target.
 uuid_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
 .PHONY : uuid_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ geographic_msgs_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/geo
 
 # fast build rule for target.
 geographic_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
 .PHONY : geographic_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ dynamic_reconfigure_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/dy
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ diagnostic_msgs_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/diagn
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ topic_tools_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/topic_tool
 
 # fast build rule for target.
 topic_tools_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
 .PHONY : topic_tools_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ dynamic_reconfigure_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/dy
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ geographic_msgs_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/geogr
 
 # fast build rule for target.
 geographic_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
 .PHONY : geographic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ dynamic_reconfigure_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/testMe.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/testMe.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/testMe.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/testMe.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ testMe: roboy_darkroom/darkroom/CMakeFiles/testMe.dir/rule
 
 # fast build rule for target.
 testMe/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build
 .PHONY : testMe/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ topic_tools_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/topic_t
 
 # fast build rule for target.
 topic_tools_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
 .PHONY : topic_tools_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ pcl_ros_gencfg: roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/rule
 
 # fast build rule for target.
 pcl_ros_gencfg/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_ros_gencfg.dir/build
 .PHONY : pcl_ros_gencfg/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ pcl_msgs_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_gene
 
 # fast build rule for target.
 pcl_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
 .PHONY : pcl_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ geographic_msgs_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/geogra
 
 # fast build rule for target.
 geographic_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
 .PHONY : geographic_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ dynamic_reconfigure_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/d
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ diagnostic_msgs_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/diagno
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
 .PHONY : diagnostic_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ diagnostic_msgs_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/diagno
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ robot_localization_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/rob
 
 # fast build rule for target.
 robot_localization_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_eus.dir/build
 .PHONY : robot_localization_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ pcl_msgs_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_g
 
 # fast build rule for target.
 pcl_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
 .PHONY : pcl_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ nodelet_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/nodelet_gen
 
 # fast build rule for target.
 nodelet_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
 .PHONY : nodelet_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ geographic_msgs_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/geogra
 
 # fast build rule for target.
 geographic_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
 .PHONY : geographic_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ topic_tools_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/topic_tool
 
 # fast build rule for target.
 topic_tools_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_eus.dir/build
 .PHONY : topic_tools_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ pcl_msgs_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_gen
 
 # fast build rule for target.
 pcl_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 .PHONY : pcl_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ uuid_msgs_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_gen
 
 # fast build rule for target.
 uuid_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
 .PHONY : uuid_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ robot_localization_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/rob
 
 # fast build rule for target.
 robot_localization_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_cpp.dir/build
 .PHONY : robot_localization_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ robot_localization_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/ro
 
 # fast build rule for target.
 robot_localization_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_lisp.dir/build
 .PHONY : robot_localization_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ robot_localization_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/
 
 # fast build rule for target.
 robot_localization_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_nodejs.dir/build
 .PHONY : robot_localization_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ robot_localization_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/robo
 
 # fast build rule for target.
 robot_localization_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/robot_localization_generate_messages_py.dir/build
 .PHONY : robot_localization_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ LighthouseVisualPlugin: roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugi
 
 # fast build rule for target.
 LighthouseVisualPlugin/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build
 .PHONY : LighthouseVisualPlugin/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ nav_msgs_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/nav_msgs_gene
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ uuid_msgs_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_g
 
 # fast build rule for target.
 uuid_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
 .PHONY : uuid_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -944,12 +944,12 @@ uuid_msgs_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/uuid_msgs
 
 # fast build rule for target.
 uuid_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
 .PHONY : uuid_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/rule
 
 # Convenience name for target.
@@ -959,12 +959,12 @@ ImuModelPlugin: roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/rule
 
 # fast build rule for target.
 ImuModelPlugin/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build
 .PHONY : ImuModelPlugin/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -974,12 +974,12 @@ nodelet_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/nodelet_gener
 
 # fast build rule for target.
 nodelet_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_lisp.dir/build
 .PHONY : nodelet_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -989,12 +989,12 @@ nav_msgs_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/nav_msgs_gene
 
 # fast build rule for target.
 nav_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ nav_msgs_generate_messages_lisp: roboy_darkroom/darkroom/CMakeFiles/nav_msgs_gen
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1019,12 +1019,12 @@ nav_msgs_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/nav_msgs_g
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1034,12 +1034,12 @@ nav_msgs_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/nav_msgs_gener
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/rule
 
 # Convenience name for target.
@@ -1049,12 +1049,12 @@ LighthouseSimulator: roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/
 
 # fast build rule for target.
 LighthouseSimulator/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build
 .PHONY : LighthouseSimulator/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ diagnostic_msgs_generate_messages_nodejs: roboy_darkroom/darkroom/CMakeFiles/dia
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_nodejs/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1079,12 +1079,12 @@ dynamic_reconfigure_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/dyn
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1094,12 +1094,12 @@ topic_tools_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/topic_tools
 
 # fast build rule for target.
 topic_tools_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/topic_tools_generate_messages_py.dir/build
 .PHONY : topic_tools_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 
 # Convenience name for target.
@@ -1109,12 +1109,12 @@ dynamic_reconfigure_gencfg: roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigu
 
 # fast build rule for target.
 dynamic_reconfigure_gencfg/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make roboy_darkroom/darkroom/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1124,12 +1124,12 @@ bond_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/bond_generate_mess
 
 # fast build rule for target.
 bond_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/bond_generate_messages_py.dir/build
 .PHONY : bond_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1139,12 +1139,12 @@ nodelet_generate_messages_cpp: roboy_darkroom/darkroom/CMakeFiles/nodelet_genera
 
 # fast build rule for target.
 nodelet_generate_messages_cpp/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_cpp.dir/build
 .PHONY : nodelet_generate_messages_cpp/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1154,12 +1154,12 @@ geographic_msgs_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/geograp
 
 # fast build rule for target.
 geographic_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
 .PHONY : geographic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1169,12 +1169,12 @@ diagnostic_msgs_generate_messages_py: roboy_darkroom/darkroom/CMakeFiles/diagnos
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_py/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make roboy_darkroom/darkroom/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
 .PHONY : diagnostic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1184,12 +1184,12 @@ uuid_msgs_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_ge
 
 # fast build rule for target.
 uuid_msgs_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
 .PHONY : uuid_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f CMakeFiles/Makefile2 roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/rule
 .PHONY : roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1199,7 +1199,7 @@ nodelet_generate_messages_eus: roboy_darkroom/darkroom/CMakeFiles/nodelet_genera
 
 # fast build rule for target.
 nodelet_generate_messages_eus/fast:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/build
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/build.make roboy_darkroom/darkroom/CMakeFiles/nodelet_generate_messages_eus.dir/build
 .PHONY : nodelet_generate_messages_eus/fast
 
 src/InYourGibbousPhase.o: src/InYourGibbousPhase.cpp.o
@@ -1208,7 +1208,7 @@ src/InYourGibbousPhase.o: src/InYourGibbousPhase.cpp.o
 
 # target to build an object file
 src/InYourGibbousPhase.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/src/InYourGibbousPhase.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/src/InYourGibbousPhase.cpp.o
 .PHONY : src/InYourGibbousPhase.cpp.o
 
 src/InYourGibbousPhase.i: src/InYourGibbousPhase.cpp.i
@@ -1217,7 +1217,7 @@ src/InYourGibbousPhase.i: src/InYourGibbousPhase.cpp.i
 
 # target to preprocess a source file
 src/InYourGibbousPhase.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/src/InYourGibbousPhase.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/src/InYourGibbousPhase.cpp.i
 .PHONY : src/InYourGibbousPhase.cpp.i
 
 src/InYourGibbousPhase.s: src/InYourGibbousPhase.cpp.s
@@ -1226,7 +1226,7 @@ src/InYourGibbousPhase.s: src/InYourGibbousPhase.cpp.s
 
 # target to generate assembly for a file
 src/InYourGibbousPhase.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/src/InYourGibbousPhase.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase.dir/src/InYourGibbousPhase.cpp.s
 .PHONY : src/InYourGibbousPhase.cpp.s
 
 src/InYourGibbousPhase3.o: src/InYourGibbousPhase3.cpp.o
@@ -1235,7 +1235,7 @@ src/InYourGibbousPhase3.o: src/InYourGibbousPhase3.cpp.o
 
 # target to build an object file
 src/InYourGibbousPhase3.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/src/InYourGibbousPhase3.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/src/InYourGibbousPhase3.cpp.o
 .PHONY : src/InYourGibbousPhase3.cpp.o
 
 src/InYourGibbousPhase3.i: src/InYourGibbousPhase3.cpp.i
@@ -1244,7 +1244,7 @@ src/InYourGibbousPhase3.i: src/InYourGibbousPhase3.cpp.i
 
 # target to preprocess a source file
 src/InYourGibbousPhase3.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/src/InYourGibbousPhase3.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/src/InYourGibbousPhase3.cpp.i
 .PHONY : src/InYourGibbousPhase3.cpp.i
 
 src/InYourGibbousPhase3.s: src/InYourGibbousPhase3.cpp.s
@@ -1253,7 +1253,7 @@ src/InYourGibbousPhase3.s: src/InYourGibbousPhase3.cpp.s
 
 # target to generate assembly for a file
 src/InYourGibbousPhase3.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/src/InYourGibbousPhase3.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase3.dir/src/InYourGibbousPhase3.cpp.s
 .PHONY : src/InYourGibbousPhase3.cpp.s
 
 src/InYourGibbousPhase4.o: src/InYourGibbousPhase4.cpp.o
@@ -1262,7 +1262,7 @@ src/InYourGibbousPhase4.o: src/InYourGibbousPhase4.cpp.o
 
 # target to build an object file
 src/InYourGibbousPhase4.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/src/InYourGibbousPhase4.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/src/InYourGibbousPhase4.cpp.o
 .PHONY : src/InYourGibbousPhase4.cpp.o
 
 src/InYourGibbousPhase4.i: src/InYourGibbousPhase4.cpp.i
@@ -1271,7 +1271,7 @@ src/InYourGibbousPhase4.i: src/InYourGibbousPhase4.cpp.i
 
 # target to preprocess a source file
 src/InYourGibbousPhase4.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/src/InYourGibbousPhase4.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/src/InYourGibbousPhase4.cpp.i
 .PHONY : src/InYourGibbousPhase4.cpp.i
 
 src/InYourGibbousPhase4.s: src/InYourGibbousPhase4.cpp.s
@@ -1280,7 +1280,7 @@ src/InYourGibbousPhase4.s: src/InYourGibbousPhase4.cpp.s
 
 # target to generate assembly for a file
 src/InYourGibbousPhase4.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/src/InYourGibbousPhase4.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/build.make roboy_darkroom/darkroom/CMakeFiles/InYourGibbousPhase4.dir/src/InYourGibbousPhase4.cpp.s
 .PHONY : src/InYourGibbousPhase4.cpp.s
 
 src/LighthouseEstimator.o: src/LighthouseEstimator.cpp.o
@@ -1289,7 +1289,7 @@ src/LighthouseEstimator.o: src/LighthouseEstimator.cpp.o
 
 # target to build an object file
 src/LighthouseEstimator.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.o
 .PHONY : src/LighthouseEstimator.cpp.o
 
 src/LighthouseEstimator.i: src/LighthouseEstimator.cpp.i
@@ -1298,7 +1298,7 @@ src/LighthouseEstimator.i: src/LighthouseEstimator.cpp.i
 
 # target to preprocess a source file
 src/LighthouseEstimator.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.i
 .PHONY : src/LighthouseEstimator.cpp.i
 
 src/LighthouseEstimator.s: src/LighthouseEstimator.cpp.s
@@ -1307,7 +1307,7 @@ src/LighthouseEstimator.s: src/LighthouseEstimator.cpp.s
 
 # target to generate assembly for a file
 src/LighthouseEstimator.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.s
 .PHONY : src/LighthouseEstimator.cpp.s
 
 src/LighthouseSimulator.o: src/LighthouseSimulator.cpp.o
@@ -1316,7 +1316,7 @@ src/LighthouseSimulator.o: src/LighthouseSimulator.cpp.o
 
 # target to build an object file
 src/LighthouseSimulator.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/src/LighthouseSimulator.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/src/LighthouseSimulator.cpp.o
 .PHONY : src/LighthouseSimulator.cpp.o
 
 src/LighthouseSimulator.i: src/LighthouseSimulator.cpp.i
@@ -1325,7 +1325,7 @@ src/LighthouseSimulator.i: src/LighthouseSimulator.cpp.i
 
 # target to preprocess a source file
 src/LighthouseSimulator.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/src/LighthouseSimulator.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/src/LighthouseSimulator.cpp.i
 .PHONY : src/LighthouseSimulator.cpp.i
 
 src/LighthouseSimulator.s: src/LighthouseSimulator.cpp.s
@@ -1334,7 +1334,7 @@ src/LighthouseSimulator.s: src/LighthouseSimulator.cpp.s
 
 # target to generate assembly for a file
 src/LighthouseSimulator.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/src/LighthouseSimulator.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseSimulator.dir/src/LighthouseSimulator.cpp.s
 .PHONY : src/LighthouseSimulator.cpp.s
 
 src/PoseEstimatorMultiLighthouse.o: src/PoseEstimatorMultiLighthouse.cpp.o
@@ -1343,7 +1343,7 @@ src/PoseEstimatorMultiLighthouse.o: src/PoseEstimatorMultiLighthouse.cpp.o
 
 # target to build an object file
 src/PoseEstimatorMultiLighthouse.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/src/PoseEstimatorMultiLighthouse.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/src/PoseEstimatorMultiLighthouse.cpp.o
 .PHONY : src/PoseEstimatorMultiLighthouse.cpp.o
 
 src/PoseEstimatorMultiLighthouse.i: src/PoseEstimatorMultiLighthouse.cpp.i
@@ -1352,7 +1352,7 @@ src/PoseEstimatorMultiLighthouse.i: src/PoseEstimatorMultiLighthouse.cpp.i
 
 # target to preprocess a source file
 src/PoseEstimatorMultiLighthouse.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/src/PoseEstimatorMultiLighthouse.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/src/PoseEstimatorMultiLighthouse.cpp.i
 .PHONY : src/PoseEstimatorMultiLighthouse.cpp.i
 
 src/PoseEstimatorMultiLighthouse.s: src/PoseEstimatorMultiLighthouse.cpp.s
@@ -1361,7 +1361,7 @@ src/PoseEstimatorMultiLighthouse.s: src/PoseEstimatorMultiLighthouse.cpp.s
 
 # target to generate assembly for a file
 src/PoseEstimatorMultiLighthouse.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/src/PoseEstimatorMultiLighthouse.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorMultiLighthouse.dir/src/PoseEstimatorMultiLighthouse.cpp.s
 .PHONY : src/PoseEstimatorMultiLighthouse.cpp.s
 
 src/PoseEstimatorSensorCloud.o: src/PoseEstimatorSensorCloud.cpp.o
@@ -1370,7 +1370,7 @@ src/PoseEstimatorSensorCloud.o: src/PoseEstimatorSensorCloud.cpp.o
 
 # target to build an object file
 src/PoseEstimatorSensorCloud.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/src/PoseEstimatorSensorCloud.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/src/PoseEstimatorSensorCloud.cpp.o
 .PHONY : src/PoseEstimatorSensorCloud.cpp.o
 
 src/PoseEstimatorSensorCloud.i: src/PoseEstimatorSensorCloud.cpp.i
@@ -1379,7 +1379,7 @@ src/PoseEstimatorSensorCloud.i: src/PoseEstimatorSensorCloud.cpp.i
 
 # target to preprocess a source file
 src/PoseEstimatorSensorCloud.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/src/PoseEstimatorSensorCloud.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/src/PoseEstimatorSensorCloud.cpp.i
 .PHONY : src/PoseEstimatorSensorCloud.cpp.i
 
 src/PoseEstimatorSensorCloud.s: src/PoseEstimatorSensorCloud.cpp.s
@@ -1388,7 +1388,7 @@ src/PoseEstimatorSensorCloud.s: src/PoseEstimatorSensorCloud.cpp.s
 
 # target to generate assembly for a file
 src/PoseEstimatorSensorCloud.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/src/PoseEstimatorSensorCloud.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/build.make roboy_darkroom/darkroom/CMakeFiles/PoseEstimatorSensorCloud.dir/src/PoseEstimatorSensorCloud.cpp.s
 .PHONY : src/PoseEstimatorSensorCloud.cpp.s
 
 src/Sensor.o: src/Sensor.cpp.o
@@ -1397,7 +1397,7 @@ src/Sensor.o: src/Sensor.cpp.o
 
 # target to build an object file
 src/Sensor.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/src/Sensor.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/src/Sensor.cpp.o
 .PHONY : src/Sensor.cpp.o
 
 src/Sensor.i: src/Sensor.cpp.i
@@ -1406,7 +1406,7 @@ src/Sensor.i: src/Sensor.cpp.i
 
 # target to preprocess a source file
 src/Sensor.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/src/Sensor.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/src/Sensor.cpp.i
 .PHONY : src/Sensor.cpp.i
 
 src/Sensor.s: src/Sensor.cpp.s
@@ -1415,7 +1415,7 @@ src/Sensor.s: src/Sensor.cpp.s
 
 # target to generate assembly for a file
 src/Sensor.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/src/Sensor.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Sensor.dir/src/Sensor.cpp.s
 .PHONY : src/Sensor.cpp.s
 
 src/TrackedObject.o: src/TrackedObject.cpp.o
@@ -1424,7 +1424,7 @@ src/TrackedObject.o: src/TrackedObject.cpp.o
 
 # target to build an object file
 src/TrackedObject.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/src/TrackedObject.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/src/TrackedObject.cpp.o
 .PHONY : src/TrackedObject.cpp.o
 
 src/TrackedObject.i: src/TrackedObject.cpp.i
@@ -1433,7 +1433,7 @@ src/TrackedObject.i: src/TrackedObject.cpp.i
 
 # target to preprocess a source file
 src/TrackedObject.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/src/TrackedObject.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/src/TrackedObject.cpp.i
 .PHONY : src/TrackedObject.cpp.i
 
 src/TrackedObject.s: src/TrackedObject.cpp.s
@@ -1442,7 +1442,7 @@ src/TrackedObject.s: src/TrackedObject.cpp.s
 
 # target to generate assembly for a file
 src/TrackedObject.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/src/TrackedObject.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/build.make roboy_darkroom/darkroom/CMakeFiles/TrackedObject.dir/src/TrackedObject.cpp.s
 .PHONY : src/TrackedObject.cpp.s
 
 src/Transform.o: src/Transform.cpp.o
@@ -1451,7 +1451,7 @@ src/Transform.o: src/Transform.cpp.o
 
 # target to build an object file
 src/Transform.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/src/Transform.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/src/Transform.cpp.o
 .PHONY : src/Transform.cpp.o
 
 src/Transform.i: src/Transform.cpp.i
@@ -1460,7 +1460,7 @@ src/Transform.i: src/Transform.cpp.i
 
 # target to preprocess a source file
 src/Transform.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/src/Transform.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/src/Transform.cpp.i
 .PHONY : src/Transform.cpp.i
 
 src/Transform.s: src/Transform.cpp.s
@@ -1469,7 +1469,7 @@ src/Transform.s: src/Transform.cpp.s
 
 # target to generate assembly for a file
 src/Transform.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/src/Transform.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Transform.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Transform.dir/src/Transform.cpp.s
 .PHONY : src/Transform.cpp.s
 
 src/Triangulation.o: src/Triangulation.cpp.o
@@ -1478,7 +1478,7 @@ src/Triangulation.o: src/Triangulation.cpp.o
 
 # target to build an object file
 src/Triangulation.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/src/Triangulation.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/src/Triangulation.cpp.o
 .PHONY : src/Triangulation.cpp.o
 
 src/Triangulation.i: src/Triangulation.cpp.i
@@ -1487,7 +1487,7 @@ src/Triangulation.i: src/Triangulation.cpp.i
 
 # target to preprocess a source file
 src/Triangulation.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/src/Triangulation.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/src/Triangulation.cpp.i
 .PHONY : src/Triangulation.cpp.i
 
 src/Triangulation.s: src/Triangulation.cpp.s
@@ -1496,7 +1496,7 @@ src/Triangulation.s: src/Triangulation.cpp.s
 
 # target to generate assembly for a file
 src/Triangulation.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/src/Triangulation.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Triangulate.dir/src/Triangulation.cpp.s
 .PHONY : src/Triangulation.cpp.s
 
 src/Utilities.o: src/Utilities.cpp.o
@@ -1505,7 +1505,7 @@ src/Utilities.o: src/Utilities.cpp.o
 
 # target to build an object file
 src/Utilities.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/src/Utilities.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/src/Utilities.cpp.o
 .PHONY : src/Utilities.cpp.o
 
 src/Utilities.i: src/Utilities.cpp.i
@@ -1514,7 +1514,7 @@ src/Utilities.i: src/Utilities.cpp.i
 
 # target to preprocess a source file
 src/Utilities.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/src/Utilities.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/src/Utilities.cpp.i
 .PHONY : src/Utilities.cpp.i
 
 src/Utilities.s: src/Utilities.cpp.s
@@ -1523,7 +1523,7 @@ src/Utilities.s: src/Utilities.cpp.s
 
 # target to generate assembly for a file
 src/Utilities.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/src/Utilities.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/build.make roboy_darkroom/darkroom/CMakeFiles/Utilities.dir/src/Utilities.cpp.s
 .PHONY : src/Utilities.cpp.s
 
 src/gazebo/DarkRoomVisualPlugin.o: src/gazebo/DarkRoomVisualPlugin.cpp.o
@@ -1532,7 +1532,7 @@ src/gazebo/DarkRoomVisualPlugin.o: src/gazebo/DarkRoomVisualPlugin.cpp.o
 
 # target to build an object file
 src/gazebo/DarkRoomVisualPlugin.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/src/gazebo/DarkRoomVisualPlugin.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/src/gazebo/DarkRoomVisualPlugin.cpp.o
 .PHONY : src/gazebo/DarkRoomVisualPlugin.cpp.o
 
 src/gazebo/DarkRoomVisualPlugin.i: src/gazebo/DarkRoomVisualPlugin.cpp.i
@@ -1541,7 +1541,7 @@ src/gazebo/DarkRoomVisualPlugin.i: src/gazebo/DarkRoomVisualPlugin.cpp.i
 
 # target to preprocess a source file
 src/gazebo/DarkRoomVisualPlugin.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/src/gazebo/DarkRoomVisualPlugin.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/src/gazebo/DarkRoomVisualPlugin.cpp.i
 .PHONY : src/gazebo/DarkRoomVisualPlugin.cpp.i
 
 src/gazebo/DarkRoomVisualPlugin.s: src/gazebo/DarkRoomVisualPlugin.cpp.s
@@ -1550,7 +1550,7 @@ src/gazebo/DarkRoomVisualPlugin.s: src/gazebo/DarkRoomVisualPlugin.cpp.s
 
 # target to generate assembly for a file
 src/gazebo/DarkRoomVisualPlugin.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/src/gazebo/DarkRoomVisualPlugin.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/DarkRoomVisualPlugin.dir/src/gazebo/DarkRoomVisualPlugin.cpp.s
 .PHONY : src/gazebo/DarkRoomVisualPlugin.cpp.s
 
 src/gazebo/ImuModelPlugin.o: src/gazebo/ImuModelPlugin.cpp.o
@@ -1559,7 +1559,7 @@ src/gazebo/ImuModelPlugin.o: src/gazebo/ImuModelPlugin.cpp.o
 
 # target to build an object file
 src/gazebo/ImuModelPlugin.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/src/gazebo/ImuModelPlugin.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/src/gazebo/ImuModelPlugin.cpp.o
 .PHONY : src/gazebo/ImuModelPlugin.cpp.o
 
 src/gazebo/ImuModelPlugin.i: src/gazebo/ImuModelPlugin.cpp.i
@@ -1568,7 +1568,7 @@ src/gazebo/ImuModelPlugin.i: src/gazebo/ImuModelPlugin.cpp.i
 
 # target to preprocess a source file
 src/gazebo/ImuModelPlugin.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/src/gazebo/ImuModelPlugin.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/src/gazebo/ImuModelPlugin.cpp.i
 .PHONY : src/gazebo/ImuModelPlugin.cpp.i
 
 src/gazebo/ImuModelPlugin.s: src/gazebo/ImuModelPlugin.cpp.s
@@ -1577,7 +1577,7 @@ src/gazebo/ImuModelPlugin.s: src/gazebo/ImuModelPlugin.cpp.s
 
 # target to generate assembly for a file
 src/gazebo/ImuModelPlugin.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/src/gazebo/ImuModelPlugin.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/ImuModelPlugin.dir/src/gazebo/ImuModelPlugin.cpp.s
 .PHONY : src/gazebo/ImuModelPlugin.cpp.s
 
 src/gazebo/LighthouseVisualPlugin.o: src/gazebo/LighthouseVisualPlugin.cpp.o
@@ -1586,7 +1586,7 @@ src/gazebo/LighthouseVisualPlugin.o: src/gazebo/LighthouseVisualPlugin.cpp.o
 
 # target to build an object file
 src/gazebo/LighthouseVisualPlugin.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/src/gazebo/LighthouseVisualPlugin.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/src/gazebo/LighthouseVisualPlugin.cpp.o
 .PHONY : src/gazebo/LighthouseVisualPlugin.cpp.o
 
 src/gazebo/LighthouseVisualPlugin.i: src/gazebo/LighthouseVisualPlugin.cpp.i
@@ -1595,7 +1595,7 @@ src/gazebo/LighthouseVisualPlugin.i: src/gazebo/LighthouseVisualPlugin.cpp.i
 
 # target to preprocess a source file
 src/gazebo/LighthouseVisualPlugin.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/src/gazebo/LighthouseVisualPlugin.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/src/gazebo/LighthouseVisualPlugin.cpp.i
 .PHONY : src/gazebo/LighthouseVisualPlugin.cpp.i
 
 src/gazebo/LighthouseVisualPlugin.s: src/gazebo/LighthouseVisualPlugin.cpp.s
@@ -1604,7 +1604,7 @@ src/gazebo/LighthouseVisualPlugin.s: src/gazebo/LighthouseVisualPlugin.cpp.s
 
 # target to generate assembly for a file
 src/gazebo/LighthouseVisualPlugin.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/src/gazebo/LighthouseVisualPlugin.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/build.make roboy_darkroom/darkroom/CMakeFiles/LighthouseVisualPlugin.dir/src/gazebo/LighthouseVisualPlugin.cpp.s
 .PHONY : src/gazebo/LighthouseVisualPlugin.cpp.s
 
 src/testMe.o: src/testMe.cpp.o
@@ -1613,7 +1613,7 @@ src/testMe.o: src/testMe.cpp.o
 
 # target to build an object file
 src/testMe.cpp.o:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/src/testMe.cpp.o
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/src/testMe.cpp.o
 .PHONY : src/testMe.cpp.o
 
 src/testMe.i: src/testMe.cpp.i
@@ -1622,7 +1622,7 @@ src/testMe.i: src/testMe.cpp.i
 
 # target to preprocess a source file
 src/testMe.cpp.i:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/src/testMe.cpp.i
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/src/testMe.cpp.i
 .PHONY : src/testMe.cpp.i
 
 src/testMe.s: src/testMe.cpp.s
@@ -1631,7 +1631,7 @@ src/testMe.s: src/testMe.cpp.s
 
 # target to generate assembly for a file
 src/testMe.cpp.s:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/src/testMe.cpp.s
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(MAKE) -f roboy_darkroom/darkroom/CMakeFiles/testMe.dir/build.make roboy_darkroom/darkroom/CMakeFiles/testMe.dir/src/testMe.cpp.s
 .PHONY : src/testMe.cpp.s
 
 # Help Target
@@ -1775,6 +1775,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

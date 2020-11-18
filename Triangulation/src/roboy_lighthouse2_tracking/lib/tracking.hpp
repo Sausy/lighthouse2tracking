@@ -93,6 +93,7 @@ public Q_SLOTS:
      */
     void showRays();
 
+
 private:
     int counter = 0;
     ros::NodeHandlePtr nh;
@@ -102,7 +103,7 @@ private:
     tf::TransformListener tf_listener;
     tf::TransformBroadcaster tf_broadcaster;
     static tf::Transform lighthouse1, lighthouse2, tf_world, tf_map,
-            simulated_object_lighthouse1, simulated_object_lighthouse2;
+            simulated_object_lighthouse1, simulated_object_lighthouse2, imu_foo;
     atomic<bool> publish_transform, update_tracked_object_info;
     int object_counter = 0, values_in_plot = 300, message_counter[4] = {0}, message_counter_statistics[2] = {0};
     vector<TrackedObjectPtr> trackedObjects;

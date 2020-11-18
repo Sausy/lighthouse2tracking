@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/Sensor.hpp
 ros/ros.h
 -
 Eigen/Core
@@ -16,25 +16,25 @@ Eigen/Dense
 Eigen/Geometry
 -
 ../../../yamc/include/alternate_shared_mutex.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
 vector
 -
 chrono
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/Triangulation.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/Triangulation.hpp
 Eigen/Core
 -
 Eigen/Dense
 -
 darkroom/Sensor.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/include/darkroom/darkroom/Sensor.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/Triangulation.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/Triangulation.cpp
 darkroom/Triangulation.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom/src/darkroom/Triangulation.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom/src/darkroom/Triangulation.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/alternate_shared_mutex.hpp
 cassert
 -
 chrono
@@ -44,9 +44,9 @@ condition_variable
 mutex
 -
 yamc_rwlock_sched.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/yamc/include/yamc_rwlock_sched.hpp
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

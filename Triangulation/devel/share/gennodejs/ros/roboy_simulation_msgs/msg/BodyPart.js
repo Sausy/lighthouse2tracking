@@ -19,22 +19,23 @@ class BodyPart {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.id = null;
-      this.link_id = null;
+      this.roboy_id = null;
+      this.link = null;
       this.position = null;
+      this.mass = null;
     }
     else {
-      if (initObj.hasOwnProperty('id')) {
-        this.id = initObj.id
+      if (initObj.hasOwnProperty('roboy_id')) {
+        this.roboy_id = initObj.roboy_id
       }
       else {
-        this.id = 0;
+        this.roboy_id = 0;
       }
-      if (initObj.hasOwnProperty('link_id')) {
-        this.link_id = initObj.link_id
+      if (initObj.hasOwnProperty('link')) {
+        this.link = initObj.link
       }
       else {
-        this.link_id = 0;
+        this.link = '';
       }
       if (initObj.hasOwnProperty('position')) {
         this.position = initObj.position
@@ -42,17 +43,25 @@ class BodyPart {
       else {
         this.position = new geometry_msgs.msg.Point();
       }
+      if (initObj.hasOwnProperty('mass')) {
+        this.mass = initObj.mass
+      }
+      else {
+        this.mass = 0.0;
+      }
     }
   }
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type BodyPart
-    // Serialize message field [id]
-    bufferOffset = _serializer.int32(obj.id, buffer, bufferOffset);
-    // Serialize message field [link_id]
-    bufferOffset = _serializer.int32(obj.link_id, buffer, bufferOffset);
+    // Serialize message field [roboy_id]
+    bufferOffset = _serializer.int32(obj.roboy_id, buffer, bufferOffset);
+    // Serialize message field [link]
+    bufferOffset = _serializer.string(obj.link, buffer, bufferOffset);
     // Serialize message field [position]
     bufferOffset = geometry_msgs.msg.Point.serialize(obj.position, buffer, bufferOffset);
+    // Serialize message field [mass]
+    bufferOffset = _serializer.float64(obj.mass, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -60,17 +69,21 @@ class BodyPart {
     //deserializes a message object of type BodyPart
     let len;
     let data = new BodyPart(null);
-    // Deserialize message field [id]
-    data.id = _deserializer.int32(buffer, bufferOffset);
-    // Deserialize message field [link_id]
-    data.link_id = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [roboy_id]
+    data.roboy_id = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [link]
+    data.link = _deserializer.string(buffer, bufferOffset);
     // Deserialize message field [position]
     data.position = geometry_msgs.msg.Point.deserialize(buffer, bufferOffset);
+    // Deserialize message field [mass]
+    data.mass = _deserializer.float64(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 32;
+    let length = 0;
+    length += object.link.length;
+    return length + 40;
   }
 
   static datatype() {
@@ -80,15 +93,16 @@ class BodyPart {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '4f76706811fad63028450434bc8c147d';
+    return '7ea6a0636760eaf5fe7e84691fe02368';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    int32 id
-    int32 link_id
+    int32 roboy_id
+    string link
     geometry_msgs/Point position
+    float64 mass
     
     ================================================================================
     MSG: geometry_msgs/Point
@@ -106,18 +120,18 @@ class BodyPart {
       msg = {};
     }
     const resolved = new BodyPart(null);
-    if (msg.id !== undefined) {
-      resolved.id = msg.id;
+    if (msg.roboy_id !== undefined) {
+      resolved.roboy_id = msg.roboy_id;
     }
     else {
-      resolved.id = 0
+      resolved.roboy_id = 0
     }
 
-    if (msg.link_id !== undefined) {
-      resolved.link_id = msg.link_id;
+    if (msg.link !== undefined) {
+      resolved.link = msg.link;
     }
     else {
-      resolved.link_id = 0
+      resolved.link = ''
     }
 
     if (msg.position !== undefined) {
@@ -125,6 +139,13 @@ class BodyPart {
     }
     else {
       resolved.position = new geometry_msgs.msg.Point()
+    }
+
+    if (msg.mass !== undefined) {
+      resolved.mass = msg.mass;
+    }
+    else {
+      resolved.mass = 0.0
     }
 
     return resolved;

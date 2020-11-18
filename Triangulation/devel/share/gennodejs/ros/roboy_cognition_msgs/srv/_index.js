@@ -11,6 +11,7 @@ let QualityOfTones = require('./QualityOfTones.js')
 let LocalizeObject = require('./LocalizeObject.js')
 let CreateInstance = require('./CreateInstance.js')
 let DetectIceCream = require('./DetectIceCream.js')
+let TalkToFile = require('./TalkToFile.js')
 let AssertProperty = require('./AssertProperty.js')
 let Talk = require('./Talk.js')
 let FindObject = require('./FindObject.js')
@@ -46,6 +47,7 @@ module.exports = {
   LocalizeObject: LocalizeObject,
   CreateInstance: CreateInstance,
   DetectIceCream: DetectIceCream,
+  TalkToFile: TalkToFile,
   AssertProperty: AssertProperty,
   Talk: Talk,
   FindObject: FindObject,

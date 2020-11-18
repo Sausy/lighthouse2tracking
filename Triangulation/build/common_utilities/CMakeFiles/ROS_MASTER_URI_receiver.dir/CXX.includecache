@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/include/common_utilities/UDPSocket.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/include/common_utilities/UDPSocket.hpp
 stdlib.h
 -
 unistd.h
@@ -60,7 +60,7 @@ vector
 ros/ros.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/src/ROS_MASTER_URI_receiver.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/src/ROS_MASTER_URI_receiver.cpp
 ros/ros.h
 -
 common_utilities/UDPSocket.hpp

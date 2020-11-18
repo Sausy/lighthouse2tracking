@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/include/common_utilities/rviz_visualization.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/include/common_utilities/rviz_visualization.hpp
 ros/ros.h
 -
 ros/package.h
@@ -38,9 +38,9 @@ string
 sys/stat.h
 -
 
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/src/rviz_visualization.cpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/src/rviz_visualization.cpp
 common_utilities/rviz_visualization.hpp
-/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/common_utilities/src/common_utilities/rviz_visualization.hpp
+/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/common_utilities/src/common_utilities/rviz_visualization.hpp
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string

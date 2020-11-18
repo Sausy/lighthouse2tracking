@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/src/hdk_ros/include/usbHidInterface.cpp
+linux/types.h
+-
+linux/input.h
+-
+linux/hidraw.h
+-
+sys/ioctl.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+unistd.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+stdint.h
+-
+stdbool.h
+-
+errno.h
+-
+unistd.h
+-
+usbHidInterface.h
+/home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/src/hdk_ros/include/usbHidInterface.h
+
+/home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/src/hdk_ros/include/usbHidInterface.h
+

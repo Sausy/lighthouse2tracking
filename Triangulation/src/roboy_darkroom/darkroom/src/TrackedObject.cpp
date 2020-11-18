@@ -10,6 +10,7 @@ TrackedObject::TrackedObject(ros::NodeHandlePtr nh):RobotLocalization::RosEkf(*n
     receiveData = true;
     sensor_sub = nh->subscribe("/roboy/middleware/DarkRoom/sensors", 2, &TrackedObject::receiveSensorDataRoboy, this);
     sensor_sub_lh2 = nh->subscribe("/roboy/middleware/DarkRoom/sensorsLH2", 2, &TrackedObject::receiveSensorDataLH2, this);
+    lhswap_sub = nh->subscribe("/roboy/middleware/DarkRoom/lhswap", 1, &TrackedObject::lhswap, this);
 
     spinner = boost::shared_ptr<ros::AsyncSpinner>(new ros::AsyncSpinner(2));
     spinner->start();
@@ -295,6 +296,18 @@ void TrackedObject::receiveSensorDataRoboy(const roboy_middleware_msgs::DarkRoom
 
 }
 
+void TrackedObject::lhswap(const std_msgs::Bool &msg){
+
+  ROS_INFO("Swapping Lighthouse base");
+
+  if(msg.data){
+    firstLighthouseBase = secondLighthouseBase_history;
+    secondLighthouseBase = firstLighthouseBase_history;
+  }else{
+    firstLighthouseBase = firstLighthouseBase_history;
+    secondLighthouseBase = secondLighthouseBase_history;
+  }
+}
 
 
 void TrackedObject::receiveSensorDataLH2(const roboy_middleware_msgs::DarkRoomSensorV2::ConstPtr &msg) {
@@ -312,56 +325,106 @@ void TrackedObject::receiveSensorDataLH2(const roboy_middleware_msgs::DarkRoomSe
         return;
     }*/
 
-    if(firstLighthouseBase == -1){
-      firstLighthouseBase = msg->base;
+    if(msg->base < 50){
+      if(firstLighthouseBase == -1){
+        firstLighthouseBase = msg->base;
+
+      }else{
+        if(firstLighthouseBase != msg->base){
+          if(secondLighthouseBase == -1){
+            secondLighthouseBase = msg->base;
+            firstLighthouseBase_history = firstLighthouseBase;
+            secondLighthouseBase_history = secondLighthouseBase;
+
+          }
+        }
+      }
     }
 
+    //ADD More sofisticated select Algorithm
+    /*
+    if(selectCNT == 30){
+      selectCNT = 31;
+
+      for (size_t i = 1; i < 32; i++) {
+        if(LHBaseCnt[i] > LHBaseCnt[0]){
+          LHBaseCnt[0] = LHBaseCnt[i];
+          firstLighthouseBase = i+1;
+        }
+      }
+      for (size_t i = 2; i < 32; i++) {
+        if(LHBaseCnt[i] > LHBaseCnt[1]){
+          LHBaseCnt[1] = LHBaseCnt[i];
+          secondLighthouseBase = i+1;
+        }
+      }
+
+      firstLighthouseBase = LHBaseCnt[0];
+      secondLighthouseBase = LHBaseCnt[1];
+
+    }else if(selectCNT < 30){
+      selectCNT++;
+      LHBaseCnt[msg->base-1]++;
+      if(LHBaseCnt[msg->base-1] >= 255){
+        LHBaseCnt[msg->base-1] = 255;
+      }
+    }
+
+    */
+
     uint8_t id = msg->SensorID;
-    bool lighthouse = (msg->base != firstLighthouseBase); //TODO: lighthouse is currently restricted to 2 Bases
+    //bool lighthouse = (msg->base != firstLighthouseBase); //TODO: lighthouse is currently restricted to 2 Bases
+    bool lighthouse = (msg->base != firstLighthouseBase);
+
     int isHORIZONTAL = 0;
     int isVERTICAL = 1;
 
-    //INFO: elevation an azimuth swap was necesarry due to misscomunication
-    double elevation = (msg->azimuth+(M_PI/2)); //-(M_PI/2)
-    double azimuth = (msg->elevation+(M_PI/2)); //-(M_PI/2)
 
-    sensors[id].update(lighthouse, isHORIZONTAL, azimuth);
-    sensors[id].update(lighthouse, isVERTICAL, elevation);
-
-    ROS_WARN_THROTTLE(10, "receiving sensor data of LH2");
-    ROS_INFO_STREAM_THROTTLE(5,
-            "sensorID:      " << id << "| lighthouse:    " << lighthouse << endl <<
-            "azimuth:       " << 180/(M_PI)*azimuth <<  " | elevation:     " << 180/(M_PI)*elevation );
+    if(msg->base == firstLighthouseBase || msg->base == secondLighthouseBase){
 
 
-    static int message_counter = 0;
+      //INFO: elevation an azimuth swap was necesarry due to misscomunication
+      double elevation = (msg->azimuth+(M_PI/2.0)); //-(M_PI/2)
+      double azimuth = (msg->elevation+(M_PI/2.0)); //-(M_PI/2)
 
-    if(message_counter++%50==0){ // publish statistics from time to time
-        {
-            roboy_middleware_msgs::DarkRoomStatistics statistics_msg;
-            statistics_msg.object_name = name;
-            statistics_msg.lighthouse = LIGHTHOUSE_A;
-            //for (uint i = 0; i < msg->sensor_value.size(); i++) {
-                float horizontal, vertical;
-                sensors[0].updateFrequency(LIGHTHOUSE_A, horizontal, vertical);
-                statistics_msg.update_frequency_horizontal.push_back(horizontal);
-                statistics_msg.update_frequency_vertical.push_back(vertical);
-            //}
-            darkroom_statistics_pub.publish(statistics_msg);
-        }
-        {
-            roboy_middleware_msgs::DarkRoomStatistics statistics_msg;
-            statistics_msg.object_name = name;
-            statistics_msg.lighthouse = LIGHTHOUSE_B;
-            //for (uint i = 0; i < msg->sensor_value.size(); i++) {
-                float horizontal, vertical;
-                sensors[0].updateFrequency(LIGHTHOUSE_B, horizontal, vertical);
-                statistics_msg.update_frequency_horizontal.push_back(horizontal);
-                statistics_msg.update_frequency_vertical.push_back(vertical);
-            //}
-            darkroom_statistics_pub.publish(statistics_msg);
-        }
-    }
+      sensors[id].update(lighthouse, isHORIZONTAL, azimuth);
+      sensors[id].update(lighthouse, isVERTICAL, elevation);
+
+      ROS_WARN_THROTTLE(10, "receiving sensor data of LH2");
+      ROS_INFO_STREAM_THROTTLE(5,
+              "sensorID:      " << id << "| lighthouse:    " << lighthouse << endl <<
+              "azimuth:       " << 180/(M_PI)*azimuth <<  " | elevation:     " << 180/(M_PI)*elevation );
+
+
+      static int message_counter = 0;
+
+      if(message_counter++%50==0){ // publish statistics from time to time
+          {
+              roboy_middleware_msgs::DarkRoomStatistics statistics_msg;
+              statistics_msg.object_name = name;
+              statistics_msg.lighthouse = LIGHTHOUSE_A;
+              //for (uint i = 0; i < msg->sensor_value.size(); i++) {
+                  float horizontal, vertical;
+                  sensors[0].updateFrequency(LIGHTHOUSE_A, horizontal, vertical);
+                  statistics_msg.update_frequency_horizontal.push_back(horizontal);
+                  statistics_msg.update_frequency_vertical.push_back(vertical);
+              //}
+              darkroom_statistics_pub.publish(statistics_msg);
+          }
+          {
+              roboy_middleware_msgs::DarkRoomStatistics statistics_msg;
+              statistics_msg.object_name = name;
+              statistics_msg.lighthouse = LIGHTHOUSE_B;
+              //for (uint i = 0; i < msg->sensor_value.size(); i++) {
+                  float horizontal, vertical;
+                  sensors[0].updateFrequency(LIGHTHOUSE_B, horizontal, vertical);
+                  statistics_msg.update_frequency_horizontal.push_back(horizontal);
+                  statistics_msg.update_frequency_vertical.push_back(vertical);
+              //}
+              darkroom_statistics_pub.publish(statistics_msg);
+          }
+      }
+  }
 }
 
 

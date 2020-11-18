@@ -1,0 +1,8 @@
+prefix=/home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/install
+
+Name: ros_usbhid_interface
+Description: Description of ros_usbhid_interface
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime

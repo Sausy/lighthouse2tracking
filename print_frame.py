@@ -22,6 +22,9 @@ PERIODS = [959000, 957000,
            893000, 887000]
 
 if __name__ == "__main__":
+
+    print("please use the one in tools this one is obsolete")
+    exit
     import sys
     import struct
     if len(sys.argv) < 2:
@@ -51,6 +54,8 @@ if __name__ == "__main__":
 
     reading = src.read(12)
     prevSweepTime = 0
+    prevBeam = 0
+
     while(len(reading) == 12):
         timestamp = struct.unpack("<I", reading[9:] + b'\x00')[0]
         beam_word = struct.unpack("<I", reading[6:9] + b'\x00')[0]
@@ -74,21 +79,23 @@ if __name__ == "__main__":
             continue
 
         # Detect new sweep
-        if ((timestamp - prevSweepTime) & 0xffffff) > 10000:
-            print()
+        if ((timestamp - prevSweepTime) & 0xffffff) > 90000:
+            print("[DIV ERROR]TS:{:06x} nPoly:{}  BeamWord:{:05x} |DIV {} ".format(prevSweepTime,identity, prevBeam, timestamp - prevSweepTime))
         prevSweepTime = timestamp
+        prevBeam = beam_word
 
         offset = offset & 0x01ffff
         if (nPoly_ok):
-            print("Sensor: {}  TS:{:06x}  Width:{:4x}  Chan:{:2}({})  nPoly:{}  BeamWord:{:05x}\t".format(sensor, timestamp, width, channel + 1,
+            print("Sensor: {}  TS:{}  Width:{:4x}  Chan:{:2}({})  nPoly:{}  BeamWord:{:05x}\t".format(real_id, timestamp, width, channel + 1,
                 slow_bit, identity, beam_word), end='')
-            print("\noffset: {:6x} | additional_id {} ".format(offset, real_id))
-        #else:
+            print("\noffset: {} | additional_id {} ".format(offset, real_id))
+        else:
+            print("[Info] nPoly not ok  TS:{:06x} nPoly:{}  BeamWord:{:05x}".format(timestamp,identity, beam_word))
         #    print("Sensor: {}  TS:{:06x}  Width:{:4x}  Chan: None  nPoly:{} BeamWord:{:05x}\t".format(sensor, timestamp, width, identity,beam_word),
         #        end='')
 
         if offset != 0:
-            if offset > (lastMeasurements[channel]+10000):
+            if offset > (lastMeasurements[channel]+100):
                 firstBeam = ((lastMeasurements[channel] * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
                 secondBeam = ((offset * 8.0) / PERIODS[identity >> 1]) * 2 * math.pi
                 azimuth, elevation = calculateAE(firstBeam, secondBeam)

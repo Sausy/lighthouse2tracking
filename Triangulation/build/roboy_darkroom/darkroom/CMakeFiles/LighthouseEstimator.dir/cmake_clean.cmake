@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LighthouseEstimator.dir/src/LighthouseEstimator.cpp.o"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/libLighthouseEstimator.pdb"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/libLighthouseEstimator.so"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib/libLighthouseEstimator.pdb"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib/libLighthouseEstimator.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -67,14 +67,14 @@ set(darkroom_rqt_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(darkroom_rqt_SOURCE_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_darkroom/darkroom_rqt)
-  set(darkroom_rqt_DEVEL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel)
+  set(darkroom_rqt_SOURCE_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_darkroom/darkroom_rqt)
+  set(darkroom_rqt_DEVEL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel)
   set(darkroom_rqt_INSTALL_PREFIX "")
   set(darkroom_rqt_PREFIX ${darkroom_rqt_DEVEL_PREFIX})
 else()
   set(darkroom_rqt_SOURCE_PREFIX "")
   set(darkroom_rqt_DEVEL_PREFIX "")
-  set(darkroom_rqt_INSTALL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install)
+  set(darkroom_rqt_INSTALL_PREFIX /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install)
   set(darkroom_rqt_PREFIX ${darkroom_rqt_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

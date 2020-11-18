@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "roboy_control_msgs: 38 messages, 6 services")
+message(STATUS "roboy_control_msgs: 38 messages, 7 services")
 
-set(MSG_I_FLAGS "-Iroboy_control_msgs:/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg;-Iroboy_control_msgs:/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iroboy_control_msgs:/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg;-Iroboy_control_msgs:/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,224 +17,229 @@ add_custom_target(roboy_control_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" "actionlib_msgs/GoalID:roboy_control_msgs/MoveEndEffectorActionGoal:actionlib_msgs/GoalStatus:roboy_control_msgs/MoveEndEffectorActionFeedback:roboy_control_msgs/MoveEndEffectorActionResult:roboy_control_msgs/MoveEndEffectorGoal:geometry_msgs/Pose:roboy_control_msgs/MoveEndEffectorFeedback:std_msgs/Header:roboy_control_msgs/MoveEndEffectorResult:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" "roboy_control_msgs/MoveEndEffectorFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" "roboy_control_msgs/PerformMovementGoal:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" "actionlib_msgs/GoalID:geometry_msgs/Vector3:roboy_control_msgs/LookAtGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" "actionlib_msgs/GoalID:roboy_control_msgs/PerformMovementGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" "actionlib_msgs/GoalID:roboy_control_msgs/PerformMovementsGoal:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementsResult:roboy_control_msgs/PerformMovementsFeedback:roboy_control_msgs/PerformMovementsActionResult:roboy_control_msgs/PerformMovementsActionGoal:std_msgs/Header:roboy_control_msgs/PerformMovementsActionFeedback"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementsFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" "geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" "roboy_control_msgs/LookAtResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/LookAtActionGoal:roboy_control_msgs/LookAtFeedback:roboy_control_msgs/LookAtActionResult:geometry_msgs/Vector3:roboy_control_msgs/LookAtActionFeedback:std_msgs/Header:roboy_control_msgs/LookAtGoal"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" "roboy_control_msgs/PerformMovementResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" "geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" "geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/MoveEndEffectorResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/MoveEndEffectorResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" "actionlib_msgs/GoalID:roboy_control_msgs/PerformMovementFeedback:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementGoal:roboy_control_msgs/PerformMovementActionFeedback:roboy_control_msgs/PerformMovementActionResult:roboy_control_msgs/PerformMovementResult:std_msgs/Header:roboy_control_msgs/PerformMovementActionGoal"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" "roboy_control_msgs/PerformMovementsGoal:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" "actionlib_msgs/GoalID:roboy_control_msgs/MoveEndEffectorGoal:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" "actionlib_msgs/GoalID:roboy_control_msgs/PerformMovementGoal:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementActionGoal:roboy_control_msgs/PerformMovementActionFeedback:roboy_control_msgs/PerformMovementActionResult:std_msgs/Header:roboy_control_msgs/PerformMovementResult:roboy_control_msgs/PerformMovementFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" "roboy_control_msgs/PerformMovementsFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/LookAtFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" "roboy_control_msgs/PerformMovementsActionGoal:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementsActionFeedback:roboy_control_msgs/PerformMovementsGoal:roboy_control_msgs/PerformMovementsFeedback:roboy_control_msgs/PerformMovementsResult:std_msgs/Header:roboy_control_msgs/PerformMovementsActionResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" "actionlib_msgs/GoalID:roboy_control_msgs/PerformMovementsResult:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/LookAtFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" "geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/MoveEndEffectorFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" "actionlib_msgs/GoalID:roboy_control_msgs/MoveEndEffectorGoal:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" "actionlib_msgs/GoalID:roboy_control_msgs/MoveEndEffectorActionFeedback:roboy_control_msgs/MoveEndEffectorResult:actionlib_msgs/GoalStatus:roboy_control_msgs/MoveEndEffectorGoal:roboy_control_msgs/MoveEndEffectorActionGoal:geometry_msgs/Pose:std_msgs/Header:roboy_control_msgs/MoveEndEffectorFeedback:geometry_msgs/Quaternion:roboy_control_msgs/MoveEndEffectorActionResult:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementsResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/PerformMovementFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" "actionlib_msgs/GoalID:roboy_control_msgs/LookAtGoal:actionlib_msgs/GoalStatus:roboy_control_msgs/LookAtActionResult:geometry_msgs/Vector3:roboy_control_msgs/LookAtFeedback:roboy_control_msgs/LookAtActionGoal:std_msgs/Header:roboy_control_msgs/LookAtResult:roboy_control_msgs/LookAtActionFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" "actionlib_msgs/GoalID:roboy_control_msgs/PerformMovementsGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" ""
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" "actionlib_msgs/GoalID:geometry_msgs/Vector3:roboy_control_msgs/LookAtGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
 add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" "actionlib_msgs/GoalID:roboy_control_msgs/LookAtResult:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:roboy_control_msgs/LookAtResult:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "roboy_control_msgs" "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" ""
 )
 
 #
@@ -244,229 +249,229 @@ add_custom_target(_roboy_control_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
@@ -474,39 +479,45 @@ _generate_msg_cpp(roboy_control_msgs
 
 ### Generating Services
 _generate_srv_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_srv_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_cpp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_cpp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/roboy_control_msgs
 )
 
@@ -522,93 +533,95 @@ add_custom_target(roboy_control_msgs_generate_messages_cpp
 add_dependencies(roboy_control_msgs_generate_messages roboy_control_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_cpp _roboy_control_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -621,229 +634,229 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_control_msgs_generate_message
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
@@ -851,39 +864,45 @@ _generate_msg_eus(roboy_control_msgs
 
 ### Generating Services
 _generate_srv_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_srv_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_eus(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_eus(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/roboy_control_msgs
 )
 
@@ -899,93 +918,95 @@ add_custom_target(roboy_control_msgs_generate_messages_eus
 add_dependencies(roboy_control_msgs_generate_messages roboy_control_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_eus _roboy_control_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -998,229 +1019,229 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_control_msgs_generate_message
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
@@ -1228,39 +1249,45 @@ _generate_msg_lisp(roboy_control_msgs
 
 ### Generating Services
 _generate_srv_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_srv_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_lisp(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_lisp(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/roboy_control_msgs
 )
 
@@ -1276,93 +1303,95 @@ add_custom_target(roboy_control_msgs_generate_messages_lisp
 add_dependencies(roboy_control_msgs_generate_messages roboy_control_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_lisp _roboy_control_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1375,229 +1404,229 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_control_msgs_generate_message
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
@@ -1605,39 +1634,45 @@ _generate_msg_nodejs(roboy_control_msgs
 
 ### Generating Services
 _generate_srv_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_srv_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_nodejs(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_nodejs(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/roboy_control_msgs
 )
 
@@ -1653,93 +1688,95 @@ add_custom_target(roboy_control_msgs_generate_messages_nodejs
 add_dependencies(roboy_control_msgs_generate_messages roboy_control_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_nodejs _roboy_control_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1752,229 +1789,229 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS roboy_control_msgs_generate_message
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_msg_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_msg_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
@@ -1982,39 +2019,45 @@ _generate_msg_py(roboy_control_msgs
 
 ### Generating Services
 _generate_srv_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 _generate_srv_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
+)
+_generate_srv_py(roboy_control_msgs
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
-)
-_generate_srv_py(roboy_control_msgs
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv"
-  "${MSG_I_FLAGS}"
-  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/roboy_control_msgs
 )
 
@@ -2030,93 +2073,95 @@ add_custom_target(roboy_control_msgs_generate_messages_py
 add_dependencies(roboy_control_msgs_generate_messages roboy_control_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ShowEmotion.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Behavior.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetMode.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/InfoNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/MoveYaw.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/ListItems.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Emotion.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/Strings.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DebugNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/PerformActions.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/srv/TranslationalPTPMotion.srv" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ErrorNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/StartRecordTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/msg/WarningNotification.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/MoveEndEffectorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/MoveEndEffectorAction.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtResult.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtAction.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/PerformMovementsActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/PerformMovementsFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/ControlLeds.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/src/roboy_communication/roboy_control_msgs/srv/SetControllerParameters.srv" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionGoal.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/share/roboy_control_msgs/msg/LookAtActionResult.msg" NAME_WE)
+add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/src/roboy_communication/roboy_control_msgs/msg/DangerNotification.msg" NAME_WE)
 add_dependencies(roboy_control_msgs_generate_messages_py _roboy_control_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

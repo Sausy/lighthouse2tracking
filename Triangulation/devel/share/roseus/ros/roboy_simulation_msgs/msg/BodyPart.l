@@ -16,26 +16,28 @@
 
 (defclass roboy_simulation_msgs::BodyPart
   :super ros::object
-  :slots (_id _link_id _position ))
+  :slots (_roboy_id _link _position _mass ))
 
 (defmethod roboy_simulation_msgs::BodyPart
   (:init
    (&key
-    ((:id __id) 0)
-    ((:link_id __link_id) 0)
+    ((:roboy_id __roboy_id) 0)
+    ((:link __link) "")
     ((:position __position) (instance geometry_msgs::Point :init))
+    ((:mass __mass) 0.0)
     )
    (send-super :init)
-   (setq _id (round __id))
-   (setq _link_id (round __link_id))
+   (setq _roboy_id (round __roboy_id))
+   (setq _link (string __link))
    (setq _position __position)
+   (setq _mass (float __mass))
    self)
-  (:id
-   (&optional __id)
-   (if __id (setq _id __id)) _id)
-  (:link_id
-   (&optional __link_id)
-   (if __link_id (setq _link_id __link_id)) _link_id)
+  (:roboy_id
+   (&optional __roboy_id)
+   (if __roboy_id (setq _roboy_id __roboy_id)) _roboy_id)
+  (:link
+   (&optional __link)
+   (if __link (setq _link __link)) _link)
   (:position
    (&rest __position)
    (if (keywordp (car __position))
@@ -43,46 +45,56 @@
      (progn
        (if __position (setq _position (car __position)))
        _position)))
+  (:mass
+   (&optional __mass)
+   (if __mass (setq _mass __mass)) _mass)
   (:serialization-length
    ()
    (+
-    ;; int32 _id
+    ;; int32 _roboy_id
     4
-    ;; int32 _link_id
-    4
+    ;; string _link
+    4 (length _link)
     ;; geometry_msgs/Point _position
     (send _position :serialization-length)
+    ;; float64 _mass
+    8
     ))
   (:serialize
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
-     ;; int32 _id
-       (write-long _id s)
-     ;; int32 _link_id
-       (write-long _link_id s)
+     ;; int32 _roboy_id
+       (write-long _roboy_id s)
+     ;; string _link
+       (write-long (length _link) s) (princ _link s)
      ;; geometry_msgs/Point _position
        (send _position :serialize s)
+     ;; float64 _mass
+       (sys::poke _mass (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
-   ;; int32 _id
-     (setq _id (sys::peek buf ptr- :integer)) (incf ptr- 4)
-   ;; int32 _link_id
-     (setq _link_id (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; int32 _roboy_id
+     (setq _roboy_id (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; string _link
+     (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _link (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;; geometry_msgs/Point _position
      (send _position :deserialize buf ptr-) (incf ptr- (send _position :serialization-length))
+   ;; float64 _mass
+     (setq _mass (sys::peek buf ptr- :double)) (incf ptr- 8)
    ;;
    self)
   )
 
-(setf (get roboy_simulation_msgs::BodyPart :md5sum-) "4f76706811fad63028450434bc8c147d")
+(setf (get roboy_simulation_msgs::BodyPart :md5sum-) "7ea6a0636760eaf5fe7e84691fe02368")
 (setf (get roboy_simulation_msgs::BodyPart :datatype-) "roboy_simulation_msgs/BodyPart")
 (setf (get roboy_simulation_msgs::BodyPart :definition-)
-      "int32 id
-int32 link_id
+      "int32 roboy_id
+string link
 geometry_msgs/Point position
+float64 mass
 
 ================================================================================
 MSG: geometry_msgs/Point
@@ -95,6 +107,6 @@ float64 z
 
 
 
-(provide :roboy_simulation_msgs/BodyPart "4f76706811fad63028450434bc8c147d")
+(provide :roboy_simulation_msgs/BodyPart "7ea6a0636760eaf5fe7e84691fe02368")
 
 

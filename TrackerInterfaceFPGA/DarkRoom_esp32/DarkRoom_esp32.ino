@@ -25,6 +25,37 @@
 #include "protoLighthouse.h"
 #include "lighthouse2Data.hpp"
 
+///============================
+///=========[IMU STUFF]========
+///============================
+#include <Adafruit_Sensor.h> //install Adafruit Unified Sensor
+#include <Adafruit_BNO055.h> //install Adafruit BNO055
+#define I2C_PIN_SDA 12//PIN 36 is GPIO 12
+#define I2C_PIN_SCL 13//PIN 35 is GPIO 13
+#define BNO055_SAMPLERATE_DELAY_MS (100)
+static Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28); //if COM3 is low address is 0x28
+void displayIMUDetails(void)
+{
+  sensor_t sensor;
+  bno.getSensor(&sensor);
+  Serial.println("------------------------------------");
+  Serial.print  ("Sensor:       "); Serial.println(sensor.name);
+  Serial.print  ("Driver Ver:   "); Serial.println(sensor.version);
+  Serial.print  ("Unique ID:    "); Serial.println(sensor.sensor_id);
+  Serial.print  ("Max Value:    "); Serial.print(sensor.max_value); Serial.println(" xxx");
+  Serial.print  ("Min Value:    "); Serial.print(sensor.min_value); Serial.println(" xxx");
+  Serial.print  ("Resolution:   "); Serial.print(sensor.resolution); Serial.println(" xxx");
+  Serial.println("------------------------------------");
+  Serial.println("");
+  delay(500);
+}
+
+static void getSensorData(){
+  static sensors_event_t ImuEvent;
+  bno.getEvent(&ImuEvent);
+}
+
+
 static const int spiClk = 1000000; // 1 MHz
 
 #define mainQUEUE_LENGTH (1)
@@ -57,8 +88,8 @@ bool new_data_available = false;
 uint8_t spi_frame[256];
 unsigned int sensor_value_counter = 0, sensor_value_counter_prev = 0;
 
-static IPAddress broadcastIP(192,168,1,255);
-static WIFI_LOVE whylove("roboy", "wiihackroboy", broadcastIP);
+static IPAddress broadcastIP(10,0,0,255);
+static WIFI_LOVE whylove("roboyexo", "wiihackroboy", broadcastIP);
 //MPU6050 mpu;
 
 #define OUTPUT_READABLE_YAWPITCHROLL
@@ -116,6 +147,18 @@ void setup()
     Serial.println("------------------------------------------------------");
     Serial.println("                    DARKROOM ESP");
     Serial.println("------------------------------------------------------");
+
+    //INIT IMU
+    if(!bno.begin())//OPERATION_MODE_NDOF
+    {
+      /* There was a problem detecting the BNO055 ... check your connections */
+      Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
+      while(1);
+    }
+    delay(1000);
+
+    /* Display some basic information on this sensor */
+    displayIMUDetails();
 
 
 
@@ -329,6 +372,13 @@ void setup()
                   NULL,             /* Parameter passed as input of the task */
                   1,                /* Priority of the task. */
                   NULL);
+  xTaskCreate(
+                  imuData,          /* Task function. */
+                  "imuData",        /* String with name of task. */
+                  10000,            /* Stack size in bytes. */
+                  NULL,             /* Parameter passed as input of the task */
+                  1,                /* Priority of the task. */
+                  NULL);
   xTaskCreatePinnedToCore(
                   sensorReadIn,          /* Task function. */
                   "sensorReadIn",        /* String with name of task. */
@@ -348,6 +398,122 @@ void setup()
 }
 
 SemaphoreHandle_t xSemaphore = NULL;
+
+
+static void imuData(void * parameter){
+  xSemaphore = xSemaphoreCreateMutex();
+
+  static sensors_event_t imuEvent;
+  static sensors_event_t orientationData;
+  static sensors_event_t magnetometerData;
+  static sensors_event_t gravityData;
+
+  static imu::Quaternion quat;
+
+  static int16_t w,x,y,z;
+
+  static bool imuIsCalibrated = 0;
+
+
+  static DarkRoomProtobuf_lighthouseMsg msg = DarkRoomProtobuf_lighthouseMsg_init_zero;
+  //static LIGHTHOUSEDATACONV imuInt;
+
+  while (1) {
+    vTaskDelay(1 / portTICK_PERIOD_MS);
+    /* code */
+    if( xSemaphore != NULL ) {
+      if( xSemaphoreTake( xSemaphore, ( TickType_t ) 10 ) == pdTRUE ){
+
+        //bno.getEvent(&orientationData);
+
+        /*bno.getEvent(&orientationData, Adafruit_BNO055::VECTOR_EULER);
+        bno.getEvent(&magnetometerData, Adafruit_BNO055::VECTOR_MAGNETOMETER);
+        bno.getEvent(&gravityData, Adafruit_BNO055::VECTOR_GRAVITY); //SENSOR_TYPE_ACCELEROMETER
+
+        Serial.print(F("Orientation: "));
+        Serial.print((float)orientationData.orientation.x);
+        Serial.print(F(" "));
+        Serial.print((float)orientationData.orientation.y);
+        Serial.print(F(" "));
+        Serial.print((float)orientationData.orientation.z);
+        Serial.println(F(""));
+
+        Serial.print(F("magnetometerData: "));
+        Serial.print((float)magnetometerData.magnetic.x);
+        Serial.print(F(" "));
+        Serial.print((float)magnetometerData.magnetic.y);
+        Serial.print(F(" "));
+        Serial.print((float)magnetometerData.magnetic.z);
+        Serial.println(F(""));
+
+        Serial.print(F("gravityData: "));
+
+        Serial.print((float)gravityData.acceleration.x);
+        Serial.print(F(" "));
+        Serial.print((float)gravityData.acceleration.y);
+        Serial.print(F(" "));
+        Serial.print((float)gravityData.acceleration.z);
+        Serial.println(F(""));*/
+
+        //WE are in NDOF=Mode
+        bno.getEvent(&imuEvent);
+        quat = bno.getQuat();
+
+        Serial.print(F("Orientation: "));
+        Serial.print(360 - (float)imuEvent.orientation.x);
+        Serial.print(F(", "));
+        Serial.print((float)imuEvent.orientation.y);
+        Serial.print(F(", "));
+        Serial.print((float)imuEvent.orientation.z);
+        Serial.println(F(""));
+
+        w = ((float)quat.w() + 2) * 1000;
+        x = ((float)quat.x() + 2) * 1000;
+        y = ((float)quat.y() + 2) * 1000;
+        z = ((float)quat.z() + 2) * 1000;
+
+
+        Serial.print(F("Quaternion: "));
+        Serial.print((float)quat.w());
+        Serial.print(F(", "));
+        Serial.print((float)quat.x());
+        Serial.print(F(", "));
+        Serial.print((float)quat.y());
+        Serial.print(F(", "));
+        Serial.print((float)quat.z());
+        Serial.println(F(""));
+        Serial.print(F("to sent: "));
+        Serial.print(w);
+        Serial.print(F(", "));
+        Serial.print(x);
+        Serial.print(F(", "));
+        Serial.print(y);
+        Serial.print(F(", "));
+        Serial.print(z);
+        Serial.println(F(""));
+
+
+        imuIsCalibrated = bno.isFullyCalibrated();
+
+        msg.BaseStationID = 222;
+        msg.SensorID = (uint32_t)(w);
+        msg.BeamWord = (uint32_t)(x); //offset
+        msg.Timestamp = (uint32_t)(y);//timestamp
+        msg.E_width = (uint32_t)(z); //offset
+        msg.BaseStationChanel = (int32_t)(imuIsCalibrated);
+
+        (void)whylove.lighthouse2DataStream(msg);
+
+        xSemaphoreGive( xSemaphore ); //RELEASE
+        vTaskDelay(200 / portTICK_PERIOD_MS);
+      }
+    }
+  }
+
+
+  vTaskSuspend( NULL );
+
+}
 
 static void watchdog_sensor(void * parameter){
   static uint8_t time_out_cnt = 0;

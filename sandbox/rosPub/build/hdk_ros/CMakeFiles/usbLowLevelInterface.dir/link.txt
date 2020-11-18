@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libusbLowLevelInterface.so -o /home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/devel/lib/libusbLowLevelInterface.so CMakeFiles/usbLowLevelInterface.dir/include/usbHidInterface.cpp.o 

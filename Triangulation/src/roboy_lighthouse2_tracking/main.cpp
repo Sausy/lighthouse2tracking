@@ -7,6 +7,9 @@
 #include <roboy_middleware_msgs/DarkRoomStatistics.h>
 #include <roboy_middleware_msgs/DarkRoomStatus.h>
 #include <roboy_middleware_msgs/DarkRoomOOTX.h>
+#include <roboy_middleware_msgs/DarkRoomSensor.h>
+#include <roboy_middleware_msgs/DarkRoomSensorV2.h>
+#include <roboy_middleware_msgs/LighthousePoseCorrection.h>
 
 #include <common_utilities/CommonDefinitions.h>
 #include <roboy_control_msgs/SetControllerParameters.h>
@@ -39,19 +42,25 @@ public:
      TrackerClass();
 
      void correctPose(const roboy_middleware_msgs::LighthousePoseCorrection &msg);
+
+
+     void imuGet(const roboy_middleware_msgs::LighthousePoseCorrection &msg);
+     void imuGet_pos(const roboy_middleware_msgs::DarkRoomSensor::ConstPtr &msg);
      void interactiveMarkersFeedback(const visualization_msgs::InteractiveMarkerFeedback &msg);
      void resetLighthousePoses();
      void updateTrackedObjectInfo();
      void transformPublisher();
      bool addTrackedObject(const char *config_file_path);
      void showRays();
+     void startTriangulation();
 
      void receiveSensorStatus(const roboy_middleware_msgs::DarkRoomStatus::ConstPtr &msg);
 
 
+
     ros::NodeHandlePtr nh; /// ROS nodehandle
     ros::Publisher motor_command; /// motor command publisher
-    ros::Subscriber pose_correction_sub, interactive_marker_sub, sensor_status_sub;
+    ros::Subscriber pose_correction_sub, interactive_marker_sub, sensor_status_sub, imu_sub, imu_pos;
 
     //ros::AsyncSpinner *spinner;
 
@@ -70,7 +79,7 @@ public:
     boost::shared_ptr<std::thread> transform_thread = nullptr, update_tracked_object_info_thread = nullptr;
 
     static tf::Transform lighthouse1, lighthouse2, tf_world, tf_map,
-            simulated_object_lighthouse1, simulated_object_lighthouse2;
+            simulated_object_lighthouse1, simulated_object_lighthouse2, imu_foo;
     vector<pair<LighthouseSimulatorPtr,LighthouseSimulatorPtr>> lighthouse_simulation;
 
 
@@ -90,6 +99,8 @@ tf::Transform TrackerClass::simulated_object_lighthouse1;
 tf::Transform TrackerClass::simulated_object_lighthouse2;
 tf::Transform TrackerClass::tf_world;
 tf::Transform TrackerClass::tf_map;
+tf::Transform TrackerClass::imu_foo;
+
 
 
 TrackerClass::TrackerClass(){
@@ -102,9 +113,15 @@ TrackerClass::TrackerClass(){
     nh = ros::NodeHandlePtr(new ros::NodeHandle);
 
 
-    /*
-    pose_correction_sub = nh->subscribe("/roboy/middleware/DarkRoom/LighthousePoseCorrection", 1,
+
+    pose_correction_sub = nh->subscribe("/roboy/middleware/DarkRoom/lhcorrect", 1,
                                         &TrackerClass::correctPose, this);
+    imu_sub = nh->subscribe("/roboy/middleware/DarkRoom/imuLH2", 1, &TrackerClass::imuGet, this);
+    imu_pos = nh->subscribe("/roboy/middleware/DarkRoom/sensor_location", 1, &TrackerClass::imuGet_pos, this);
+
+
+
+    /*
     sensor_sub = nh->subscribe("/roboy/middleware/DarkRoom/sensors", 1, &TrackerClass::receiveSensorData, this);
 
     statistics_sub = nh->subscribe("/roboy/middleware/DarkRoom/Statistics", 2, &TrackerClass::receiveStatistics, this);
@@ -113,6 +130,8 @@ TrackerClass::TrackerClass(){
     */
 
     sensor_status_sub = nh->subscribe("/roboy/middleware/DarkRoom/status", 1, &TrackerClass::receiveSensorStatus, this);
+
+
 
     /*
     spinner = boost::shared_ptr<ros::AsyncSpinner>(new ros::AsyncSpinner(1));
@@ -171,11 +190,84 @@ TrackerClass::TrackerClass(){
 
 
     showRays();
+
+    startTriangulation();
+    //startEstimateObjectPoseMultiLighthouse();
+    //switchLighthouses();
+
     //LighthouseEstimator::publishRays
     //publishRays
 
     ROS_INFO("Finished setup");
 }
+
+void TrackerClass::imuGet_pos(const roboy_middleware_msgs::DarkRoomSensor::ConstPtr &msg) {
+    mux.lock();
+
+    tf::Transform tf;
+    //tf::transformMsgToTF(msg.tf, tf);
+    tf::Vector3 tf_vec;
+
+    geometry_msgs::Vector3 v;
+    v = msg->position[0];
+
+    tf::vector3MsgToTF(v, tf_vec);
+
+    imu_foo.setOrigin(tf_vec);
+
+    tf_broadcaster.sendTransform(tf::StampedTransform(imu_foo, ros::Time::now(), "world", "imu"));
+
+    mux.unlock();
+}
+
+void TrackerClass::imuGet(const roboy_middleware_msgs::LighthousePoseCorrection &msg) {
+  mux.lock();
+
+  tf::Transform tf;
+  tf::transformMsgToTF(msg.tf, tf);
+
+  //if (msg.type == 0) // relativ
+  //    imu_foo = tf * imu_foo;
+  //else    // absolut
+  imu_foo = tf;
+
+  //tf::Transform foo;
+  //tf::TransformBroadcaster foo_br;
+
+  imu_foo.setOrigin(tf::Vector3(0.0,2.0,0.0));
+  //foo.setRotation(tf::Quaternion(0,0,0,1));
+  //foo_br.sendTransform(tf::StampedTransform(foo, ros::Time::now(), "world", "imu"));
+
+  tf_broadcaster.sendTransform(tf::StampedTransform(imu_foo, ros::Time::now(), "world", "imu"));
+
+  //foo.setOrigin(tf::Vector3(3.0,0.0,0.0));
+  //foo.setRotation(tf::Quaternion(0,0,0,1));
+
+  //foo_br.sendTransform(tf::StampedTransform(foo, ros::Time::now(), "world", "foo"));
+
+  mux.unlock();
+
+}
+
+void TrackerClass::startTriangulation() {
+    //std::cout<<"amount of tracked Objects " << trackedObjects.size();
+    ROS_INFO("amount of tread objects %d", trackedObjects.size());
+    for (uint i = 0; i < trackedObjects.size(); i++) {
+        trackedObjects[i]->mux.lock();
+
+            ROS_INFO("starting tracking thread");
+            trackedObjects[i]->tracking = true;
+            trackedObjects[i]->tracking_thread = boost::shared_ptr<boost::thread>(
+                    new boost::thread(
+                            [this, i]() { this->trackedObjects[i]->triangulateSensors(); }
+                    ));
+            trackedObjects[i]->tracking_thread->detach();
+
+        trackedObjects[i]->mux.unlock();
+    }
+}
+
+
 
 void TrackerClass::receiveSensorStatus(const roboy_middleware_msgs::DarkRoomStatus::ConstPtr &msg){
   int active_sensors = 0;
@@ -192,6 +284,7 @@ void TrackerClass::correctPose(const roboy_middleware_msgs::LighthousePoseCorrec
     mux.lock();
     tf::Transform tf;
     tf::transformMsgToTF(msg.tf, tf);
+
     if (msg.id == LIGHTHOUSE_A) {
         if (msg.type == 0) // relativ
             lighthouse1 = tf * lighthouse1;
@@ -203,6 +296,7 @@ void TrackerClass::correctPose(const roboy_middleware_msgs::LighthousePoseCorrec
         else    // absolut
             lighthouse2 = tf;
     }
+
     mux.unlock();
 }
 
@@ -256,7 +350,9 @@ void TrackerClass::resetLighthousePoses() {
     lighthouse1.setOrigin(tf::Vector3(0, -1, 0));
     lighthouse2.setRotation(quat);
 //    lighthouse2.setOrigin(tf::Vector3(-1, -2, 0));
-    lighthouse2.setOrigin(tf::Vector3(-0.825, -1, 0));
+    lighthouse2.setOrigin(tf::Vector3(-0.825, -1,0));
+    imu_foo.setOrigin(tf::Vector3(2, -1,0.5));
+
 }
 
 
@@ -404,6 +500,8 @@ int main(int argc, char *argv[]) {
 
 
     TrackerClass robot;
+
+    //robot.simulated = true;
 
     /*ros::Publisher pubHandl_Sensor;
     pubHandl_Sensor = nh.advertise<roboy_middleware_msgs::DarkRoomSensorV2>("/roboy/middleware/DarkRoom/sensorsLH2", 1);

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Sensor.dir/src/Sensor.cpp.o"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/libSensor.pdb"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/libSensor.so"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib/libSensor.pdb"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib/libSensor.so"
 )
 
 # Per-language clean rules from dependency scanning.

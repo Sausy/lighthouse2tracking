@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rfid_unlocker.dir/src/rfid_unlocker.cpp.o"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/common_utilities/rfid_unlocker.pdb"
-  "/home/userdev/Projects/lighthouse/lighthouse2sandbox/10_first_release/lighthouse2_tracking/devel/lib/common_utilities/rfid_unlocker"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib/common_utilities/rfid_unlocker.pdb"
+  "/home/userdev/Projects/lighthouse/lighthouse2tracking/Triangulation/devel/lib/common_utilities/rfid_unlocker"
 )
 
 # Per-language clean rules from dependency scanning.

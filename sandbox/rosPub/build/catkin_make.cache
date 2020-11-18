@@ -1,0 +1,2 @@
+hdk_ros
+-DCATKIN_DEVEL_PREFIX=/home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/devel -DCMAKE_INSTALL_PREFIX=/home/sausy/Projects/lighthouse/lighthouse2tracking/sandbox/rosPub/install -G Unix Makefiles
